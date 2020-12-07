@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ellucian Ethos Integration SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Ellucian Ethos Integration SDK ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="ellucian-ethos-integration-sdk">Ellucian Ethos Integration SDK</h1>
+
+<p>This SDK allows you to easily develop .NET applications in C# that integrate with Ellucian Ethos Integration.  It takes care of
+building and executing HTTP requests and managing the responses.  This allows your application to use the C# library methods
+to communicate with Ethos Integration without the need to call the REST APIs directly.</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<ol>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#quick-start">Quick Start</a></li>
+<li><a href="#full-api-documentation">Full API Doc</a></li>
+<li><a href="#examples">Examples</a></li>
+</ol>
+<h1 id="setup">Setup</h1>
+<p>This SDK is available for download from the nuget repository (<a href="https://www.nuget.org/packages/Ellucian.EthosIntegration.SDK/">https://www.nuget.org/packages/Ellucian.EthosIntegration.SDK/</a>).</p>
+<p>Before using the SDK, you will need to download and install the following:</p>
+<ul>
+<li>A .NET runtime. The SDK was built in .NET Core 3.1</li>
+<li>nuget</li>
+</ul>
+<p>You will need an API key from an Ethos Integration application.  It is expected that the application that the API key belongs
+to is already configured properly in Ethos Integration.  Please refer to Ellucian documentation for more information about how to get
+an API key and configure Ethos Integration applications.</p>
+<p>We also recommend:</p>
+<ul>
+<li>A C# IDE such as
+<ul>
+<li><a href="https://visualstudio.microsoft.com/">Visual Studio</a></li>
+<li><a href="https://code.visualstudio.com/docs/languages/csharp">Visual Studio Code</a></li>
+<li><a href="https://www.jetbrains.com/rider//">JetBrains Rider</a></li>
+</ul>
+</li>
+<li><a href="https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/install">.NET Core</a> - if you're on Mac or Linux or just really like the commandline on Windows.</li>
+</ul>
+<p>In general your choice of C# IDE will work fine as long as you can do manage nuget with it.</p>
+<h1 id="quick-start">Quick Start</h1>
+<p>To make API requests against the Ethos Integration services, you will first need to create a client object.  To create a client
+object, use the <strong>EthosClientBuilder</strong>, found in the <code>Ellucian.Ethos.Integration.Client</code> namespace.</p>
+<p>The types of clients that you can create are as follows:</p>
+<ul>
+<li><code>EthosConfigurationClient</code> - make requests for getting config data, such as /appConfig and /available-resources</li>
+<li><code>EthosErrorsClient</code> - perform create, read, and delete operations against the EI errors service</li>
+<li><code>EthosMessagesClient</code> - get messages from a subscriber queue</li>
+<li><code>EthosProxyClient</code> - perform CRUD operations for Ethos Data Models and other resources using the EI proxy API</li>
+</ul>
+<p>To use the EthosClientBuilder, you will need to create a new instance of it, passing a valid Ethos Integration API key to the
+constructor.  The API key is used to get an access token from Ethos Integration, allowing the client to authenticate to the EI
+services when making requests.</p>
+<p>Here is a quick example of creating a proxy client and making a simple GET request for the 'courses' resource.  See the
+<a href="#examples">examples</a> section for more detailed code examples.</p>
+<p>One thing to note is that all of these clients return <code>Task</code> types, and are <code>awaitable</code>.  The examples cover how to handle this in the most common, easiest to use, typical way: using an <code>async</code> method and <code>await</code>ing the result.</p>
+<pre><code class="lang-csharp">using Ellucian.Ethos.Integration.Client;
+using Ellucian.Ethos.Integration.Client.Proxy;
+
+// Create Proxy Client
+string apiKey = &quot;11111111-1111-1111-1111-111111111111&quot;;
+EthosProxyClient proxyClient = new EthosClientBuilder(apiKey).BuildEthosProxyClient();
+EthosResponse response = await proxyClient.GetAsync(&quot;courses&quot;);
+</code></pre>
+<p>The <code>EthosResponse</code> object is returned from many of the methods in the proxy client.  It holds information about the HTTP response,
+such as the content (response body), response headers, and status code.  It also holds a <code>requestedUrl</code> property that can show you
+the URL that was built by the client and used to make the request.</p>
+<p>There are overloaded methods in the <code>EthosProxyClient</code> that let you get the response as a <code>string</code> or as a <code>Newtonsoft.Json.Linq.JObject</code> object.
+These response types contain only the content portion of the <code>EthosResponse</code>.</p>
+<pre><code class="lang-csharp">// get as string.  string.Empty tells the SDK to get the latest version.
+string response = await proxyClient.GetAsStringAsync​(&quot;persons&quot;, string.Empty);
+
+// get as JArray.  string.Empty tells the SDK to get the latest version.
+JArray response = await proxyClient.GetAsJArrayAsync(&quot;persons&quot;, string.Empty);
+</code></pre>
+<p>The <a href="https://www.newtonsoft.com/json">Json.NET</a> is heavily used in this SDK to manage serializing and parsing
+JSON objects.  The <code>JObject</code>, <code>JToken</code> and <code>JArray</code> objects make it easy to read the JSON properties of the responses.  It provides a way to generically
+manage all the Ethos Data Models and other resource types that could be returned from Ethos Integration without having to create and
+manage C# objects for every possible one.</p>
+<p>Here is an example of getting properties from a list of persons, then printing out the <code>id</code> and <code>fullName</code> attribute.</p>
+<pre><code class="lang-csharp">	JArray persons = await ethosProxyClient.GetAsJArrayAsync(&quot;persons&quot;, string.Empty);
+    foreach (JToken person in persons)
+    {
+        string id = person[&quot;id&quot;].Tostring();
+		// a person can have more than one name, but we just want the first one for simplicity.
+        string fullName = person[&quot;names&quot;][0][&quot;fullName&quot;].Tostring();
+        Console.WriteLine($&quot;{fullName} has a person ID of {id}&quot;);
+    }
+</code></pre>
+<p>The proxy client is different than the other clients because the response objects could be in any JSON format that the authoritative
+applications return.  This is why it is necessary to handle the responses as strings or generic JSON nodes.</p>
+<p>The other clients, such as <code>EthosMessagesClient</code> and <code>EthosErrorsClient</code>, return more specialized objects since the responses
+have defined JSON schemas.  They return <code>EthosError</code> and <code>ChangeNotification</code> objects.  See the full API doc for more details.</p>
+<h1 id="full-api-documentation">Full API Documentation</h1>
+<p><strong>TO-DO</strong> add link here once it is hosted publicly</p>
+<h1 id="examples">Examples</h1>
+<p>To view more examples, clone this repo and view the <code>Ellucian.EthosIntegration.SDK.Sample</code> project.  Each of the
+classes in that package has a static <code>main</code> method and can be run from the command line or with an IDE run command.  When
+running these classes, an API key is required as a program argument.</p>
+<p>For example:
+<code>dotnet run --project ./Ellucian.EthosIntegration.SDK.Sample/ &quot;11111111-1111-1111-1111-111111111111&quot;</code></p>
+<p>That will run the examples specified in the <code>Program.cs</code> file.</p>
+<h3 id="making-requests-to-the-proxy-api">Making Requests to the Proxy API</h3>
+<p>Get a page of 'courses' resources using a specific version.</p>
+<pre><code class="lang-csharp">EthosProxyClient proxyClient = new EthosClientBuilder(apiKey).BuildEthosProxyClient();
+EthosResponse response = await proxyClient.Get(&quot;courses&quot;, &quot;application/vnd.hedtech.integration.v16.1.0+json&quot;);
+</code></pre>
+<p>Get a page of 'persons' resources for a major version.</p>
+<pre><code class="lang-csharp">// get the full version header for v12 of 'persons'
+EthosConfigurationClient configClient = new EthosClientBuilder(apiKey).buildEthosConfigurationClient();
+string version = await configClient.GetVersionHeader​(&quot;persons&quot;, 12);
+
+EthosResponse response = proxyClient.GetAsync(&quot;persons&quot;, version);
+</code></pre>
+<p>Get a single 'employees' row using an ID.</p>
+<pre><code class="lang-csharp">EthosResponse response = await proxyClient.GetByIdAsync(&quot;employees&quot;, &quot;11111111-1111-1111-1111-111111111111&quot;);
+</code></pre>
+<p>Create a new record with a POST request.</p>
+<pre><code class="lang-csharp">EthosResponse response = await ethosProxyClient.PostAsync(&quot;colors&quot;, &quot;{ \&quot;id\&quot;:\&quot;00000000-0000-0000-0000-000000000000\&quot;, \&quot;name\&quot;: \&quot;green\&quot; }&quot;);
+</code></pre>
+<p>Update a record with a PUT request.</p>
+<pre><code class="lang-csharp">EthosResponse response = await ethosProxyClient.PutAsync(&quot;colors&quot;, &quot;11111111-1111-1111-1111-111111111111&quot;, &quot;{ \&quot;name\&quot;: \&quot;forest green\&quot; }&quot;);
+</code></pre>
+<p>Delete a record with a DELETE request.</p>
+<pre><code class="lang-csharp">await ethosProxyClient.DeleteAsync(&quot;colors&quot;, &quot;11111111-1111-1111-1111-111111111111&quot;);
+</code></pre>
+<h3 id="consuming-subscriber-messages">Consuming Subscriber Messages</h3>
+<p>Call the consume endpoint to get the default number of new messages from your application's subscriber queue.  The messages are
+returned as ChangeNotification objects.</p>
+<pre><code class="lang-csharp">EthosMessagesClient messagesClient = new EthosClientBuilder(apiKey).GetEthosMessagesClient();
+IEnumerable&lt;ChangeNotification&gt; changeNotifications = await messagesClient.ConsumeAsync();
+</code></pre>
+<p>Call the consume endpoint to get available messages from your application's subscriber queue, starting after message ID of '10'.</p>
+<pre><code class="lang-csharp">IEnumerable&lt;ChangeNotification&gt; changeNotifications = await messagesClient.Consume(10, 10);
+</code></pre>
+<p>The '10' parameter sent to this method is used to send the <code>lastProcessedID</code> query parameter in the HTTP request to the /consume
+endpoint.  This parameter can be used to indicate the ID of the last message that was successfully processed. It can be used
+to retrieve messages that have already been retrieved. The messages in the queue have sequential ID's, and the lastProcessedID parameter
+corresponds to the ID of a message in the queue.
+Here is an example of how lastProcessedID can be used. If the application consuming the messages retrieves messages 1-10,
+but only successfully processes messages 1-5, it can set the lastProcessedID parameter to 5 in the next invocation. That will give
+the application messages 6-10 again.</p>
+<p>Check to see how many messages are available in your application's subscriber queue.</p>
+<pre><code class="lang-csharp">int numMessages = await messagesClient.GetNumAvailableMessagesAsync();
+</code></pre>
+<h3 id="getting-configuration-info">Getting Configuration Info</h3>
+<p>Get the configuration information for the application to which the API key belongs.</p>
+<pre><code class="lang-csharp">EthosConfigurationClient configClient = new EthosClientBuilder(apiKey).BuildEthosConfigurationClient();
+
+// get app configuration as a string
+string appConfig = await configClient.GetAppConfigAsync();
+
+// get app configuration as a JArray
+JArray appConfig = await configClient.GetAppConfigJsonAsync();
+</code></pre>
+<p>Get the list of available resources from the authoritative applications in your tenant.  This calls the /available-resources
+endpoint of Ethos Integration, and returns that data in a string or JArray format.</p>
+<pre><code class="lang-csharp">// get as string
+string availableResources = await configClient.GetAllAvailableResourcesAsync();
+
+// get as JArray
+JArray availableResources = await configClient.GetAllAvailableResourcesJsonAsync();
+</code></pre>
+<p>There is also an option to get the available resources data that only pertains to your application.  If your application has
+credentials configured to call one or more authoritative application API's, then it will have an <code>ownerOverrides</code> array defined in the
+app config.  This ownerOverrides array determines which authoritative app will serve requests for different resources.  When you get
+the available resource data specific to your application, the response will be limited to resources and authoritative apps in your application's
+ownerOverrides config.</p>
+<pre><code class="lang-csharp">// get as string
+string availableResources = await configClient.GetAvailableResourcesForAppAsync();
+
+// get as JArray
+JArray availableResources = await configClient.GetAvailableResourcesForAppJsonAsync();
+</code></pre>
+<h3 id="managing-ethos-errors">Managing Ethos Errors</h3>
+<p>Create an error in the Ethos Integration errors service.</p>
+<pre><code class="lang-csharp">EthosErrorsClient errorsClient = new EthosClientBuilder(apiKey).BuildEthosErrorsClient();
+// create an EthosError object from a JSON string
+string json = &quot;{ &quot; +
+	&quot;\&quot;severity\&quot;:\&quot;Error\&quot;, &quot; +
+    &quot;\&quot;responseCode\&quot;:400,&quot; +
+    &quot;\&quot;description\&quot;:\&quot;Bad request\&quot;, &quot; +
+    &quot;\&quot;details\&quot;:\&quot;additional error details\&quot; &quot; +
+&quot;}&quot;;
+EthosError error = ErrorFactory.CreateErrorFromJson(json);
+// post to errors service
+EthosError response = await errorsClient.CreateAsync(error);
+</code></pre>
+<p>Get a single page of errors for your tenant from the errors service.</p>
+<pre><code class="lang-csharp">EthosResponse errorResponse = await errorsClient.GetAsync();
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
