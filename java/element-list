@@ -1,0 +1,9 @@
+com.ellucian.ethos.integration
+com.ellucian.ethos.integration.authentication
+com.ellucian.ethos.integration.client
+com.ellucian.ethos.integration.client.config
+com.ellucian.ethos.integration.client.errors
+com.ellucian.ethos.integration.client.messages
+com.ellucian.ethos.integration.client.proxy
+com.ellucian.ethos.integration.client.proxy.filter
+com.ellucian.ethos.integration.sample.commandline
