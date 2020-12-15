@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EthosMessagesClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EthosMessagesClient
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient" class="text-break">Class EthosMessagesClient
+  </h1>
+  <div class="markdown level0 summary"><p>An EthosClient used to publish and consume messages using the Ethos Integration messages service.</p>
+<p>
+This client accepts an API key that belongs to an ethos application.All requests made from this client are done
+on behalf of the application to which that API key belongs. That means that calling the consume methods
+will try to retrieve change-notifications from the subscription queue of that specific application.It is assumed that
+the application is configured in Ethos Integration to subscribe to some resource changes.</p>
+<p>
+Likewise, calling the publish methods will try to publish change-notifications on behalf of the application
+to which the API key belongs. It is assumed that the application is configured in Ethos Integration to own the resources
+that are in the change-notifications being published. If a change-notification is sent to the Ethos Integration
+/publish endpoint for a resource that is not owned by the calling application, it will return a<pre><code>403 Forbidden</code></pre>
+response.</p>
+<p>
+The preferred way to instantiate this class is via the { @link com.ellucian.ethos.integration.client.EthosClientBuilder EthosClientBuilder }.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html">EthosClient</a></div>
+    <div class="level2"><span class="xref">EthosMessagesClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ApiKey">EthosClient.ApiKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_expirationMinutes">EthosClient.expirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ExpirationMinutes">EthosClient.ExpirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AutoRefresh">EthosClient.AutoRefresh</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Token">EthosClient.Token</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Region">EthosClient.Region</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HttpProtocolClientBuilder">EthosClient.HttpProtocolClientBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_EthosResponseBuilder">EthosClient.EthosResponseBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ResponseHandlerAsync_HttpResponseMessage_">EthosClient.ResponseHandlerAsync(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AttachHeaders_HttpClient_Dictionary_System_String_System_String__">EthosClient.AttachHeaders(HttpClient, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAccessTokenAsync">EthosClient.GetAccessTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetNewTokenAsync">EthosClient.GetNewTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetHttpClient">EthosClient.GetHttpClient()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetStringAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetStringAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_System_String_">EthosClient.GetAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HeadAsync_System_String_">EthosClient.HeadAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PostAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PostAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PutAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PutAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_DeleteAsync_Dictionary_System_String_System_String__System_String_">EthosClient.DeleteAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AddAccessTokenAuthHeaderAsync_Dictionary_System_String_System_String__">EthosClient.AddAccessTokenAuthHeaderAsync(Dictionary&lt;String, String&gt;)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.html">Ellucian.Ethos.Integration.Client.Messages</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EthosMessagesClient : EthosClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient__ctor_" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient__ctor_System_String_HttpClient_" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.#ctor(System.String,HttpClient)">EthosMessagesClient(String, HttpClient)</h4>
+  <div class="markdown level1 summary"><p>Creates an EthosMessagesClient using the given API key. Note that the preferred way to get an instance of this class
+is through the { @link com.ellucian.ethos.integration.client.EthosClientBuilder EthosClientBuilder }.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosMessagesClient(string apiKey, HttpClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>A valid API key from Ethos Integration. This is required to be a valid 36 character GUID string.
+If it is null, empty, or not in a valid GUID format, then an<pre><code> ArgumentNullException</code></pre> will be thrown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A HttpClient. If it is null/empty, then an <see cref="!:ArgumentNullException"></see> will be thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient_cnType" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.cnType">cnType</h4>
+  <div class="markdown level1 summary"><p>The version to use for the Ethos Messages API.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">const string cnType = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient_ConsumeAsync_" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.ConsumeAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient_ConsumeAsync_System_Nullable_System_Int32__System_Nullable_System_Int64__" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.ConsumeAsync(System.Nullable{System.Int32},System.Nullable{System.Int64})">ConsumeAsync(Nullable&lt;Int32&gt;, Nullable&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of messages from the subscription queue of the application. This will return the number of messages specified
+by the limit parameter, if there are that many available.The messages will be returned in the format of a<br>
+change-notification.</p>
+<p>
+The limit can be up to 1000, but the total size of the response payload from Ethos Integration
+is limited to 1 MB. If the size limit is reached, the number of messages returned will be less than the specified limit, even if there
+are more messages remaining in the queue.</p>
+<p>
+The lastProcessedID parameter can be used to indicate the ID of the last message that was successfully processed.
+This parameter can be used to retrieve messages that have already been retrieved.The messages in the queue have sequential ID&apos;s, and the
+lastProcessedID parameter corresponds to the ID of a message in the queue.</p>
+<p>
+Here is an example of how lastProcessedID  can be used. If the application consuming the messages retrieves messages 1-10, but
+only successfully processes messages 1-5, it can set the lastProcessedID parameter to 5 in the next invocation.That will give the application
+messages 6-10 again.</p>
+<p>
+When both the limit and lastProcessedID parameters are used together, they do not affect each other. The lastProcessedID gives
+a starting point on what message should be the first one returned. The limit is evaluated separately to see how many messages should be returned
+(starting with lastProcessedID + 1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;ChangeNotification&gt;&gt; ConsumeAsync(int? limit = null, long? lastProcessedID = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The maximum number of messages to retrieve with a single request. This is required to be an integer between
+1 and 1000, otherwise an InvalidOperationException will be thrown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">lastProcessedID</span></td>
+        <td><p>The ID of the last message that was successfully processed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>&gt;&gt;</td>
+        <td><p>A list of messages in the change-notification format. This will return up to the given limit of messages if there are that many
+available in the queue and they all fit within the 1 MB payload limit.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient_GetMessagesAsync_" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.GetMessagesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient_GetMessagesAsync_System_Nullable_System_Int32__System_Nullable_System_Int64__" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.GetMessagesAsync(System.Nullable{System.Int32},System.Nullable{System.Int64})">GetMessagesAsync(Nullable&lt;Int32&gt;, Nullable&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of messages from the subscription queue of the application. This will return the default number of messages, if
+available, from Ethos Integration in the format of a change-notification.</p>
+<p>
+By default, each subsequent call to consume messages will remove the previously retrieved messages from the queue. If you need
+to get the same messages( or subset of them ) again, use the consume method that accepts a lastProcessedID parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;ChangeNotification&gt;&gt; GetMessagesAsync(int? limit, long? lastProcessedID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The limit query parameter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int64</span>&gt;</td>
+        <td><span class="parametername">lastProcessedID</span></td>
+        <td><p>The lastProcessedID query parameter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>&gt;&gt;</td>
+        <td><p>A list of change-notifications.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient_GetNumAvailableMessagesAsync_" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.GetNumAvailableMessagesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Messages_EthosMessagesClient_GetNumAvailableMessagesAsync" data-uid="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.GetNumAvailableMessagesAsync">GetNumAvailableMessagesAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the number of available messages in the subscription queue of the application. This will return 0 if
+the app has an empty queue or if the app has no subscriber queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetNumAvailableMessagesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of available messages in the application's queue.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

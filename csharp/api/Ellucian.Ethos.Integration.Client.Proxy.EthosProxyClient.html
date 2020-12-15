@@ -1,0 +1,4164 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EthosProxyClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EthosProxyClient
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient" class="text-break">Class EthosProxyClient
+  </h1>
+  <div class="markdown level0 summary"><p>An EthosClient used to retrieve data from the Ethos Integration Proxy API.</p>
+<p>
+Supports( but not limited to ) the following functionality:
+<ul>
+<li>Getting data for a given Ethos resource</li>
+<li>Getting an Ethos resource by ID (GUID)</li>
+<li>Getting the page size and/or total count for a resource</li>
+</ul>
+</p>
+<p>Supports paging for data in the following formats:</p>
+<ul>
+<li>List&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>> a list of EthosResponse objects</li>
+<li>List&lt;<see cref="!:System.String"></see>> a list of strings</li>
+<li>List&lt;<see cref="!:JArray"></see>> a list of Newtonsoft JArray objects</li>
+</ul>
+Each item in the list represents one page of data.Each page of data can contain many rows according to the page size.
+<p>
+<strong>NOTE: None of the methods in this class should be used to bulk load Ethos data. Such is NOT the intent of this SDK.
+It is possible that long running process times could result and/or <see cref="!:OutOfMemoryException"></see>s could occur if trying to get
+a large quantity of data. Instead, the Ethos bulk loading solution should be used for loading data in Ethos data model format in bulk.</strong></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html">EthosClient</a></div>
+    <div class="level2"><span class="xref">EthosProxyClient</span></div>
+      <div class="level3"><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html">EthosFilterQueryClient</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ApiKey">EthosClient.ApiKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_expirationMinutes">EthosClient.expirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ExpirationMinutes">EthosClient.ExpirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AutoRefresh">EthosClient.AutoRefresh</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Token">EthosClient.Token</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Region">EthosClient.Region</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HttpProtocolClientBuilder">EthosClient.HttpProtocolClientBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_EthosResponseBuilder">EthosClient.EthosResponseBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ResponseHandlerAsync_HttpResponseMessage_">EthosClient.ResponseHandlerAsync(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AttachHeaders_HttpClient_Dictionary_System_String_System_String__">EthosClient.AttachHeaders(HttpClient, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAccessTokenAsync">EthosClient.GetAccessTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetNewTokenAsync">EthosClient.GetNewTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetHttpClient">EthosClient.GetHttpClient()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetStringAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetStringAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_System_String_">EthosClient.GetAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HeadAsync_System_String_">EthosClient.HeadAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PostAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PostAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PutAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PutAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_DeleteAsync_Dictionary_System_String_System_String__System_String_">EthosClient.DeleteAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AddAccessTokenAuthHeaderAsync_Dictionary_System_String_System_String__">EthosClient.AddAccessTokenAuthHeaderAsync(Dictionary&lt;String, String&gt;)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.html">Ellucian.Ethos.Integration.Client.Proxy</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EthosProxyClient : EthosClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient__ctor_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient__ctor_System_String_HttpClient_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.#ctor(System.String,HttpClient)">EthosProxyClient(String, HttpClient)</h4>
+  <div class="markdown level1 summary"><p>Constructs an EthosProxyClient using the given API key.
+Note that the preferred way to get an instance of this class is through the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosProxyClient(string apiKey, HttpClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>A valid API key from Ethos Integration. This is required to be a valid 36 character GUID string.
+If it is null, empty, <see cref="!:ArgumentNullException"></see> will be thrown or not in a valid GUID format, then a <see cref="!:FormatException"></see> will be thrown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A HttpClient. If it is null/empty, then an <see cref="!:ArgumentNullException"></see> will be thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DEFAULT_MAX_PAGE_SIZE" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DEFAULT_MAX_PAGE_SIZE">DEFAULT_MAX_PAGE_SIZE</h4>
+  <div class="markdown level1 summary"><p>Default value for max-page-size header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int DEFAULT_MAX_PAGE_SIZE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DEFAULT_PAGE_SIZE" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DEFAULT_PAGE_SIZE">DEFAULT_PAGE_SIZE</h4>
+  <div class="markdown level1 summary"><p>Default value for page size (limit).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly int DEFAULT_PAGE_SIZE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DEFAULT_VERSION" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DEFAULT_VERSION">DEFAULT_VERSION</h4>
+  <div class="markdown level1 summary"><p>Default value for the accept and content-type header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly string DEFAULT_VERSION</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_ethosResponseConverter" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.ethosResponseConverter">ethosResponseConverter</h4>
+  <div class="markdown level1 summary"><p>Converts <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to string <see cref="!:JArray"></see> or <see cref="!:JObject"></see>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">readonly EthosResponseConverter ethosResponseConverter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseConverter.html">EthosResponseConverter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_APPLICATION_CONTEXT" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_APPLICATION_CONTEXT">HDR_APPLICATION_CONTEXT</h4>
+  <div class="markdown level1 summary"><p>Response header for the application designation in Ethos Integration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_APPLICATION_CONTEXT = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_CONTENT_TYPE" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_CONTENT_TYPE">HDR_CONTENT_TYPE</h4>
+  <div class="markdown level1 summary"><p>Response header for the content-type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_CONTENT_TYPE = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_DATE" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_DATE">HDR_DATE</h4>
+  <div class="markdown level1 summary"><p>Response header for the current date of the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_DATE = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID">HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID</h4>
+  <div class="markdown level1 summary"><p>Response header for the application ID of the application used in Ethos Integration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME">HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME</h4>
+  <div class="markdown level1 summary"><p>Response header for the application name of the application used in Ethos Integration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_X_MAX_PAGE_SIZE" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_X_MAX_PAGE_SIZE">HDR_X_MAX_PAGE_SIZE</h4>
+  <div class="markdown level1 summary"><p>Response header for the max page size. Specifies the maximum number of resources returned in a response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_X_MAX_PAGE_SIZE = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_X_MEDIA_TYPE" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_X_MEDIA_TYPE">HDR_X_MEDIA_TYPE</h4>
+  <div class="markdown level1 summary"><p>Response header for the version of the Ethos resource (data-model).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_X_MEDIA_TYPE = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_X_TOTAL_COUNT" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_X_TOTAL_COUNT">HDR_X_TOTAL_COUNT</h4>
+  <div class="markdown level1 summary"><p>Response header for the total count (total number of rows) for the given resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_X_TOTAL_COUNT = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_BuildHeadersMap_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.BuildHeadersMap*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_BuildHeadersMap_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.BuildHeadersMap(System.String)">BuildHeadersMap(String)</h4>
+  <div class="markdown level1 summary"><p>Builds a map of headers with the given version. If the version is null or empty, uses the default version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, string&gt; BuildHeadersMap(string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version to use for the Accept and Content-Type headers, as supplied in the returned map.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><p>a <see cref="!:Dictionary&lt;TKey, TValue>"></see> of header values including Accept and Content-Type (both set to the given version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DeleteAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DeleteAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DeleteAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DeleteAsync(System.String,System.String)">DeleteAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Deletes an instance of the given resource by the given id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteAsync(string resourceName, string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to delete an instance of identified by the given id.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The unique ID (GUID) of the resource to delete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingForAllAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingForAllAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingForAllAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingForAllAsync(System.String,System.String,System.Int32,System.Int32)">DoPagingForAllAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Used within the SDK to page for all pages for a given resource by using an offset of 0.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;EthosResponse&gt;&gt; DoPagingForAllAsync(string resourceName, string version, int totalCount, int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td><p>The total count of rows for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>s where each <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> in the list represents a page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingForNumPagesAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingForNumPagesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingForNumPagesAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingForNumPagesAsync(System.String,System.String,System.Int32,System.Int32,System.Int32)">DoPagingForNumPagesAsync(String, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Used within the SDK to page for some number of pages for a given resource by using an offset of 0.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;EthosResponse&gt;&gt; DoPagingForNumPagesAsync(string resourceName, string version, int totalCount, int pageSize, int numPages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td><p>The total count of rows for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numPages</span></td>
+        <td><p>The number of pages to page for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>s where each <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> in the list represents a page,
+up to some number of pages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingForNumRowsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingForNumRowsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingForNumRowsAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingForNumRowsAsync(System.String,System.String,System.Int32,System.Int32,System.Int32)">DoPagingForNumRowsAsync(String, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Used within the SDK to page for some number of rows for a given resource, using an offset of 0.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;EthosResponse&gt;&gt; DoPagingForNumRowsAsync(string resourceName, string version, int totalCount, int pageSize, int numRows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td><p>The total count of rows for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>s where each <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> in the list represents a page,
+up to the number of rows specified or the total count of the resource( whichever is less).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingFromOffsetAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingFromOffsetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingFromOffsetAsync_System_String_System_String_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingFromOffsetAsync(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32)">DoPagingFromOffsetAsync(String, String, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;List&lt;EthosResponse&gt;&gt; DoPagingFromOffsetAsync(string resourceName, string version, string filter, int totalCount, int pageSize, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filter</span></td>
+        <td><p>The string resource filter in JSON format contained in the URL, e.g: <pre>?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}</pre></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td><p>The total count of rows for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>s where each <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> in the list represents a page,
+beginning from the given offset index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingFromOffsetForNumPagesAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingFromOffsetForNumPagesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingFromOffsetForNumPagesAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingFromOffsetForNumPagesAsync(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">DoPagingFromOffsetForNumPagesAsync(String, String, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Used within the SDK to page for some number of pages for a given resource from the given offset.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;EthosResponse&gt;&gt; DoPagingFromOffsetForNumPagesAsync(string resourceName, string version, int totalCount, int pageSize, int numPages, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td><p>The total count of rows for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numPages</span></td>
+        <td><p>The number of pages to page for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>s where each <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> in the list represents a page,
+from the given offset( inclusive) and up to some number of pages( exclusive).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingFromOffsetForNumRowsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingFromOffsetForNumRowsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingFromOffsetForNumRowsAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.DoPagingFromOffsetForNumRowsAsync(System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">DoPagingFromOffsetForNumRowsAsync(String, String, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Used within the SDK to page for some number of rows for a given resource, using an offset of 0.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;EthosResponse&gt;&gt; DoPagingFromOffsetForNumRowsAsync(string resourceName, string version, int totalCount, int pageSize, int offset, int numRows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td><p>The total count of rows for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td><p>The overall number of rows to page for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsJArraysAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesAsJArraysAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsJArraysAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesAsJArraysAsync(System.String,System.String,System.Int32)">GetAllPagesAsJArraysAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all pages for the given resource, version, and page size.</p>
+<p><strong>NOTE: This method could result in a long running process and return a large volume of data.It is possible that
+an<see cref="!:OutOfMemoryException"></see> could occur if trying to get a large quantity of data. This is NOT intended to be
+used for any kind of resource bulk loading of data. The Ethos bulk loading solution should be used for loading
+data in Ethos data model format in bulk.</strong></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;JArray&gt;&gt; GetAllPagesAsJArraysAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">JArray</span>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsStringsAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesAsStringsAsync(System.String,System.String,System.Int32)">GetAllPagesAsStringsAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all pages for the given resource, version, and page size.</p>
+<p><strong>NOTE: This method could result in a long running process and return a large volume of data.It is possible that
+an<see cref="!:OutOfMemoryException"></see> could occur if trying to get a large quantity of data. This is NOT intended to be
+used for any kind of resource bulk loading of data. The Ethos bulk loading solution should be used for loading
+data in Ethos data model format in bulk.</strong></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetAllPagesAsStringsAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesAsync(System.String,System.String)">GetAllPagesAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets all pages for the given resource and version. Uses the default page size of the response body content length.</p>
+<p><strong>NOTE: This method could result in a long running process and return a large volume of data.It is possible that
+an<see cref="!:OutOfMemoryException"></see> could occur if trying to get a large quantity of data. This is NOT intended to be
+used for any kind of resource bulk loading of data. The Ethos bulk loading solution should be used for loading
+data in Ethos data model format in bulk.</strong></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetAllPagesAsync(string resourceName, string version = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>Name of the resource</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesAsync(System.String,System.String,System.Int32)">GetAllPagesAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all pages for the given resource, version, and page size.</p>
+<p><strong>NOTE: This method could result in a long running process and return a large volume of data.It is possible that
+an<see cref="!:OutOfMemoryException"></see> could occur if trying to get a large quantity of data. This is NOT intended to be
+used for any kind of resource bulk loading of data. The Ethos bulk loading solution should be used for loading
+data in Ethos data model format in bulk.</strong></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetAllPagesAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesFromOffsetAsJArraysAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesFromOffsetAsJArraysAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesFromOffsetAsJArraysAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesFromOffsetAsJArraysAsync(System.String,System.String,System.Int32,System.Int32)">GetAllPagesFromOffsetAsJArraysAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all pages for the given resource, version, and page size, from the given offset.</p>
+<p><strong>NOTE: This method could result in a long running process and return a large volume of data.It is possible that
+an<see cref="!:OutOfMemoryException"></see> could occur if trying to get a large quantity of data. This is NOT intended to be
+used for any kind of resource bulk loading of data. The Ethos bulk loading solution should be used for loading
+data in Ethos data model format in bulk.</strong></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;JArray&gt;&gt; GetAllPagesFromOffsetAsJArraysAsync(string resourceName, string version = &quot;&quot;, int offset = 0, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">JArray</span>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesFromOffsetAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesFromOffsetAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesFromOffsetAsStringsAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesFromOffsetAsStringsAsync(System.String,System.String,System.Int32,System.Int32)">GetAllPagesFromOffsetAsStringsAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all pages for the given resource, version, and page size from the given offset.</p>
+<p><strong>NOTE: This method could result in a long running process and return a large volume of data.It is possible that
+an<see cref="!:OutOfMemoryException"></see> could occur if trying to get a large quantity of data. This is NOT intended to be
+used for any kind of resource bulk loading of data. The Ethos bulk loading solution should be used for loading
+data in Ethos data model format in bulk.</strong></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetAllPagesFromOffsetAsStringsAsync(string resourceName, string version, int offset, int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesFromOffsetAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesFromOffsetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesFromOffsetAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAllPagesFromOffsetAsync(System.String,System.String,System.Int32,System.Int32)">GetAllPagesFromOffsetAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all pages for the given resource, version, and page size, from the offset. If the offset is negative, all pages
+will be returned.</p>
+<p><strong>NOTE: This method could result in a long running process and return a large volume of data.It is possible that
+an<see cref="!:OutOfMemoryException"></see> could occur if trying to get a large quantity of data. This is NOT intended to be
+used for any kind of resource bulk loading of data. The Ethos bulk loading solution should be used for loading
+data in Ethos data model format in bulk.</strong></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetAllPagesFromOffsetAsync(string resourceName, string version = &quot;&quot;, int offset = 0, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsJArrayAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsJArrayAsync(System.String,System.String)">GetAsJArrayAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetAsJArrayAsync(string resourceName, string version = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A <see cref="!:JArray"></see> containing an initial page (EthosResponse content) of resource data according</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsJArrayAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsJArrayAsync(System.String,System.String,System.Int32,System.Int32)">GetAsJArrayAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name, version, offset, and pageSize. A page of data is returned from the
+given offset index containing the number of rows( pageSize) specified.If the given offset is negative, it will
+not be used.If the given pageSize is 0 or negative, it will not be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetAsJArrayAsync(string resourceName, string version = &quot;&quot;, int offset = 0, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in the returned page (EthosResponse).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsJObjectByIdAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsJObjectByIdAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsJObjectByIdAsync_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsJObjectByIdAsync(System.String,System.String,System.String)">GetAsJObjectByIdAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a resource by ID (GUID) for the given resource name and version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JObject&gt; GetAsJObjectByIdAsync(string resourceName, string id, string version = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The unique ID (GUID) of the resource to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JObject</span>&gt;</td>
+        <td><p>The data for a given resource as a <see cref="!:JObject"></see> according to the requested version of the resource.
+Only returns the content body of the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>. Does not return header information or the Http status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsStringAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsStringAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsStringAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsStringAsync(System.String,System.String)">GetAsStringAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetAsStringAsync(string resourceName, string version = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsStringAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsStringAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsStringAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsStringAsync(System.String,System.String,System.Int32,System.Int32)">GetAsStringAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name, version, offset, and pageSize. A page of data is returned from the
+given offset index containing the number of rows( pageSize) specified. If the given offset is negative, it will
+not be used. If the given pageSize is 0 or negative, it will not be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetAsStringAsync(string resourceName, string version = &quot;&quot;, int offset = 0, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in the returned page (EthosResponse).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsStringByIdAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsStringByIdAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsStringByIdAsync_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsStringByIdAsync(System.String,System.String,System.String)">GetAsStringByIdAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a resource by ID (GUID) for the given resource name and version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetAsStringByIdAsync(string resourceName, string id, string version = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The unique ID (GUID) of the resource to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The data for a given resource as a <see cref="!:System.String"></see> according to the requested version of the resource.
+Only returns the content body of the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>. Does not return header information or the Http status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsync(System.String,System.String)">GetAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetAsync(string resourceName, string version = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> containing an initial page (EthosResponse content) of resource data according
+to the requested version of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetAsync(System.String,System.String,System.Int32,System.Int32)">GetAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name, version, offset, and pageSize. A page of data is returned from the
+given offset index containing the number of rows( pageSize) specified.If the given offset is negative, it will
+not be used.If the given pageSize is 0 or negative, it will not be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetAsync(string resourceName, string version = &quot;&quot;, int offset = 0, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in the returned page (EthosResponse).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetByIdAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetByIdAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetByIdAsync_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetByIdAsync(System.String,System.String,System.String)">GetByIdAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a resource by ID (GUID) for the given resource name and version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetByIdAsync(string resourceName, string id, string version = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The unique ID (GUID) of the resource to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>The data for a given resource in an <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> according to the requested version of the resource.
+The <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> contains the content body of the resource data as well as headers and
+the Http status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetDataFromInitialContent_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetDataFromInitialContent*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetDataFromInitialContent_Ellucian_Ethos_Integration_Client_Proxy_Pager_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetDataFromInitialContent(Ellucian.Ethos.Integration.Client.Proxy.Pager)">GetDataFromInitialContent(Pager)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Gets resource data from the initial content obtained when preparing for paging.This method does not page for data.
+Supports trimming the data content according to the given PagingType( howToPage attribute ).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;EthosResponse&gt; GetDataFromInitialContent(Pager pager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><span class="parametername">pager</span></td>
+        <td><p>A pager previously prepared for paging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>A list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>s containing a single page of data, which may be trimmed according to the
+howToPage PagingType specified in the pager.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetDataFromPagingAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetDataFromPagingAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetDataFromPagingAsync_Ellucian_Ethos_Integration_Client_Proxy_Pager_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetDataFromPagingAsync(Ellucian.Ethos.Integration.Client.Proxy.Pager)">GetDataFromPagingAsync(Pager)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Determines how to page given the &quot;howToPage&quot; attribute of the pager. The howToPage attribute must be one of the
+defined PagingTypes.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;EthosResponse&gt;&gt; GetDataFromPagingAsync(Pager pager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><span class="parametername">pager</span></td>
+        <td><p>A previously prepared pager with the howToPage attribute set appropriately.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>s where each <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> in the list contains a page of data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetFromOffsetAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetFromOffsetAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetFromOffsetAsJArrayAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetFromOffsetAsJArrayAsync(System.String,System.String,System.Int32)">GetFromOffsetAsJArrayAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version, from the given offset index. The default page size is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetFromOffsetAsJArrayAsync(string resourceName, string version = &quot;&quot;, int offset = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetFromOffsetAsStringAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetFromOffsetAsStringAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetFromOffsetAsStringAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetFromOffsetAsStringAsync(System.String,System.String,System.Int32)">GetFromOffsetAsStringAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version, from the given offset index. The default page size is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetFromOffsetAsStringAsync(string resourceName, string version = &quot;&quot;, int offset = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetFromOffsetAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetFromOffsetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetFromOffsetAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetFromOffsetAsync(System.String,System.String,System.Int32)">GetFromOffsetAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and from the given offset index. The default version and page size are used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetFromOffsetAsync(string resourceName, string version = &quot;&quot;, int offset = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetHeaderValue_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetHeaderValue*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetHeaderValue_Ellucian_Ethos_Integration_Client_EthosResponse_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetHeaderValue(Ellucian.Ethos.Integration.Client.EthosResponse,System.String)">GetHeaderValue(EthosResponse, String)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p> 
+Returns the header value from the given ethosResponse.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static string GetHeaderValue(EthosResponse ethosResponse, string primaryHeaderName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>The <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to get a header value from.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">primaryHeaderName</span></td>
+        <td><p>A header name following Ethos standards (such as &quot;x-media-type&quot;).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The value of the given header. Returns null if the given ethosResponse is null or the header is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetMaxPageSizeAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetMaxPageSizeAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetMaxPageSizeAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetMaxPageSizeAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.EthosResponse)">GetMaxPageSizeAsync(String, String, EthosResponse)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Gets the max page size for the given resourceName, version, and ethosResponse.If the ethosResponse is null, it
+will make a call to get the data for the given resource to then calculate the page size from the response body content.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetMaxPageSizeAsync(string resourceName, string version = &quot;&quot;, EthosResponse ethosResponse = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the Ethos resource to get the page size for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>An <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> from which to calculate the page size using it's content body length, or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The max page size for the resource as found using the x-max-page-size header.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesAsJArraysAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesAsJArraysAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesAsJArraysAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesAsJArraysAsync(System.String,System.String,System.Int32,System.Int32)">GetPagesAsJArraysAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of pages for the given resource, version, and page size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;JArray&gt;&gt; GetPagesAsJArraysAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0, int numPages = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numPages</span></td>
+        <td><p>The number of pages of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">JArray</span>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesAsStringsAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesAsStringsAsync(System.String,System.String,System.Int32,System.Int32)">GetPagesAsStringsAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of pages for the given resource, version, and page size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetPagesAsStringsAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0, int numPages = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numPages</span></td>
+        <td><p>The number of pages of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesAsync(System.String,System.String,System.Int32,System.Int32)">GetPagesAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of pages for the given resource, version, and page size. If numPages is negative, all pages
+will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetPagesAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0, int numPages = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numPages</span></td>
+        <td><p>The number of pages of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesFromOffsetAsJArraysAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesFromOffsetAsJArraysAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesFromOffsetAsJArraysAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesFromOffsetAsJArraysAsync(System.String,System.String,System.Int32,System.Int32,System.Int32)">GetPagesFromOffsetAsJArraysAsync(String, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of pages for the given resource, version, and page size, from the given offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;JArray&gt;&gt; GetPagesFromOffsetAsJArraysAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0, int offset = 0, int numPages = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numPages</span></td>
+        <td><p>The number of pages of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">JArray</span>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesFromOffsetAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesFromOffsetAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesFromOffsetAsStringsAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesFromOffsetAsStringsAsync(System.String,System.String,System.Int32,System.Int32,System.Int32)">GetPagesFromOffsetAsStringsAsync(String, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of pages for the given resource, version, and page size, from the given offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetPagesFromOffsetAsStringsAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0, int offset = 0, int numPages = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numPages</span></td>
+        <td><p>The number of pages of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesFromOffsetAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesFromOffsetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesFromOffsetAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPagesFromOffsetAsync(System.String,System.String,System.Int32,System.Int32,System.Int32)">GetPagesFromOffsetAsync(String, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of pages for the given resource, version, and page size, from the given offset. If both the offset
+and numPages are negative, all pages will be returned.If the offset is negative, pages up to the numPages will
+be returned. If numPages is negative, all pages from the offset will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetPagesFromOffsetAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0, int offset = 0, int numPages = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numPages</span></td>
+        <td><p>The number of pages of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPageSizeAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPageSizeAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPageSizeAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetPageSizeAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.EthosResponse)">GetPageSizeAsync(String, String, EthosResponse)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Gets the page size for the given resourceName, version, and ethosResponse.If the ethosResponse is null, it
+will make a call to get the data for the given resource to then calculate the page size from the response body content.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetPageSizeAsync(string resourceName, string version = &quot;&quot;, EthosResponse ethosResponse = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the Ethos resource to get the page size for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>An <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> from which to calculate the page size using it's content body length, or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The page size of the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsAsJArrayAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsAsJArrayAsync(System.String,System.String,System.Int32)">GetRowsAsJArrayAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of rows for the given resource and version. The rows are returned as a <see cref="!:JArray"></see> with each child
+representing a resource. The length of the returned JArray will be the length of the number of rows requested, if there were
+that many available in the source system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetRowsAsJArrayAsync(string resourceName, string version = &quot;&quot;, int numRows = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td><p>The number of rows of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A JSON array of data for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsAsStringsAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsAsStringsAsync(System.String,System.String,System.Int32)">GetRowsAsStringsAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of rows for the given resource and version. The rows are returned as a list of strings with each string
+representing a resource. The length of the returned list will be the length of the number of rows requested, if there were
+that many available in the source system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetRowsAsStringsAsync(string resourceName, string version = &quot;&quot;, int numRows = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td><p>The number of rows of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A string list of data for the given resource from the given offset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsAsync(System.String,System.String,System.Int32,System.Int32)">GetRowsAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of rows for the given resource, version, and page size. The number of rows is returned in a list of
+pages altogether containing the number of rows.If numRows is negative, all pages will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetRowsAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0, int numRows = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td><p>The number of rows of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsFromOffsetAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsFromOffsetAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsFromOffsetAsJArrayAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsFromOffsetAsJArrayAsync(System.String,System.String,System.Int32,System.Int32)">GetRowsFromOffsetAsJArrayAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of rows for the given resource and version, from the given offset. The rows are returned as a <see cref="!:JArray"></see> with each child
+representing a resource. The length of the returned JArray will be the length of the number of rows requested, if there were
+that many available in the source system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetRowsFromOffsetAsJArrayAsync(string resourceName, string version = &quot;&quot;, int offset = 0, int numRows = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td><p>The number of rows of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A JSON array of data for the given resource from the given offset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsFromOffsetAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsFromOffsetAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsFromOffsetAsStringsAsync_System_String_System_String_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsFromOffsetAsStringsAsync(System.String,System.String,System.Int32,System.Int32)">GetRowsFromOffsetAsStringsAsync(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of rows for the given resource and version, from the given offset. The rows are returned as a list of strings with each string
+representing a resource.  The length of the returned list will be the length of the number of rows requested, if there were
+that many available in the source system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetRowsFromOffsetAsStringsAsync(string resourceName, string version = &quot;&quot;, int offset = 0, int numRows = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td><p>The number of rows of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A string list of data for the given resource from the given offset.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsFromOffsetAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsFromOffsetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsFromOffsetAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetRowsFromOffsetAsync(System.String,System.String,System.Int32,System.Int32,System.Int32)">GetRowsFromOffsetAsync(String, String, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets some number of rows for the given resource, version, and page size, from the given offset. The number of rows is returned in a list of
+pages altogether containing the number of rows. If both the offset and numRows are negative, all pages will be returned.
+If the offset is negative, pages up to the numRows will be returned. If numRows is negative, all pages from the offset will be returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetRowsFromOffsetAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0, int offset = 0, int numRows = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to get a page of data for the given resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td><p>The number of rows of the given resource to return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetTotalCountAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetTotalCountAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetTotalCountAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetTotalCountAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.EthosResponse)">GetTotalCountAsync(String, String, EthosResponse)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Gets the total count of rows for the given Ethos resource, version, and ethosResponse.If the ethosResponse is null,
+a call will be made to get the resource data to then get the total count from the x-total-count header.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetTotalCountAsync(string resourceName, string version = &quot;&quot;, EthosResponse ethosResponse = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the Ethos resource to get the total count for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>An <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> from which to get the total count, or null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The total count for the given resource, or 0 if the resourceName is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetWithPageSizeAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetWithPageSizeAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetWithPageSizeAsJArrayAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetWithPageSizeAsJArrayAsync(System.String,System.String,System.Int32)">GetWithPageSizeAsJArrayAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version, using the given page size. Offset index 0 is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetWithPageSizeAsJArrayAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in the returned page (EthosResponse).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetWithPageSizeAsStringAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetWithPageSizeAsStringAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetWithPageSizeAsStringAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetWithPageSizeAsStringAsync(System.String,System.String,System.Int32)">GetWithPageSizeAsStringAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version, using the given page size. Offset index 0 is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetWithPageSizeAsStringAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in the returned page (EthosResponse).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetWithPageSizeAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetWithPageSizeAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetWithPageSizeAsync_System_String_System_String_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.GetWithPageSizeAsync(System.String,System.String,System.Int32)">GetWithPageSizeAsync(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version, using the given page size. Offset index 0 is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetWithPageSizeAsync(string resourceName, string version = &quot;&quot;, int pageSize = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of rows to include in the returned page (EthosResponse).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>A page of data for the given resource from the given offset with the given page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HandlePagingAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HandlePagingAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HandlePagingAsync_Ellucian_Ethos_Integration_Client_Proxy_Pager_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HandlePagingAsync(Ellucian.Ethos.Integration.Client.Proxy.Pager)">HandlePagingAsync(Pager)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+For some resource defined within the given pager, determines whether to page for data, or to use the data
+obtained during paging preparation.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;EthosResponse&gt;&gt; HandlePagingAsync(Pager pager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><span class="parametername">pager</span></td>
+        <td><p>A pager previously prepared for paging (see <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PrepareForPagingAsync_Ellucian_Ethos_Integration_Client_Proxy_Pager_">PrepareForPagingAsync(Pager)</a> and <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_ShouldDoPaging_Ellucian_Ethos_Integration_Client_Proxy_Pager_System_Boolean_">ShouldDoPaging(Pager, Boolean)</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>s where each <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> in the list contains a page of data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_NeedToPage_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.NeedToPage*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_NeedToPage_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.NeedToPage(System.Int32,System.Int32)">NeedToPage(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+A simple comparison which is used by the other <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_NeedToPage_System_Int32_System_Int32_">NeedToPage(Int32, Int32)</a> method, comparing the given page size to the
+total count. If the page size is less than the total count, then paging is needed. If not, paging is not needed.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool NeedToPage(int pageSize, int totalCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The page size for some resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">totalCount</span></td>
+        <td><p>The total count of rows for some resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if paging is needed, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PostAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_System_String_JObject_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PostAsync(System.String,JObject)">PostAsync(String, JObject)</h4>
+  <div class="markdown level1 summary"><p>Submits a POST request for the given resourceName with the given requestBodyNode. Uses the default version.
+This is a convenience method equivalent to <pre>Post(resourceName, requestBodyNode.toString())</pre>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PostAsync(string resourceName, JObject requestBodyNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to add an instance of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">JObject</span></td>
+        <td><span class="parametername">requestBodyNode</span></td>
+        <td><p>The body of the request to POST for the given resource as a JsonNode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse containing the instance of the resource that was added by this POST operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PostAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PostAsync(System.String,System.String)">PostAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Submits a POST request for the given resourceName with the given requestBody. Uses the default version.
+The requestBody should be a string in JSON format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PostAsync(string resourceName, string requestBody)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to add an instance of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestBody</span></td>
+        <td><p>The body of the request to POST for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse containing the instance of the resource that was added by this POST operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PostAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_System_String_System_String_JObject_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PostAsync(System.String,System.String,JObject)">PostAsync(String, String, JObject)</h4>
+  <div class="markdown level1 summary"><p>Submits a POST request for the given resourceName with the given requestBodyNode. Uses the default version.
+This is a convenience method equivalent to <pre>Post(resourceName, requestBodyNode.toString())</pre>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PostAsync(string resourceName, string version, JObject requestBodyNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to add an instance of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The full version header value of the resource used for this POST request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">JObject</span></td>
+        <td><span class="parametername">requestBodyNode</span></td>
+        <td><p>The body of the request to POST for the given resource as a JsonNode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse containing the instance of the resource that was added by this POST operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PostAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PostAsync(System.String,System.String,System.String)">PostAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Submits a POST request for the given resourceName with the given requestBody. The requestBody should be a string
+in JSON format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PostAsync(string resourceName, string version, string requestBody)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to add an instance of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The full version header value of the resource used for this POST request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestBody</span></td>
+        <td><p>The body of the request to POST for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse containing the instance of the resource that was added by this POST operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PrepareForPagingAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PrepareForPagingAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PrepareForPagingAsync_Ellucian_Ethos_Integration_Client_Proxy_Pager_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PrepareForPagingAsync(Ellucian.Ethos.Integration.Client.Proxy.Pager)">PrepareForPagingAsync(Pager)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Uses the given pager object to prepare for paging operations.The pager object is used to contain various
+fields required for paging.If the given pager is null, returns the same pager. Sets default values for the
+version and offset within the pager as needed and makes an initial call for the pager resource to get metadata
+about the resource used for paging. Also sets the page size and the total count within the pager.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Pager&gt; PrepareForPagingAsync(Pager pager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><span class="parametername">pager</span></td>
+        <td><p>The Pager object used holding the required fields for paging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a>&gt;</td>
+        <td><p>The same pager object with the version and offset validated, and the page size and total count set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PutAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_System_String_System_String_JObject_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PutAsync(System.String,System.String,JObject)">PutAsync(String, String, JObject)</h4>
+  <div class="markdown level1 summary"><p>Submits a PUT request for the given resourceName to update a resource with the given requestBodyNode. Uses the default version.
+This is a convenience method equivalent to <pre>put(resourceName, requestBodyNode.toString())</pre>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PutAsync(string resourceName, string resourceId, JObject requestBodyNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to add an instance of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceId</span></td>
+        <td><p>The unique id (GUID) for the given resource, as required when making a PUT/update request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">JObject</span></td>
+        <td><span class="parametername">requestBodyNode</span></td>
+        <td><p>The body of the request to PUT/update for the given resource as a JsonNode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse containing the instance of the resource that was added by this PUT operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PutAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PutAsync(System.String,System.String,System.String)">PutAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Submits a PUT request for the given resourceName to update a resource with the given requestBody. Uses the default version.
+The requestBody should be a string in JSON format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PutAsync(string resourceName, string resourceId, string requestBody)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to add an instance of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceId</span></td>
+        <td><p>The unique id (GUID) for the given resource, as required when making a PUT/update request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestBody</span></td>
+        <td><p>The body of the request to PUT/update for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse containing the instance of the resource that was added by this PUT operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PutAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_System_String_System_String_System_String_JObject_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PutAsync(System.String,System.String,System.String,JObject)">PutAsync(String, String, String, JObject)</h4>
+  <div class="markdown level1 summary"><p>Submits a PUT request for the given resourceName to update a resource with the given requestBodyNode. Uses the default version.
+This is a convenience method equivalent to <pre>put(resourceName, requestBodyNode.toString())</pre>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PutAsync(string resourceName, string resourceId, string version, JObject requestBodyNode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to add an instance of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceId</span></td>
+        <td><p>The unique id (GUID) for the given resource, as required when making a PUT/update request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The full version header value of the resource used for this PUT/update request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">JObject</span></td>
+        <td><span class="parametername">requestBodyNode</span></td>
+        <td><p>The body of the request to PUT/update for the given resource as a JsonNode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse containing the instance of the resource that was added by this PUT operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PutAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_System_String_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.PutAsync(System.String,System.String,System.String,System.String)">PutAsync(String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Submits a PUT/update request for the given resourceName with the given requestBody. The requestBody should be a string
+in JSON format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PutAsync(string resourceName, string resourceId, string version, string requestBody)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to add an instance of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceId</span></td>
+        <td><p>The unique ID for the given resource, as required when making a PUT/update request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The full version header value of the resource used for this PUT/update request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestBody</span></td>
+        <td><p>The body of the request to PUT/update for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse containing the instance of the resource that was added by this PUT operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_ShouldDoPaging_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.ShouldDoPaging*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_ShouldDoPaging_Ellucian_Ethos_Integration_Client_Proxy_Pager_System_Boolean_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.ShouldDoPaging(Ellucian.Ethos.Integration.Client.Proxy.Pager,System.Boolean)">ShouldDoPaging(Pager, Boolean)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Determines whether paging should be done for the resource within the given pager.
+Supports normal paging (by total count ) or paging for number of rows. If normal paging, then the need to page
+is determined by comparing the total count with the page size. If paging for number of rows, the need to page
+is determined by comparing the number of rows with the page size.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Pager ShouldDoPaging(Pager pager, bool forNumRows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><span class="parametername">pager</span></td>
+        <td><p>The Pager object containing the total count or numRows, and page size to determine the need to page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">forNumRows</span></td>
+        <td><p>If true, then paging is by numRows. If false, then paging is by total count.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>The given pager object with the shouldDoPaging flag set to true when paging is needed, or false when not.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

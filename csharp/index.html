@@ -62,9 +62,12 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="ellucian-ethos-integration-sdk">Ellucian Ethos Integration SDK</h1>
 
-<p>This SDK allows you to easily develop .NET applications in C# that integrate with Ellucian Ethos Integration.  It takes care of
-building and executing HTTP requests and managing the responses.  This allows your application to use the C# library methods
-to communicate with Ethos Integration without the need to call the REST APIs directly.</p>
+<p>Ethos Integration SDK provides utilities and libraries that make it easier for developers to quickly start building Ethos-based integrations.</p>
+<p>The Ethos Integration SDK for .NET allows you to easily develop applications in C# that integrate with Ellucian Ethos Integration. The SDK
+builds and executes HTTP requests and manages the responses. This allows your application to use the C# library methods to communicate
+with Ethos Integration, without the need to call the REST APIs directly.</p>
+<p>The Ethos Integration SDK for .NET simplifies use of Ethos Integration by providing a set of libraries that .NET developers are familiar with.
+The Ethos Integration SDK makes the application development process less expensive and more efficient.</p>
 <h2 id="table-of-contents">Table of contents</h2>
 <ol>
 <li><a href="#setup">Setup</a></li>
@@ -74,7 +77,7 @@ to communicate with Ethos Integration without the need to call the REST APIs dir
 </ol>
 <h1 id="setup">Setup</h1>
 <p>This SDK is available for download from the nuget repository (<a href="https://www.nuget.org/packages/Ellucian.EthosIntegration.SDK/">https://www.nuget.org/packages/Ellucian.EthosIntegration.SDK/</a>).</p>
-<p>Before using the SDK, you will need to download and install the following:</p>
+<p>Before using the SDK, you will need to download and install the following required software:</p>
 <ul>
 <li>A .NET runtime. The SDK was built in .NET Core 3.1</li>
 <li>nuget</li>
@@ -148,7 +151,7 @@ applications return.  This is why it is necessary to handle the responses as str
 <p>The other clients, such as <code>EthosMessagesClient</code> and <code>EthosErrorsClient</code>, return more specialized objects since the responses
 have defined JSON schemas.  They return <code>EthosError</code> and <code>ChangeNotification</code> objects.  See the full API doc for more details.</p>
 <h1 id="full-api-documentation">Full API Documentation</h1>
-<p><strong>TO-DO</strong> add link here once it is hosted publicly</p>
+<p>The full SDK API for the C# SDK is hosted on our Github Pages site, located at (<a href="https://ellucianethos.github.io/integrationSDKDoc/csharp">https://ellucianethos.github.io/integrationSDKDoc/csharp</a>).  This site uses the DocFX tool to generate API documentation.</p>
 <h1 id="examples">Examples</h1>
 <p>To view more examples, clone this repo and view the <code>Ellucian.EthosIntegration.SDK.Sample</code> project.  Each of the
 classes in that package has a static <code>main</code> method and can be run from the command line or with an IDE run command.  When
@@ -179,6 +182,23 @@ EthosResponse response = proxyClient.GetAsync(&quot;persons&quot;, version);
 </code></pre>
 <p>Delete a record with a DELETE request.</p>
 <pre><code class="lang-csharp">await ethosProxyClient.DeleteAsync(&quot;colors&quot;, &quot;11111111-1111-1111-1111-111111111111&quot;);
+</code></pre>
+<p>Make requests that use paging.  This will handle sending multiple HTTP requests to get multiple pages of data with a single operation.<br>
+<strong>Use caution when trying to get all pages of a resource in a single request.  Depending on the resource, this could cause a long
+running operation that will cause a timeout, or it could return a huge amount of data that could cause an out of memory error.</strong></p>
+<pre><code class="lang-csharp">// get all the pages of data for the 'buildings' resource using the default page size
+var ethosResponseList = await ethosProxyClient.GetAllPagesAsync( &quot;buildings&quot;);
+
+// get the max page size for the 'persons' resource
+int pageSize = ethosProxyClient.GetMaxPageSizeAsync( &quot;persons&quot; );
+
+// get 5 pages of persons data using the default version and maximum allowed page size
+// return the data as a list of JArray objects
+var jsonNodeList = await ethosProxyClient.GetPagesAsJArraysAsync( &quot;persons&quot;, &quot;&quot;, pageSize, 5 );
+
+// get 2 pages of courses data starting from an offset of 100, using the default version and page size
+// return the data as a list of Strings
+var stringList = await ethosProxyClient.GetPagesFromOffsetAsStringsAsync( &quot;courses&quot;, &quot;&quot;, 0, 100, 2 );
 </code></pre>
 <h3 id="consuming-subscriber-messages">Consuming Subscriber Messages</h3>
 <p>Call the consume endpoint to get the default number of new messages from your application's subscriber queue.  The messages are
@@ -240,7 +260,7 @@ string json = &quot;{ &quot; +
 &quot;}&quot;;
 EthosError error = ErrorFactory.CreateErrorFromJson(json);
 // post to errors service
-EthosError response = await errorsClient.CreateAsync(error);
+EthosError response = await errorsClient.PostAsync(error);
 </code></pre>
 <p>Get a single page of errors for your tenant from the errors service.</p>
 <pre><code class="lang-csharp">EthosResponse errorResponse = await errorsClient.GetAsync();

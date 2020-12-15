@@ -1,0 +1,950 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EthosClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EthosClient
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.EthosClient">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Client_EthosClient" data-uid="Ellucian.Ethos.Integration.Client.EthosClient" class="text-break">Class EthosClient
+  </h1>
+  <div class="markdown level0 summary"><p>Base HTTP client to interact with Ellucian Ethos API. This class is mostly used internally by the SDK to interact with the Ethos Integration API to retrieve objects via HTTP(S).
+It lightly wraps the <see cref="!:HttpClient"></see> library for simplicity.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EthosClient</span></div>
+      <div class="level2"><a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html">EthosErrorsClient</a></div>
+      <div class="level2"><a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a></div>
+      <div class="level2"><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a></div>
+      <div class="level2"><a class="xref" href="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.html">EthosConfigurationClient</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Client.html">Ellucian.Ethos.Integration.Client</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Client_EthosClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EthosClient : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient__ctor_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient__ctor_System_String_HttpClient_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.#ctor(System.String,HttpClient)">EthosClient(String, HttpClient)</h4>
+  <div class="markdown level1 summary"><p>Constructor called by subclasses of this class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosClient(string apiKey, HttpClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>An api key <see cref="!:Guid"></see>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A <see cref="!:System.Net.Http.HttpClient"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_expirationMinutes" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.expirationMinutes">expirationMinutes</h4>
+  <div class="markdown level1 summary"><p>Default token expiration time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int expirationMinutes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_ApiKey_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.ApiKey*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_ApiKey" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.ApiKey">ApiKey</h4>
+  <div class="markdown level1 summary"><p>A <see cref="!:Guid"></see> api key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ApiKey
+{
+}</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_AutoRefresh_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.AutoRefresh*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_AutoRefresh" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.AutoRefresh">AutoRefresh</h4>
+  <div class="markdown level1 summary"><p>Gets/Sets the automatic refresh behavior for access tokens.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AutoRefresh { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_EthosResponseBuilder_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.EthosResponseBuilder*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_EthosResponseBuilder" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.EthosResponseBuilder">EthosResponseBuilder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EthosResponseBuilder EthosResponseBuilder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html">EthosResponseBuilder</a></td>
+        <td><p>Used to build an EthosResponse from the given HttpResponse in the responseHandler of each call made.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_ExpirationMinutes_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.ExpirationMinutes*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_ExpirationMinutes" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.ExpirationMinutes">ExpirationMinutes</h4>
+  <div class="markdown level1 summary"><p>Gets/Sets the number of minutes that a new access token will be valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ExpirationMinutes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_HttpProtocolClientBuilder_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.HttpProtocolClientBuilder*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_HttpProtocolClientBuilder" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.HttpProtocolClientBuilder">HttpProtocolClientBuilder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IHttpProtocolClientBuilder HttpProtocolClientBuilder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.IHttpProtocolClientBuilder.html">IHttpProtocolClientBuilder</a></td>
+        <td><p>The Http client builder which builds an <see cref="!:HttpClient"></see> used for making secure calls to the Ethos Integration API.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_Region_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.Region*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_Region" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.Region">Region</h4>
+  <div class="markdown level1 summary"><p>Supported region.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SupportedRegions Region { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Authentication.SupportedRegions.html">SupportedRegions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_Token_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.Token*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_Token" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.Token">Token</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AccessToken Token { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Authentication.AccessToken.html">AccessToken</a></td>
+        <td><p>AccessToken used when making calls through the SDK to the Ethos Integration APIs. This is specified by the subclasses of this class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_AddAccessTokenAuthHeaderAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.AddAccessTokenAuthHeaderAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_AddAccessTokenAuthHeaderAsync_Dictionary_System_String_System_String__" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.AddAccessTokenAuthHeaderAsync(Dictionary{System.String,System.String})">AddAccessTokenAuthHeaderAsync(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets an access token and add it authorization key to the header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task AddAccessTokenAuthHeaderAsync(Dictionary&lt;string, string&gt; headers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td><p>A <see cref="!:Task"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_AttachHeaders_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.AttachHeaders*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_AttachHeaders_HttpClient_Dictionary_System_String_System_String__" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.AttachHeaders(HttpClient,Dictionary{System.String,System.String})">AttachHeaders(HttpClient, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Attaches headers to a request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AttachHeaders(HttpClient request, Dictionary&lt;string, string&gt; headers)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request being made.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>A map of headers to attach to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_DeleteAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.DeleteAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_DeleteAsync_Dictionary_System_String_System_String__System_String_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.DeleteAsync(Dictionary{System.String,System.String},System.String)">DeleteAsync(Dictionary&lt;String, String&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Send an HTTP or HTTPS DELETE request to a given URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteAsync(Dictionary&lt;string, string&gt; headers, string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>A dictionary containing HTTP headers. Usually this will contain the authorization header at minimum.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>URL to post to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_GetAccessTokenAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetAccessTokenAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_GetAccessTokenAsync" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetAccessTokenAsync">GetAccessTokenAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets an access token. If this client does not currently have an access token, it will make a call to the Ethos Integration
+/auth endpoint to get one.Additionally, if autoRefresh is set to true, this will check to see if the current token is
+expired and, if so, get a new one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;AccessToken&gt; GetAccessTokenAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Authentication.AccessToken.html">AccessToken</a>&gt;</td>
+        <td><p>An access token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_Dictionary_System_String_System_String__System_String_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetAsync(Dictionary{System.String,System.String},System.String)">GetAsync(Dictionary&lt;String, String&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Make an HTTP GET request with the given headers. This will return the result as a string so any conversion to JSON or other
+results will need to be done on the caller.  Also note that HTTP status codes that throw errors will come back as an
+exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetAsync(Dictionary&lt;string, string&gt; headers, string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>headers attached to the request. typically would include authentication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>URL to make the request to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>The result of the request as a string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetAsync(System.String)">GetAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Convenience method to make an HTTP call without headers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetAsync(string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The URL to GET.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>The response as an EthosRespone containing response headers, response body (content) and the HTTP status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_GetHttpClient_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetHttpClient*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_GetHttpClient" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetHttpClient">GetHttpClient()</h4>
+  <div class="markdown level1 summary"><p>Returns the HttpClient built by the httpProtocolClientBuilder. Used primarily by this class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HttpClient GetHttpClient()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><p>The HttpClient used to make Http calls.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_GetNewTokenAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetNewTokenAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_GetNewTokenAsync" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetNewTokenAsync">GetNewTokenAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets a new access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;AccessToken&gt; GetNewTokenAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Authentication.AccessToken.html">AccessToken</a>&gt;</td>
+        <td><p>An access token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_GetStringAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetStringAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_GetStringAsync_Dictionary_System_String_System_String__System_String_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.GetStringAsync(Dictionary{System.String,System.String},System.String)">GetStringAsync(Dictionary&lt;String, String&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Make an HTTP GET request with no headers. This will return the result as a string so any conversion to JSON or other
+results will need to be done on the caller.  Also note that HTTP status codes that throw errors will come back as an
+exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetStringAsync(Dictionary&lt;string, string&gt; headers, string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>headers attached to the request. typically would include authentication.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>URL to make the request to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The result of the request as a string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_HeadAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.HeadAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_HeadAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.HeadAsync(System.String)">HeadAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Make an HTTP HEAD request against the given URL.  This will return an EthosResponse object containing the response
+headers.Note that the HTTP status codes that throw errors will come back as an exception via the responseHandler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; HeadAsync(string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>The Request URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>The response as an Ethos Response containing headers and HTTP status code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_PostAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.PostAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_PostAsync_Dictionary_System_String_System_String__System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.PostAsync(Dictionary{System.String,System.String},System.String,System.String)">PostAsync(Dictionary&lt;String, String&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>Post to the Ethos Integration REST API to get objects back to translate to the SDK model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PostAsync(Dictionary&lt;string, string&gt; headers, string url, string body = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>A dictionary containing HTTP headers. Usually this will contained the authorization header at minimum.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>URL to post to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>The JSON body to post to the URL endpoint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>A <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_PutAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.PutAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_PutAsync_Dictionary_System_String_System_String__System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.PutAsync(Dictionary{System.String,System.String},System.String,System.String)">PutAsync(Dictionary&lt;String, String&gt;, String, String)</h4>
+  <div class="markdown level1 summary"><p>Send a PUT request to the Ethos Integration REST API to get objects back to translate to the SDK model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PutAsync(Dictionary&lt;string, string&gt; headers, string url, string body = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">headers</span></td>
+        <td><p>A dictionary containing HTTP headers. Usually this will contained the authorization header at minimum.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td><p>URL to PUT to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">body</span></td>
+        <td><p>The JSON body to PUT to the URL endpoint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>A <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosClient_ResponseHandlerAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.ResponseHandlerAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClient_ResponseHandlerAsync_HttpResponseMessage_" data-uid="Ellucian.Ethos.Integration.Client.EthosClient.ResponseHandlerAsync(HttpResponseMessage)">ResponseHandlerAsync(HttpResponseMessage)</h4>
+  <div class="markdown level1 summary"><p>The responseHandler used for each request made. Either supplies an EthosResponse, or throws an HttpResponseException if the HttpStatus code is not a successful code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;EthosResponse&gt; ResponseHandlerAsync(HttpResponseMessage response)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpResponseMessage</span></td>
+        <td><span class="parametername">response</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>A <see cref="!:Task"></see> of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

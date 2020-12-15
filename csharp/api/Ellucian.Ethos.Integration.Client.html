@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Ellucian.Ethos.Integration.Client
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Ellucian.Ethos.Integration.Client
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client">
+  
+  <h1 id="Ellucian_Ethos_Integration_Client" data-uid="Ellucian.Ethos.Integration.Client" class="text-break">Namespace Ellucian.Ethos.Integration.Client
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html">EthosClient</a></h4>
+      <section><p>Base HTTP client to interact with Ellucian Ethos API. This class is mostly used internally by the SDK to interact with the Ethos Integration API to retrieve objects via HTTP(S).
+It lightly wraps the <see cref="!:HttpClient"></see> library for simplicity.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a></h4>
+      <section><p>Factory used for building Ethos clients. This is the primary means of building the desired Ethos client class.
+This class supports building clients specified by the various client types.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></h4>
+      <section><p>Response object used by the Ethos SDK to contain specific response headers, response body content, and the HTTP response status code.
+This class contains mostly getter methods on attributes to reduce the possibility of response values being changed.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html">EthosResponseBuilder</a></h4>
+      <section><p>Intended to be used to more easily build an EthosResponse object from the given <see cref="!:System.Net.Http.HttpResponseMessage"></see>.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseConverter.html">EthosResponseConverter</a></h4>
+      <section><p>Converter class extending the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html">EthosResponseBuilder</a>, the primary purpose of which is to handle manipulation
+of the response body content for paging calculations, such as trimming the response body content for a given offset or
+number of rows.Also converts an <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to <see cref="!:System.String"></see> format.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.HttpProtocolClientBuilder.html">HttpProtocolClientBuilder</a></h4>
+      <section><p>Builds an <see cref="!:System.Net.Http.HttpClient"></see> used for making secure API calls over HTTP.
+Uses Tls13, Tls12, Tls11 protocol.</p>
+</section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.IHttpProtocolClientBuilder.html">IHttpProtocolClientBuilder</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

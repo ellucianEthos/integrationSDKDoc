@@ -1,0 +1,2481 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EthosConfigurationClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EthosConfigurationClient
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient" class="text-break">Class EthosConfigurationClient
+  </h1>
+  <div class="markdown level0 summary"><p>A client that can be used to call configuration endpoints in the Ethos Integration API.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html">EthosClient</a></div>
+    <div class="level2"><span class="xref">EthosConfigurationClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ApiKey">EthosClient.ApiKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_expirationMinutes">EthosClient.expirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ExpirationMinutes">EthosClient.ExpirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AutoRefresh">EthosClient.AutoRefresh</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Token">EthosClient.Token</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Region">EthosClient.Region</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HttpProtocolClientBuilder">EthosClient.HttpProtocolClientBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_EthosResponseBuilder">EthosClient.EthosResponseBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ResponseHandlerAsync_HttpResponseMessage_">EthosClient.ResponseHandlerAsync(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AttachHeaders_HttpClient_Dictionary_System_String_System_String__">EthosClient.AttachHeaders(HttpClient, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAccessTokenAsync">EthosClient.GetAccessTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetNewTokenAsync">EthosClient.GetNewTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetHttpClient">EthosClient.GetHttpClient()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetStringAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetStringAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_System_String_">EthosClient.GetAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HeadAsync_System_String_">EthosClient.HeadAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PostAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PostAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PutAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PutAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_DeleteAsync_Dictionary_System_String_System_String__System_String_">EthosClient.DeleteAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AddAccessTokenAuthHeaderAsync_Dictionary_System_String_System_String__">EthosClient.AddAccessTokenAuthHeaderAsync(Dictionary&lt;String, String&gt;)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Config.html">Ellucian.Ethos.Integration.Config</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EthosConfigurationClient : EthosClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient__ctor_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient__ctor_System_String_HttpClient_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.#ctor(System.String,HttpClient)">EthosConfigurationClient(String, HttpClient)</h4>
+  <div class="markdown level1 summary"><p>Public constructor taking a api key and http client parameter.</p>
+<p>Note that the preferred way to instantiate this class is through the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosConfigurationClient(string apiKey, HttpClient httpClient)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>A valid API key from Ethos Integration. This is required to be a valid 36 character GUID string.
+If it is null or empty, an <see cref="!:ArgumentNullException"></see> will be thrown or not in a valid GUID format, then a <see cref="!:FormatException"></see> will be thrown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td><p>The http client required to make calls through the Ethos Proxy API.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_FULL_VERSION" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.FULL_VERSION">FULL_VERSION</h4>
+  <div class="markdown level1 summary"><p>Pattern used to provide the full version of a given resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string FULL_VERSION</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_FULL_VERSION_TAG" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.FULL_VERSION_TAG">FULL_VERSION_TAG</h4>
+  <div class="markdown level1 summary"><p>The tag used as a placeholder for the version value in the FULL_VERSION string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string FULL_VERSION_TAG</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_APPICATIONID" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_APPICATIONID">JSON_APPICATIONID</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing an applicationId property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_APPICATIONID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_APPID" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_APPID">JSON_APPID</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing an appId property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_APPID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_APPLICATION_JSON" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_APPLICATION_JSON">JSON_APPLICATION_JSON</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing application/json property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_APPLICATION_JSON</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_APPNAME" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_APPNAME">JSON_APPNAME</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing an appName property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string JSON_APPNAME</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_FILTERS" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_FILTERS">JSON_FILTERS</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing Filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_FILTERS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_ID" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_ID">JSON_ID</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing an id property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_ID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_NAME" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_NAME">JSON_NAME</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing a name property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_NAME</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_NAMED_QUERIES" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_NAMED_QUERIES">JSON_NAMED_QUERIES</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing Named Queries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_NAMED_QUERIES</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_NON_SEMANTIC_LIST" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_NON_SEMANTIC_LIST">JSON_NON_SEMANTIC_LIST</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing non semantic version list name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static readonly string JSON_NON_SEMANTIC_LIST</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_REPRESENTATIONS" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_REPRESENTATIONS">JSON_REPRESENTATIONS</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing a representations property path from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string JSON_REPRESENTATIONS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_RESOURCE" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_RESOURCE">JSON_RESOURCE</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing a resource property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_RESOURCE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_RESOURCE_NAME" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_RESOURCE_NAME">JSON_RESOURCE_NAME</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing a resource.name property path from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_RESOURCE_NAME</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_RESOURCENAME" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_RESOURCENAME">JSON_RESOURCENAME</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing a resourceName property on a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_RESOURCENAME</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_RESOURCES" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_RESOURCES">JSON_RESOURCES</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing a resources property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_RESOURCES</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_SEMANTIC_LIST" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_SEMANTIC_LIST">JSON_SEMANTIC_LIST</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing list of semantic version name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static readonly string JSON_SEMANTIC_LIST</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_VERSION" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_VERSION">JSON_VERSION</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing a version property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_VERSION</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_VERSIONS" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_VERSIONS">JSON_VERSIONS</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing versions property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_VERSIONS</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_JSON_XMEDIATYPE" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.JSON_XMEDIATYPE">JSON_XMEDIATYPE</h4>
+  <div class="markdown level1 summary"><p>Constant used when accessing an X-Media-Type property from a json.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string JSON_XMEDIATYPE</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_EthosResponseConverter_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.EthosResponseConverter*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_EthosResponseConverter" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.EthosResponseConverter">EthosResponseConverter</h4>
+  <div class="markdown level1 summary"><p>EthosResponseConverter used to convert from EthosResponses to string or Json formats.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EthosResponseConverter EthosResponseConverter
+{
+}</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseConverter.html">EthosResponseConverter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_FilterAvailableResources_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.FilterAvailableResources*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_FilterAvailableResources_JArray_JArray_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.FilterAvailableResources(JArray,JArray)">FilterAvailableResources(JArray, JArray)</h4>
+  <div class="markdown level1 summary"><p>Filter the given list of available resources by the list of desired resources. The expected formats are:</p>
+<ul><li>availableResources - JSON response from calling the /admin/available-resources endpoint in Ethos Integration</li><li>desiredResources - JSON array containing objects with &apos;applicationId&apos; and &apos;resourceName&apos; properties. This is the format of
+the &apos;ownerOverrides&apos; array from calling the /appConfig endpoint in Ethos Integration.
+</li></ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JArray FilterAvailableResources(JArray availableResources, JArray desiredResources)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JArray</span></td>
+        <td><span class="parametername">availableResources</span></td>
+        <td><p>The entire list of available resources from Ethos Integration</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">JArray</span></td>
+        <td><span class="parametername">desiredResources</span></td>
+        <td><p>The target list of specific app resources that you want returned</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JArray</span></td>
+        <td><p>A filtered list of available resources</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_FilterAvailableResources_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.FilterAvailableResources*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_FilterAvailableResources_JArray_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.FilterAvailableResources(JArray,System.String)">FilterAvailableResources(JArray, String)</h4>
+  <div class="markdown level1 summary"><p>Filter the given list of available resources by the name of the resource. The expected format of the available resources list is
+the JSON response from calling the /admin/available-resources endpoint in Ethos Integration. This returns an array containing
+the details of the given resource from each owning application in the available resources list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JArray FilterAvailableResources(JArray availableResources, string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JArray</span></td>
+        <td><span class="parametername">availableResources</span></td>
+        <td><p>The entire list of available resources from Ethos Integration</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource for which you want details</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JArray</span></td>
+        <td><p>A filtered list of available resources</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_FilterMajorVersions_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.FilterMajorVersions*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_FilterMajorVersions_IEnumerable_System_String__" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.FilterMajorVersions(IEnumerable{System.String})">FilterMajorVersions(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+<p>
+Filters the given versionList to remove duplicate versions and ensure each version in the returned list
+a major whole number version only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;string&gt; FilterMajorVersions(IEnumerable&lt;string&gt; versionList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">versionList</span></td>
+        <td><p>A list of versions from a given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A list of filtered versions containing no duplicates where each version in the list is a major whole version only.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAllAvailableResourcesAsJsonAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAllAvailableResourcesAsJsonAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAllAvailableResourcesAsJsonAsync" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAllAvailableResourcesAsJsonAsync">GetAllAvailableResourcesAsJsonAsync()</h4>
+  <div class="markdown level1 summary"><p>Get the details about all the available resources in the tenant associate with this client's access token as a
+JSON array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetAllAvailableResourcesAsJsonAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>The available resources details in a <see cref="!:JArray"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAllAvailableResourcesAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAllAvailableResourcesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAllAvailableResourcesAsync" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAllAvailableResourcesAsync">GetAllAvailableResourcesAsync()</h4>
+  <div class="markdown level1 summary"><p>Get the details about all the available resources in the tenant associated with this client's access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetAllAvailableResourcesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The available resources details in string format</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAppConfigAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAppConfigAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAppConfigAsync" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAppConfigAsync">GetAppConfigAsync()</h4>
+  <div class="markdown level1 summary"><p>Get application's configuration info from Ethos Integration. This returns the config
+data for the application that this client's access token belongs to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetAppConfigAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The config info for your app in string format</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAppConfigJsonAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAppConfigJsonAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAppConfigJsonAsync" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAppConfigJsonAsync">GetAppConfigJsonAsync()</h4>
+  <div class="markdown level1 summary"><p>Get application's configuration as a JSON object from Ethos Integration. This returns the config
+data for the application that this client's access token belongs to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JObject&gt; GetAppConfigJsonAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JObject</span>&gt;</td>
+        <td><p>The config info for your app in a <see cref="!:JObject"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAvailableResourcesForAppAsJsonAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAvailableResourcesForAppAsJsonAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAvailableResourcesForAppAsJsonAsync" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAvailableResourcesForAppAsJsonAsync">GetAvailableResourcesForAppAsJsonAsync()</h4>
+  <div class="markdown level1 summary"><p>Get the details about the available resources your application points to, from the tenant associated with this
+client's session token. The results will be filtered based on the 'ownerOverrides' array from the access token application's
+config data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetAvailableResourcesForAppAsJsonAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>The available resources details in a <see cref="!:JArray"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAvailableResourcesForAppAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAvailableResourcesForAppAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetAvailableResourcesForAppAsync" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetAvailableResourcesForAppAsync">GetAvailableResourcesForAppAsync()</h4>
+  <div class="markdown level1 summary"><p>Get the details about the available resources your application points to, from the tenant associated with this
+client's access token. The results will be filtered based on the 'ownerOverrides' array from the access token application's
+config data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetAvailableResourcesForAppAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The available resources details in a string format</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetFiltersAndNamedQueriesAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetFiltersAndNamedQueriesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetFiltersAndNamedQueriesAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetFiltersAndNamedQueriesAsync(System.String,System.String)">GetFiltersAndNamedQueriesAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a JObject containing the supported filters and named queries for the given resource and version header.
+If the given versionHeader is null or empty, the latest version will be used.
+<br>
+The following is an example of the JSON data structure within the returned JObject:</p>
+<pre>
+{
+  &quot;resourceName&quot; : &quot;persons&quot;,
+  &quot;version&quot; : &quot;application/vnd.hedtech.integration.v12.3.0+json&quot;,
+  &quot;namedQueries&quot; : [
+      {
+          &quot;filters&quot; : [ &quot;personFilter&quot; ],
+          &quot;name&quot; : &quot;personFilter&quot;
+      }
+  ],
+  &quot;filters&quot; : [
+      &quot;names.title&quot;,
+      &quot;names.firstName&quot;,
+      &quot;names.middleName&quot;,
+      &quot;names.lastNamePrefix&quot;,
+      &quot;names.lastName&quot;,
+      &quot;names.pedigree&quot;,
+      &quot;roles.role&quot;,
+      &quot;credentials.type&quot;,
+      &quot;credentials.value&quot;,
+      &quot;alternativeCredentials.type.id&quot;,
+      &quot;alternativeCredentials.value&quot;,
+      &quot;emails.address&quot;
+  ]
+}
+</pre>
+<p>Throws an EthosResourceNotFoundException (Runtime) if the given resourceName is not found in the available-resource response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JObject&gt; GetFiltersAndNamedQueriesAsync(string resourceName, string versionHeader = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get available filters and named queries for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">versionHeader</span></td>
+        <td><p>The version header value used to retrieve available filters and/or named queries for the resource.
+If null or empty, the latest version header value will be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JObject</span>&gt;</td>
+        <td><p>A JObject containing the name of the resource and version header, with filters if they exist for the
+given resource and version, and/or named queries if they exist for the given resource and version.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetFiltersAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetFiltersAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetFiltersAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetFiltersAsync(System.String,System.String)">GetFiltersAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of filters for the given resource name. The latest version of the given resource is used to obtain
+the list of filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetFiltersAsync(string resourceName, string versionHeader = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the Ethos resource for which to get a list of filters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">versionHeader</span></td>
+        <td><p>The full version header value for which to get a list of filters for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A list of filter values (strings) which the given resource supports, or an empty list if none found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetLatestVersionAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetLatestVersionAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetLatestVersionAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetLatestVersionAsync(System.String)">GetLatestVersionAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the latest version of the given resource. Could return either a Semantic version (e.g. 12.0.0), or a
+non-semantic version( e.g. 12), as a string value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; GetLatestVersionAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get the latest version of.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The latest version of the given resource, either a semantic version, or a non-semantic whole number value, as a string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetLatestVersionHeaderAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetLatestVersionHeaderAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetLatestVersionHeaderAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetLatestVersionHeaderAsync(System.String)">GetLatestVersionHeaderAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the latest version header of the given resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetLatestVersionHeaderAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get the latest version header for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The latest full version header value of the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetMajorVersionsOfResourceAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetMajorVersionsOfResourceAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetMajorVersionsOfResourceAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetMajorVersionsOfResourceAsync(System.String)">GetMajorVersionsOfResourceAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets only the major version headers as a List of strings for the given resource name.
+Gets the entire version header string of the resource also found in the Accept Header
+of the request containing only the major versioning notation: e.g.application/vnd.hedtech.integration.v12+json</p>
+<p>
+<p><strong>The following table shows examples given various supported versions. Supported resource versions and versions returned by the SDK:-</strong></p><ul><li>Resource Supports Versions SDK Returns Version</li><li>v12.2.1, v12, v12.0.0, v13.1.0</li><li>application/vnd.hedtech.integration.v12+json, application/vnd.hedtech.integration.v13+json</li><li>v3, v4.5.0, v5.0.1</li><li>application/vnd.hedtech.integration.v3+json, application/vnd.hedtech.integration.v4+json, application/vnd.hedtech.integration.v5+json</li><li>v2.0.1, v3.2.0, v3.0.0</li><li>application/vnd.hedtech.integration.v2+json, application/vnd.hedtech.integration.v3+json, application/vnd.hedtech.integration.v10+json, application/vnd.hedtech.integration.v11+json</li><li>v10.0.0, v11.12.0, v11.12.3</li></ul>
+</p>
+<p>
+Also throws an ArgumentNullException (Runtime) if the given resourceName is null or empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetMajorVersionsOfResourceAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A List of Strings where each item in the list is a major version supported by the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetNamedQueriesAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetNamedQueriesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetNamedQueriesAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetNamedQueriesAsync(System.String,System.String)">GetNamedQueriesAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets named queries for the given resource name and version header value. If the given version header is
+null or empty, the latest version of the given resource will be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Dictionary&lt;string, IEnumerable&lt;string&gt;&gt;&gt; GetNamedQueriesAsync(string resourceName, string versionHeader = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the Ethos resource for which to get a map of named queries.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">versionHeader</span></td>
+        <td><p>The full version header value for which to get a map of named queries for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td><p>A map of named query values (strings) which the given resource supports, or an empty map if none found.
+Each key in the map is the name of a named query, with a corresponding value which is a string list of filter values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetResourceDetailsAsJsonAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetResourceDetailsAsJsonAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetResourceDetailsAsJsonAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetResourceDetailsAsJsonAsync(System.String)">GetResourceDetailsAsJsonAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get the details of a single resource from the tenant associated with this client's access token. The results will include
+details from each application in the tenant that owns the resource.</p>
+<p>
+The format of the response will be a JSON array with each object containing the following properties:
+<ul><li>appId - the ID of an owning application</li><li>appName - the name of an owning application</li><li>resource - the details of the resource</li></ul>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetResourceDetailsAsJsonAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource for which you want details.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>The resource details in a JSON array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetResourceDetailsAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetResourceDetailsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetResourceDetailsAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetResourceDetailsAsync(System.String)">GetResourceDetailsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get the details of a single resource from the tenant associated with this client's access token. The results will include
+details from each application in the tenant that owns the resource.</p>
+<p>
+The format of the response will be a JSON array with each object containing the following properties:
+<ul><li>appId - the ID of an owning application</li><li>appName - the name of an owning application</li><li>resource - the details of the resource</li></ul>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetResourceDetailsAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource for which you want details.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The resource details in string format</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetResourceDetailsJsonAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetResourceDetailsJsonAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetResourceDetailsJsonAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetResourceDetailsJsonAsync(System.String)">GetResourceDetailsJsonAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get the details of a single resource from the tenant associated with this client's access token. The results will include
+details from each application in the tenant that owns the resource.</p>
+<p>
+The format of the response will be a JSON array with each object containing the following properties:
+<ul><li>appId - the ID of an owning application</li><li>appName - the name of an owning application</li><li>resource - the details of the resource</li></ul>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetResourceDetailsJsonAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource for which you want details.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>The resource details in a JSON array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetResourceVersionsByRepresentationTypeAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetResourceVersionsByRepresentationTypeAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetResourceVersionsByRepresentationTypeAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetResourceVersionsByRepresentationTypeAsync(System.String,System.String)">GetResourceVersionsByRepresentationTypeAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+<p>
+Gets an ArrayNode containing a list of objects with each element in the list having this structure:
+<ul>
+<li>appId - the application ID of the app in Ethos Integration</li>
+<li>appName - the name of the application in Ethos Integration</li>
+<li>resourceName - the name of the Ethos resource</li>
+<li>versions - a list of versions based on the representationType</li>
+</ul>
+<p>
+Gets a list of versions of the given resource name from the available-resources API.
+Uses the representationType param to return either a list of version headers, or a list of version values.
+Version values are prefixed with the char &apos;v&apos;, e.g.v4.5.0.
+To return a list of version headers, the representationType must be &apos;/X-Media-Type&apos;. To return a list of version
+values, the representationType must be &apos;/version&apos;.
+A runtime ArgumentNullException will be thrown if the resourceName param is null or empty, or if the representationType
+param is not one of those two supported values.
+Each version in the list is from the /resource/representations/X-Media-Type or the /resource/representations/version
+property of the available-resources response for the given resource across all Ethos applications for the tenant in the access token.
+The returned list may contain duplicate version values.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;JArray&gt; GetResourceVersionsByRepresentationTypeAsync(string resourceName, string representationType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource for which to get a list of versions.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">representationType</span></td>
+        <td><p>The jsonLabel in the available-resources response used to access the version or version header value.
+Expected to only be 'version' or 'X-Media-Type', otherwise an ArgumentException will be thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A list of supported version values for the given resource according to the given representationType. If the
+representationType is 'X-Media-Type' a list of full version headers will be returned. If the representationType
+is '/version' a list of version values where each version value is prefixed with the 'v' char will be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeaderAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeaderAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeaderAsync_System_String_Ellucian_Ethos_Integration_Config_SemVer_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeaderAsync(System.String,Ellucian.Ethos.Integration.Config.SemVer)">GetVersionHeaderAsync(String, SemVer)</h4>
+  <div class="markdown level1 summary"><p>Gets the full version header string for the given resource and SemVer if the resource supports the given
+version contained within the SemVer.If the resource does not support the SemVer version, an UnsupportedVersionException is thrown,
+which is a RuntimeException.</p>
+<p>
+Also throws an IllegalArgumentException (Runtime) if the given resourceName is null or empty or the given semVer is null.</p>
+<p>
+NOTE: This method should only be used when the complete semVer notation of a version is known.For example, using the SemVer version
+when only the major.minor version is provided will result in a patch version of 0, which may or may not be desired.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetVersionHeaderAsync(string resourceName, SemVer semVer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Config.SemVer.html">SemVer</a></td>
+        <td><span class="parametername">semVer</span></td>
+        <td><p>The SemVer containing the requested version of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeaderAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeaderAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeaderAsync_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeaderAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">GetVersionHeaderAsync(String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the full version header string for the given resource, major, minor, and patch version if the resource supports the given
+major.minor.patch version.If the resource does not support the major.minor.patch version, an UnsupportedVersionException is thrown,
+which is a RuntimeException.</p>
+<p>
+Also throws an IllegalArgumentException (Runtime) if the given resourceName is null or empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetVersionHeaderAsync(string resourceName, int? majorVersion = null, int? minorVersion = null, int? patchVersion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">majorVersion</span></td>
+        <td><p>The major version of the resource to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">minorVersion</span></td>
+        <td><p>The minor version of the resource to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">patchVersion</span></td>
+        <td><p>The patch version of the resource to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The full version string for the given resource and major.minor.patch version: e.g. application/vnd.hedtech.integration.v12.1.3+json</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeadersForAppAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeadersForAppAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeadersForAppAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeadersForAppAsync(System.String)">GetVersionHeadersForAppAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of version headers for the given resourceName filtered by the ownerOverrides property from appConfig.
+Returns a simple list of version headers because each resource is only listed once under ownerOverrides.
+The results will be filtered based on the resources available in the 'ownerOverrides' array from the session token application's
+configuration data.
+If resourceName not found in ownerOverrides, returns an empty List.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetVersionHeadersForAppAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A list of version headers according to whether the given resource is found in the ownerOverrides property of appConfig,
+or an empty list if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeadersOfResourceAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeadersOfResourceAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeadersOfResourceAsStringsAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeadersOfResourceAsStringsAsync(System.String)">GetVersionHeadersOfResourceAsStringsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of version header string values from the /versions json property of the ArrayNode
+returned from {@link #getVersionHeadersOfResource(string) getVersionHeadersOfResource()}.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetVersionHeadersOfResourceAsStringsAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A list of version header strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeadersOfResourceAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeadersOfResourceAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionHeadersOfResourceAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionHeadersOfResourceAsync(System.String)">GetVersionHeadersOfResourceAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of full version headers of the given resource name from the available-resources API.
+Each version in the list is from the /resource/representations/X-Media-Type property of the available-resources response
+for the given resource across all Ethos applications for the tenant in the access token.An example of a full version
+header returned in the list is &quot;application/vnd.hedtech.integration.v8+json&quot;.
+The returned list may contain duplicate version header values.</p>
+<p>
+Each element in the returned ArrayNode contains the following properties:
+<ul>
+<li>appId - The GUID applicationId.</li>
+<li>appName - The name of the application in Ethos Integration.</li>
+<li>resourceName - The name of the Ethos resource.</li>
+<li>versions - An array of version header values: e.g. [ &quot;application/vnd.hedtech.integration.v8+json&quot;, &quot;application/vnd.hedtech.integration.v12.1.0+json&quot; ]</li>
+</ul></p>
+<p>
+The following is an example of the JSON data structure contained within the returned ArrayNode:
+<pre><code>[
+    {
+       &quot;appId&quot; : &quot;11111111-1111-1111-1111-111111111111&quot;,
+       &quot;appName&quot; : &quot;Banner Integration API&quot;,
+       &quot;resourceName&quot; : &quot;general-ledger-transactions&quot;,
+       &quot;versions&quot; : [
+       &quot;application/vnd.hedtech.integration.v6+json&quot;,
+       &quot;application/vnd.hedtech.integration.v8+json&quot;,
+       &quot;application/vnd.hedtech.integration.v12.1.0+json&quot;,
+       &quot;application/vnd.hedtech.integration.v12.0.0+json&quot;,
+       &quot;application/vnd.hedtech.integration.v12+json&quot;,
+       &quot;application/json&quot;
+        ]
+    }
+]</code></pre></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetVersionHeadersOfResourceAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A list of supported version headers for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionList_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionList*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionList_JArray_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionList(JArray,System.String)">GetVersionList(JArray, String)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally by the SDK.</strong></p>
+<p>
+Reads the given application/resource arrayNode and returns a simple list of version strings from that node.
+The given arrayNode is expected to contain an array of the following properties:
+<ul>
+<li>appId - the application ID of the app in Ethos Integration</li>
+<li>appName - the name of the application in Ethos Integration</li>
+<li>resourceName - the name of the Ethos resource</li>
+<li>versions - a list of versions based on the representationType</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;string&gt; GetVersionList(JArray arrayNode, string representationType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JArray</span></td>
+        <td><span class="parametername">arrayNode</span></td>
+        <td><p>The arrayNode containing application/resource info with a list of versions per resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">representationType</span></td>
+        <td><p>The JSON property to use, expected to be &quot;/versions&quot; when the array node contains both version
+values (v2, v3.0.4, etc. ) and version header strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A list of the versions as strings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionListForOwnerOverrides_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionListForOwnerOverrides*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionListForOwnerOverrides_JArray_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionListForOwnerOverrides(JArray,System.String)">GetVersionListForOwnerOverrides(JArray, String)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally by the SDK.</strong></p>
+<p>
+Extracts a list of versions as either a list of version headers or a list of version values depending on the
+representationType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;string&gt; GetVersionListForOwnerOverrides(JArray resourcesArrayNode, string representationType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JArray</span></td>
+        <td><span class="parametername">resourcesArrayNode</span></td>
+        <td><p>The ArrayNode containing a list of resources per the ownerOverrides configuration from appConfig.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">representationType</span></td>
+        <td><p>The type of version representation to extract, either &quot;/version&quot; for the version value,
+or &quot;/X-Media-Type&quot; for the version header value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A list of either version values or version headers per the representationType.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionsForAppAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionsForAppAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionsForAppAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionsForAppAsync(System.String)">GetVersionsForAppAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a list of versions for the given resourceName filtered by the ownerOverrides property from appConfig.
+Returns a simple list of versions because each resource is only listed once under ownerOverrides.
+The results will be filtered based on the resources available in the 'ownerOverrides' array from the session token application's
+configuration data.
+If resourceName not found in ownerOverrides, returns an empty List.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetVersionsForAppAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A list of versions according to whether the given resource is found in the ownerOverrides property of appConfig,
+or an empty list if not found.Each version in the list will be prefixed with the 'v' char, e.g. &quot;v4.5&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionsOfResourceAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionsOfResourceAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionsOfResourceAsStringsAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionsOfResourceAsStringsAsync(System.String)">GetVersionsOfResourceAsStringsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of version string values from the /versions json property of the JArray returned from {@link #getVersionsOfResource(string) getVersionsOfResource()}.
+Version values are gathered from across Ethos Integration applications for the given tenant(access token) and resource name,
+and should not contain duplicate values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetVersionsOfResourceAsStringsAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the Ethos resource to get a list of versions for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A list of version strings. Each element in the list is prefixed with the 'v' char, e.g. &quot;v4.5&quot;.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionsOfResourceAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionsOfResourceAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_GetVersionsOfResourceAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.GetVersionsOfResourceAsync(System.String)">GetVersionsOfResourceAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets a list of versions of the given resource name from the available-resources API.
+Each version in the list is from the /resource/representations/version property of the available-resources response
+for the given resource across all Ethos applications for the tenant in the access token.Each version value in the
+returned list is prefixed with the 'v' char, e.g. 'v4.5.1'. The returned list may contain duplicate version values.</p>
+<p>
+Each element in the returned ArrayNode contains the following properties:
+<ul>
+<li>appId - The GUID applicationId.</li>
+<li>appName - The name of the application in Ethos Integration.</li>
+<li>resourceName - The name of the Ethos resource.</li>
+<li>versions - An array of version values, each prefixed with the &apos;v&apos; char: e.g. [ &apos;v6&apos;, &apos;v8&apos;, &apos;v12.1.0&apos; ]</li>
+</ul></p>
+<p>
+The following is an example of the JSON data structure contained within the returned ArrayNode:
+<pre><code>[
+   {
+      &quot;appId&quot; : &quot;11111111-1111-1111-1111-111111111111&quot;,
+      &quot;appName&quot; : &quot;Banner Integration API&quot;,
+      &quot;resourceName&quot; : &quot;general-ledger-transactions&quot;,
+      &quot;versions&quot; : [ &quot;v6&quot;, &quot;v8&quot;, &quot;v12.1.0&quot;, &quot;v12.0.0&quot;, &quot;v12&quot; ]
+   }
+]</code></pre></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;JArray&gt; GetVersionsOfResourceAsync(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource for which to get a list of versions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A list of supported version values for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_IsResourceVersionSupportedAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.IsResourceVersionSupportedAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_IsResourceVersionSupportedAsync_System_String_Ellucian_Ethos_Integration_Config_SemVer_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.IsResourceVersionSupportedAsync(System.String,Ellucian.Ethos.Integration.Config.SemVer)">IsResourceVersionSupportedAsync(String, SemVer)</h4>
+  <div class="markdown level1 summary"><p>Indicates if the requested Ethos resource supports a version represented by the given SemVer object.
+SemVer objects are to be used where a version is truly a semantic version, and not when any of the major, minor,
+or patch versions of the semantic version notation are missing or not known.For example, this method should
+not be used when trying to determine if version 12.2 is supported because the given SemVer will translate 12.2
+into 12.2.0 which is different.</p>
+<p>
+Also throws an ArgumentNullException( Runtime) if the given resourceName is null or empty or the given semVer is null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; IsResourceVersionSupportedAsync(string resourceName, SemVer semVer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Config.SemVer.html">SemVer</a></td>
+        <td><span class="parametername">semVer</span></td>
+        <td><p>The SemVer object containing the full semantic version to check for the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if the given resource supports the specified full version header, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_IsResourceVersionSupportedAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.IsResourceVersionSupportedAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_IsResourceVersionSupportedAsync_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_Nullable_System_Int32__" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.IsResourceVersionSupportedAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">IsResourceVersionSupportedAsync(String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Indicates if the given resource supports the given major version. For example, if the resource supports this version:
+<br><em>application/vnd.hedtech.integration.v12+json</em></br>
+<br>this method will return true if the major version is 12. However, if the resource only supports these versions:</br>
+<br><em>application/vnd.hedtech.integration.v12.0+json</em> OR<em>application/vnd.hedtech.integration.v12.0.0+json</em></br>
+<br>this method will return false.</br></p>
+<p>
+Also throws an ArgumentNullException (Runtime) if the given resourceName is null or empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; IsResourceVersionSupportedAsync(string resourceName, int? majorVersion = null, int? minorVersion = null, int? patchVersion = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">majorVersion</span></td>
+        <td><p>The major version of the resource to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">minorVersion</span></td>
+        <td><p>The minor version of the resource to check.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">patchVersion</span></td>
+        <td><p>The patch version of the resource to check.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if the given resource supports the given major version, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_IsResourceVersionSupportedAsync_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.IsResourceVersionSupportedAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_IsResourceVersionSupportedAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.IsResourceVersionSupportedAsync(System.String,System.String)">IsResourceVersionSupportedAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Indicates if the given resource supports the given full version header. The full version header should be in the following
+format:  application/vnd.hedtech.integration.vSEMVER+json, where SEMVER is the semantic version of the requested resource.</p>
+<p>
+Also throws an ArgumentNullException( Runtime) if the given resourceName or fullVersionHeader is null or empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;bool&gt; IsResourceVersionSupportedAsync(string resourceName, string fullVersionHeader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The resource name for which to get a list of supported version headers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fullVersionHeader</span></td>
+        <td><p>The full version header of the Ethos resource as described above.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>True if the given resource supports the specified full version header, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_SplitVersionList_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.SplitVersionList*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_SplitVersionList_IEnumerable_System_String__" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.SplitVersionList(IEnumerable{System.String})">SplitVersionList(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p><strong>Used internally by the SDK.</strong></p>
+<p>
+The given versionList could contain both semantic and non-semantic version values.Splits the versionList
+into 2 lists:  1 with SemVer values, and 1 with non-semantic Integer version values.</p>
+<p>
+Any null or blank version values in the versionList will be filtered out and not processed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, IEnumerable&lt;object&gt;&gt; SplitVersionList(IEnumerable&lt;string&gt; versionList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">versionList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_ValidateResourceNameNotNull_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.ValidateResourceNameNotNull*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Config_EthosConfigurationClient_ValidateResourceNameNotNull_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Config.EthosConfigurationClient.ValidateResourceNameNotNull(System.String,System.String)">ValidateResourceNameNotNull(String, String)</h4>
+  <div class="markdown level1 summary"><p><strong>Used internally by the SDK.</strong></p>
+<p>
+Validates the given resourceName to ensure it is not null or empty( blank).
+Throws an ArgumentNullException with the given errorMessage if the resourceName is null or empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static void ValidateResourceNameNotNull(string resourceName, string errorMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

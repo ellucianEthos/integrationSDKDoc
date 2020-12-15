@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Ellucian.Ethos.Integration.Client.Proxy
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Ellucian.Ethos.Integration.Client.Proxy
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.Proxy">
+  
+  <h1 id="Ellucian_Ethos_Integration_Client_Proxy" data-uid="Ellucian.Ethos.Integration.Client.Proxy" class="text-break">Namespace Ellucian.Ethos.Integration.Client.Proxy
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html">EthosFilterQueryClient</a></h4>
+      <section><p>An EthosProxyClient that provides the ability to submit GET requests supporting filters and/or named queries with support for paging.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a></h4>
+      <section><p>An EthosClient used to retrieve data from the Ethos Integration Proxy API.</p>
+<p>
+Supports( but not limited to ) the following functionality:
+<ul>
+<li>Getting data for a given Ethos resource</li>
+<li>Getting an Ethos resource by ID (GUID)</li>
+<li>Getting the page size and/or total count for a resource</li>
+</ul>
+</p>
+<p>Supports paging for data in the following formats:</p>
+<ul>
+<li>List&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>> a list of EthosResponse objects</li>
+<li>List&lt;<see cref="!:System.String"></see>> a list of strings</li>
+<li>List&lt;<see cref="!:JArray"></see>> a list of Newtonsoft JArray objects</li>
+</ul>
+Each item in the list represents one page of data.Each page of data can contain many rows according to the page size.
+<p>
+<strong>NOTE: None of the methods in this class should be used to bulk load Ethos data. Such is NOT the intent of this SDK.
+It is possible that long running process times could result and/or <see cref="!:OutOfMemoryException"></see>s could occur if trying to get
+a large quantity of data. Instead, the Ethos bulk loading solution should be used for loading data in Ethos data model format in bulk.</strong></p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></h4>
+      <section><p>Data transfer object (DTO) used primarily within the SDK to easily specify various criteria supporting paging operations.
+This class follows the builder pattern and contains an inner static Builder class used to build this object with the various attributes/properties.</p>
+</section>
+    <h3 id="enums">Enums
+  </h3>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.PagingType.html">Pager.PagingType</a></h4>
+      <section><p>Various paging types to determine what kind of paging to be done.  This class is built with different attributes
+depending on the pagingType( howToPage attribute ).</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

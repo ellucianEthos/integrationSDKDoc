@@ -1,0 +1,902 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Pager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Pager
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Client_Proxy_Pager" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager" class="text-break">Class Pager
+  </h1>
+  <div class="markdown level0 summary"><p>Data transfer object (DTO) used primarily within the SDK to easily specify various criteria supporting paging operations.
+This class follows the builder pattern and contains an inner static Builder class used to build this object with the various attributes/properties.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Pager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.html">Ellucian.Ethos.Integration.Client.Proxy</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Pager : object</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_CriteriaFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.CriteriaFilter*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_CriteriaFilter" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.CriteriaFilter">CriteriaFilter</h4>
+  <div class="markdown level1 summary"><p>The optional request URL criteria filter used when paging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CriteriaFilter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.EthosResponse*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_EthosResponse" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.EthosResponse">EthosResponse</h4>
+  <div class="markdown level1 summary"><p>Ethos response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosResponse EthosResponse { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_FilterMap_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.FilterMap*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_FilterMap" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.FilterMap">FilterMap</h4>
+  <div class="markdown level1 summary"><p>The optional request URL filter map used when paging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FilterMap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_HowToPage_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.HowToPage*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_HowToPage" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.HowToPage">HowToPage</h4>
+  <div class="markdown level1 summary"><p>The pagingType for how to page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager.PagingType HowToPage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.PagingType.html">Pager.PagingType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_NumPages_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.NumPages*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_NumPages" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.NumPages">NumPages</h4>
+  <div class="markdown level1 summary"><p>The number of pages to page for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumPages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_NumRows_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.NumRows*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_NumRows" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.NumRows">NumRows</h4>
+  <div class="markdown level1 summary"><p>The number of rows to page for.  Data is still returned in pages up to the number of rows when this is specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumRows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_Offset_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.Offset*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_Offset" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.Offset">Offset</h4>
+  <div class="markdown level1 summary"><p>The offset to begin paging from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Offset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_PageSize_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.PageSize*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_PageSize" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.PageSize">PageSize</h4>
+  <div class="markdown level1 summary"><p>The pageSize specified when paging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PageSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ResourceName_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ResourceName*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ResourceName" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ResourceName">ResourceName</h4>
+  <div class="markdown level1 summary"><p>The resource name used when paging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ResourceName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ShouldDoPaging_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ShouldDoPaging*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ShouldDoPaging" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ShouldDoPaging">ShouldDoPaging</h4>
+  <div class="markdown level1 summary"><p>Indicator of whether paging should be done or not for a given request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShouldDoPaging { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_TotalCount_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.TotalCount*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_TotalCount" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.TotalCount">TotalCount</h4>
+  <div class="markdown level1 summary"><p>The total count (of rows) for a given resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_Version_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.Version*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_Version" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.Version">Version</h4>
+  <div class="markdown level1 summary"><p>The version specified when paging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Version { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_Build_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.Build*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_Build_Action_Ellucian_Ethos_Integration_Client_Proxy_Pager__" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.Build(Action{Ellucian.Ethos.Integration.Client.Proxy.Pager})">Build(Action&lt;Pager&gt;)</h4>
+  <div class="markdown level1 summary"><p>An inner static Builder class used for building the Pager object with various criteria.  This uses the builder
+fluent API pattern.
+All of the attributes in this Builder class correspond to the attributes in the containing Pager class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Pager Build(Action&lt;Pager&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Takes an Action delegate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_Build_Action_Ellucian_Ethos_Integration_Client_Proxy_Pager___examples">Examples</h5>
+  <pre><code>Pager pager = Pager.Build(p =>
+{
+	p.ForResource(&quot;student-cohorts&quot;)
+	.WithPageSize(5)
+	.ForVersion(&quot;12&quot;)
+	.ForNumPages(10)
+	.ForNumRows(5);
+});</code></pre>
+
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForNumPages_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForNumPages*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForNumPages_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForNumPages(System.Int32)">ForNumPages(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets number of pages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager ForNumPages(int forNumPages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">forNumPages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForNumRows_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForNumRows*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForNumRows_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForNumRows(System.Int32)">ForNumRows(Int32)</h4>
+  <div class="markdown level1 summary"><p>Assigns the specified numRows and returns this builder for fluent API functionality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager ForNumRows(int forNumRows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">forNumRows</span></td>
+        <td><p>The number of rows to page for.  Data is returned in pages up to the specified number of rows.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>Pager object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForPagerType_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForPagerType*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForPagerType_Ellucian_Ethos_Integration_Client_Proxy_Pager_PagingType_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForPagerType(Ellucian.Ethos.Integration.Client.Proxy.Pager.PagingType)">ForPagerType(Pager.PagingType)</h4>
+  <div class="markdown level1 summary"><p>Assigns the specified PagingType for how to page and returns this builder for fluent API functionality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager ForPagerType(Pager.PagingType pagingType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.PagingType.html">Pager.PagingType</a></td>
+        <td><span class="parametername">pagingType</span></td>
+        <td><p>Must be of the PagingType enumeration defined in the Pager class, and used to determine how to page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>Pager object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForResource_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForResource*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForResource_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForResource(System.String)">ForResource(String)</h4>
+  <div class="markdown level1 summary"><p>Assigns the given resourceName to the resourceName of Pager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager ForResource(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>Name of the resource e.g. student-cohorts</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>Pager object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForVersion_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForVersion*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_ForVersion_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.ForVersion(System.String)">ForVersion(String)</h4>
+  <div class="markdown level1 summary"><p>Assigns the specified version and returns this builder for fluent API functionality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager ForVersion(string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version of the Ethos resource (A.K.A media type).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>Pager object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_FromOffSet_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.FromOffSet*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_FromOffSet_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.FromOffSet(System.Int32)">FromOffSet(Int32)</h4>
+  <div class="markdown level1 summary"><p>Assigns the specified offset and returns this builder for fluent API functionality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager FromOffSet(int forOffSet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">forOffSet</span></td>
+        <td><p>The offset (row number) to start paging from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>Pager object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_WithCriteriaFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.WithCriteriaFilter*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_WithCriteriaFilter_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.WithCriteriaFilter(System.String)">WithCriteriaFilter(String)</h4>
+  <div class="markdown level1 summary"><p>Assigns the specified request URL criteria filter and returns this builder for fluent API functionality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager WithCriteriaFilter(string criteriaFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>The request URL criteria-based filter which can also be used when paging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>The Builder with the criteria filter assigned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_WithFilterMap_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.WithFilterMap*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_WithFilterMap_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.WithFilterMap(System.String)">WithFilterMap(String)</h4>
+  <div class="markdown level1 summary"><p>Assigns the specified request URL filter map and returns this builder for fluent API functionality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager WithFilterMap(string filterMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filterMap</span></td>
+        <td><p>The request URL filter map which can also be used when paging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>The Builder with the filter map assigned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_WithPageSize_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.WithPageSize*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_WithPageSize_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.WithPageSize(System.Int32)">WithPageSize(Int32)</h4>
+  <div class="markdown level1 summary"><p>Assigns the specified pageSize and returns this builder for fluent API functionality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager WithPageSize(int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The pageSize (number of rows in each response) to page with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>Pager object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

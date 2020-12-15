@@ -1,0 +1,1401 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EthosErrorsClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EthosErrorsClient
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient" class="text-break">Class EthosErrorsClient
+  </h1>
+  <div class="markdown level0 summary"><p>An EthosClient used to perform Create, Read, and Delete operations for Error objects, using the Ethos Integration errors service.</p>
+<p>The preferred way to instantiate this class is via the EthosClientBuilder.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html">EthosClient</a></div>
+    <div class="level2"><span class="xref">EthosErrorsClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ApiKey">EthosClient.ApiKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_expirationMinutes">EthosClient.expirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ExpirationMinutes">EthosClient.ExpirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AutoRefresh">EthosClient.AutoRefresh</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Token">EthosClient.Token</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Region">EthosClient.Region</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HttpProtocolClientBuilder">EthosClient.HttpProtocolClientBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_EthosResponseBuilder">EthosClient.EthosResponseBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ResponseHandlerAsync_HttpResponseMessage_">EthosClient.ResponseHandlerAsync(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AttachHeaders_HttpClient_Dictionary_System_String_System_String__">EthosClient.AttachHeaders(HttpClient, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAccessTokenAsync">EthosClient.GetAccessTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetNewTokenAsync">EthosClient.GetNewTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetHttpClient">EthosClient.GetHttpClient()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetStringAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetStringAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_System_String_">EthosClient.GetAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HeadAsync_System_String_">EthosClient.HeadAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PostAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PostAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PutAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PutAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_DeleteAsync_Dictionary_System_String_System_String__System_String_">EthosClient.DeleteAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AddAccessTokenAuthHeaderAsync_Dictionary_System_String_System_String__">EthosClient.AddAccessTokenAuthHeaderAsync(Dictionary&lt;String, String&gt;)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.html">Ellucian.Ethos.Integration.Client.Errors</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EthosErrorsClient : EthosClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient__ctor_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient__ctor_System_String_HttpClient_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.#ctor(System.String,HttpClient)">EthosErrorsClient(String, HttpClient)</h4>
+  <div class="markdown level1 summary"><p>Constructs an EthosErrorClient using the given API key.
+Note that the preferred way to get an instance of this class is through the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosErrorsClient(string apiKey, HttpClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>A valid API key from Ethos Integration. This is required to be a valid 36 character GUID string.
+If it is null, empty, <see cref="!:ArgumentNullException"></see> will be thrown or not in a valid GUID format, then a <see cref="!:FormatException"></see> will be thrown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A HttiClient. If it is null, empty, then an <see cref="!:ArgumentNullException"></see> will be thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_DefaultErrorPageSize" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.DefaultErrorPageSize">DefaultErrorPageSize</h4>
+  <div class="markdown level1 summary"><p>The default page size (limit) when paging for errors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int DefaultErrorPageSize = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_errorType" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.errorType">errorType</h4>
+  <div class="markdown level1 summary"><p>Accept header value for Error type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">const string errorType = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_ethosResponseConverter" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.ethosResponseConverter">ethosResponseConverter</h4>
+  <div class="markdown level1 summary"><p>Used to convert EthosResponses to EthosError objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EthosResponseConverter ethosResponseConverter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseConverter.html">EthosResponseConverter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_HDR_REMAINING_COUNT" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.HDR_REMAINING_COUNT">HDR_REMAINING_COUNT</h4>
+  <div class="markdown level1 summary"><p>The remaining count header found in the EthosResponse. This value is equal to the total count minus the page size of the given request/response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_REMAINING_COUNT = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_HDR_TOTAL_COUNT" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.HDR_TOTAL_COUNT">HDR_TOTAL_COUNT</h4>
+  <div class="markdown level1 summary"><p>The x-total-count header, representing the number of items in the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string HDR_TOTAL_COUNT = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_BuildHeadersMap_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.BuildHeadersMap*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_BuildHeadersMap" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.BuildHeadersMap">BuildHeadersMap()</h4>
+  <div class="markdown level1 summary"><p>Builds the headers dictionary used when making requests for errors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, string&gt; BuildHeadersMap()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><p>A dictionary containing the headers needed for making a request to the Ethos Integration Errors API service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_CalculateNumberOfPages_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.CalculateNumberOfPages*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_CalculateNumberOfPages_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.CalculateNumberOfPages(System.Int32,System.Int32,System.Int32)">CalculateNumberOfPages(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Calculates the number of pages given the input params. Input param values are not validated, so specifying
+invalid negative values could produce unpredictable results. A 0 value is valid for the offset, but not for the other params.</p>
+<p>
+    The calculation is as follows:
+<br>
+<em>
+double numPages = Math.Ceiling(Convert.ToDouble((totalErrorCount - offset)/pageSize));
+</em>
+<br>
+The numPages returned value is cast to an int.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CalculateNumberOfPages(int totalErrorCount, int pageSize, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">totalErrorCount</span></td>
+        <td><p>The total number of errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The limit number of errors to include in each page.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of pages.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_DeleteAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.DeleteAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_DeleteAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.DeleteAsync(System.String)">DeleteAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Delete the Error with the given ID from the tenant associated with the AccessToken.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteAsync(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The ID of the Error that you want to delete</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_DoPagingAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.DoPagingAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_DoPagingAsync_System_Int32_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.DoPagingAsync(System.Int32,System.Int32,System.Int32)">DoPagingAsync(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong></p>
+Handles paging for errors.If the given pageSize is &lt;= 0, the default page size is used. If the offset is &lt; 0,
+0 will be used for the offset.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; DoPagingAsync(int totalErrorCount, int pageSize, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">totalErrorCount</span></td>
+        <td><p>The total count of errors for the given tenant per access token.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The number of errors to include in each page (EthosResponse) of the list returned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for errors. To get all errors, the offset should be 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>IEnumerable&lt;EthosResponse&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsJArrayAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsJArrayAsync">GetAllErrorsAsJArrayAsync()</h4>
+  <div class="markdown level1 summary"><p>Get all of the errors for the given tenant per access token, as a list of Jarrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;JArray&gt;&gt; GetAllErrorsAsJArrayAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">JArray</span>&gt;&gt;</td>
+        <td><p>A list of JArrays where each JArray in the list contains a page of errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsStringsAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsStringsAsync">GetAllErrorsAsStringsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token, as a list of Strings in JSON format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetAllErrorsAsStringsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A list of strings where each string in the list contains a page of errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsync">GetAllErrorsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetAllErrorsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A list of EthosResponses where each ethosResponse in the list contains a page of errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsWithPageSizeAsJArraysAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsWithPageSizeAsJArraysAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsWithPageSizeAsJArraysAsync_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsWithPageSizeAsJArraysAsync(System.Int32)">GetAllErrorsWithPageSizeAsJArraysAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token using the given page size as a list of JArrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;JArray&gt;&gt; GetAllErrorsWithPageSizeAsJArraysAsync(int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The limit number of errors to include in each page of errors returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">JArray</span>&gt;&gt;</td>
+        <td><p>A list of EthosResponses where each ethosResponse in the list contains a page of errors and each page
+contains up to the number of errors specified as the page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsWithPageSizeAsStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsWithPageSizeAsStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsWithPageSizeAsStringsAsync_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsWithPageSizeAsStringsAsync(System.Int32)">GetAllErrorsWithPageSizeAsStringsAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token using the given page size as a list of strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetAllErrorsWithPageSizeAsStringsAsync(int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The limit number of errors to include in each page of errors returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>A list of EthosResponses where each ethosResponse in the list contains a page of errors and each page
+contains up to the number of errors specified as the page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsWithPageSizeAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsWithPageSizeAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsWithPageSizeAsync_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsWithPageSizeAsync(System.Int32)">GetAllErrorsWithPageSizeAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token using the given page size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetAllErrorsWithPageSizeAsync(int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The limit number of errors to include in each page of errors returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>A list of EthosResponses where each ethosResponse in the list contains a page of errors and each page
+contains up to the number of errors specified as the page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsJArrayAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsJArrayAsync">GetAsJArrayAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets an initial array (page) of Errors from the tenant associated with the access token, as a JArray.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JArray&gt; GetAsJArrayAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A JArray containing child nodes for each error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsStringAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsStringAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsStringAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsStringAsync">GetAsStringAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets an initial array (page) of Errors from the tenant associated with the access token, as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetAsStringAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsync">GetAsync()</h4>
+  <div class="markdown level1 summary"><p>Get an initial array (page) of Errors from the tenant associated with the access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse containing an array of errors in the content body.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetByIdAsEthosErrorAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetByIdAsEthosErrorAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetByIdAsEthosErrorAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetByIdAsEthosErrorAsync(System.String)">GetByIdAsEthosErrorAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get a single error as an EthosError object, using the given ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosError&gt; GetByIdAsEthosErrorAsync(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The ID of the Error to get. This is a required parameter.
+If it is null or empty, then an ArgumentNullException will be thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.EthosError.html">EthosError</a>&gt;</td>
+        <td><p>An EthosError object representing the error for the given ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetByIdAsJObjectAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetByIdAsJObjectAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetByIdAsJObjectAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetByIdAsJObjectAsync(System.String)">GetByIdAsJObjectAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get a single error as a JObject, using the given ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;JObject&gt; GetByIdAsJObjectAsync(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The ID of the Error to get. This is a required parameter.
+If it is null or empty, then an ArgumentNullException will be thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">JObject</span>&gt;</td>
+        <td><p>A JObject representing the error for the given ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetByIdAsStringAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetByIdAsStringAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetByIdAsStringAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetByIdAsStringAsync(System.String)">GetByIdAsStringAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get a single error as a JObject, using the given ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetByIdAsStringAsync(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The ID of the Error to get. This is a required parameter.
+If it is null or empty, then an ArgumentNullException will be thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A string representing the error for the given ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetByIdAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetByIdAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetByIdAsync_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetByIdAsync(System.String)">GetByIdAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get a specific error assigned the ID passed in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetByIdAsync(string id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Error ID</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An EthosResponse object containing the EthosError in the content body.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsJArrayAsync_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsJArrayAsync(System.Int32)">GetErrorsFromOffsetAsJArrayAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token from the given offset, as a list of JArrays.
+Uses the default page size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;JArray&gt;&gt; GetErrorsFromOffsetAsJArrayAsync(int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">JArray</span>&gt;&gt;</td>
+        <td><p>IEnumerable&lt;JArray&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsJsonStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsJsonStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsJsonStringsAsync_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsJsonStringsAsync(System.Int32)">GetErrorsFromOffsetAsJsonStringsAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token from the given offset, as a list of strings.
+Uses the default page size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetErrorsFromOffsetAsJsonStringsAsync(int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>IEnumerable&lt;string&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsync_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsync(System.Int32)">GetErrorsFromOffsetAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token from the given offset. Uses the default page size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetErrorsFromOffsetAsync(int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>IEnumerable&lt;EthosResponse&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetWithPageSizeAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetWithPageSizeAsJArrayAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetWithPageSizeAsJArrayAsync_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetWithPageSizeAsJArrayAsync(System.Int32,System.Int32)">GetErrorsFromOffsetWithPageSizeAsJArrayAsync(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token from the given offset, as a list of JArrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;JArray&gt;&gt; GetErrorsFromOffsetWithPageSizeAsJArrayAsync(int offset, int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The limit number of Errors to include in each page of errors returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">JArray</span>&gt;&gt;</td>
+        <td><p>IEnumerable&lt;JArray&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetWithPageSizeAsJsonStringsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetWithPageSizeAsJsonStringsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetWithPageSizeAsJsonStringsAsync_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetWithPageSizeAsJsonStringsAsync(System.Int32,System.Int32)">GetErrorsFromOffsetWithPageSizeAsJsonStringsAsync(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token from the given offset, as a list of strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;string&gt;&gt; GetErrorsFromOffsetWithPageSizeAsJsonStringsAsync(int offset, int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The limit number of Errors to include in each page of errors returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p>IEnumerable&lt;string&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetWithPageSizeAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetWithPageSizeAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetWithPageSizeAsync_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetWithPageSizeAsync(System.Int32,System.Int32)">GetErrorsFromOffsetWithPageSizeAsync(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token from the given offset. Uses the given page size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosResponse&gt;&gt; GetErrorsFromOffsetWithPageSizeAsync(int offset, int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for errors.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The limit number of Errors to include in each page of errors returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>IEnumerable&lt;EthosResponse&gt;</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetTotalErrorCountAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetTotalErrorCountAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetTotalErrorCountAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetTotalErrorCountAsync">GetTotalErrorCountAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the total number of errors according to the 'x-total-count' response header for the given tenant per access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetTotalErrorCountAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The total number of errors for the given tenant, or 0 if the 'x-total-count' header is not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_PostAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.PostAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_PostAsync_Ellucian_Ethos_Integration_Client_Errors_EthosError_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.PostAsync(Ellucian.Ethos.Integration.Client.Errors.EthosError)">PostAsync(EthosError)</h4>
+  <div class="markdown level1 summary"><p>Create the given Error in the tenant associated with the AccessToken.
+See the examples directory for how to do this.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; PostAsync(EthosError newError)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.EthosError.html">EthosError</a></td>
+        <td><span class="parametername">newError</span></td>
+        <td><p>An Error object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>The response payload from the errors service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

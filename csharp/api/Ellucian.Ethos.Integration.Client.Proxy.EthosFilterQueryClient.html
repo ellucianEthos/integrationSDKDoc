@@ -1,0 +1,2119 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EthosFilterQueryClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EthosFilterQueryClient
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient" class="text-break">Class EthosFilterQueryClient
+  </h1>
+  <div class="markdown level0 summary"><p>An EthosProxyClient that provides the ability to submit GET requests supporting filters and/or named queries with support for paging.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html">EthosClient</a></div>
+    <div class="level2"><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a></div>
+    <div class="level3"><span class="xref">EthosFilterQueryClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DEFAULT_VERSION">EthosProxyClient.DEFAULT_VERSION</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DEFAULT_PAGE_SIZE">EthosProxyClient.DEFAULT_PAGE_SIZE</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DEFAULT_MAX_PAGE_SIZE">EthosProxyClient.DEFAULT_MAX_PAGE_SIZE</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_DATE">EthosProxyClient.HDR_DATE</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_CONTENT_TYPE">EthosProxyClient.HDR_CONTENT_TYPE</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_X_TOTAL_COUNT">EthosProxyClient.HDR_X_TOTAL_COUNT</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_APPLICATION_CONTEXT">EthosProxyClient.HDR_APPLICATION_CONTEXT</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_X_MAX_PAGE_SIZE">EthosProxyClient.HDR_X_MAX_PAGE_SIZE</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_X_MEDIA_TYPE">EthosProxyClient.HDR_X_MEDIA_TYPE</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID">EthosProxyClient.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME">EthosProxyClient.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_ethosResponseConverter">EthosProxyClient.ethosResponseConverter</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_System_String_System_String_">EthosProxyClient.PostAsync(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_System_String_System_String_System_String_">EthosProxyClient.PostAsync(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_System_String_JObject_">EthosProxyClient.PostAsync(String, JObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PostAsync_System_String_System_String_JObject_">EthosProxyClient.PostAsync(String, String, JObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_System_String_System_String_System_String_">EthosProxyClient.PutAsync(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_System_String_System_String_System_String_System_String_">EthosProxyClient.PutAsync(String, String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_System_String_System_String_JObject_">EthosProxyClient.PutAsync(String, String, JObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_PutAsync_System_String_System_String_System_String_JObject_">EthosProxyClient.PutAsync(String, String, String, JObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DeleteAsync_System_String_System_String_">EthosProxyClient.DeleteAsync(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsync_System_String_System_String_">EthosProxyClient.GetAsync(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsStringAsync_System_String_System_String_">EthosProxyClient.GetAsStringAsync(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsJArrayAsync_System_String_System_String_">EthosProxyClient.GetAsJArrayAsync(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsStringAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetAsStringAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsJArrayAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetAsJArrayAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetFromOffsetAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetFromOffsetAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetFromOffsetAsStringAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetFromOffsetAsStringAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetFromOffsetAsJArrayAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetFromOffsetAsJArrayAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetWithPageSizeAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetWithPageSizeAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetWithPageSizeAsStringAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetWithPageSizeAsStringAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetWithPageSizeAsJArrayAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetWithPageSizeAsJArrayAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsync_System_String_System_String_">EthosProxyClient.GetAllPagesAsync(String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetAllPagesAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsStringsAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetAllPagesAsStringsAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesAsJArraysAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetAllPagesAsJArraysAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesFromOffsetAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetAllPagesFromOffsetAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesFromOffsetAsStringsAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetAllPagesFromOffsetAsStringsAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAllPagesFromOffsetAsJArraysAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetAllPagesFromOffsetAsJArraysAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetPagesAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesAsStringsAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetPagesAsStringsAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesAsJArraysAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetPagesAsJArraysAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesFromOffsetAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_">EthosProxyClient.GetPagesFromOffsetAsync(String, String, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesFromOffsetAsStringsAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_">EthosProxyClient.GetPagesFromOffsetAsStringsAsync(String, String, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPagesFromOffsetAsJArraysAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_">EthosProxyClient.GetPagesFromOffsetAsJArraysAsync(String, String, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetRowsAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsAsStringsAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetRowsAsStringsAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsAsJArrayAsync_System_String_System_String_System_Int32_">EthosProxyClient.GetRowsAsJArrayAsync(String, String, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsFromOffsetAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_">EthosProxyClient.GetRowsFromOffsetAsync(String, String, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsFromOffsetAsStringsAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetRowsFromOffsetAsStringsAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetRowsFromOffsetAsJArrayAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.GetRowsFromOffsetAsJArrayAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetByIdAsync_System_String_System_String_System_String_">EthosProxyClient.GetByIdAsync(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsStringByIdAsync_System_String_System_String_System_String_">EthosProxyClient.GetAsStringByIdAsync(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetAsJObjectByIdAsync_System_String_System_String_System_String_">EthosProxyClient.GetAsJObjectByIdAsync(String, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_BuildHeadersMap_System_String_">EthosProxyClient.BuildHeadersMap(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_ShouldDoPaging_Ellucian_Ethos_Integration_Client_Proxy_Pager_System_Boolean_">EthosProxyClient.ShouldDoPaging(Pager, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_NeedToPage_System_Int32_System_Int32_">EthosProxyClient.NeedToPage(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HandlePagingAsync_Ellucian_Ethos_Integration_Client_Proxy_Pager_">EthosProxyClient.HandlePagingAsync(Pager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetDataFromPagingAsync_Ellucian_Ethos_Integration_Client_Proxy_Pager_">EthosProxyClient.GetDataFromPagingAsync(Pager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetDataFromInitialContent_Ellucian_Ethos_Integration_Client_Proxy_Pager_">EthosProxyClient.GetDataFromInitialContent(Pager)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingForAllAsync_System_String_System_String_System_Int32_System_Int32_">EthosProxyClient.DoPagingForAllAsync(String, String, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingFromOffsetAsync_System_String_System_String_System_String_System_Int32_System_Int32_System_Int32_">EthosProxyClient.DoPagingFromOffsetAsync(String, String, String, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingForNumPagesAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_">EthosProxyClient.DoPagingForNumPagesAsync(String, String, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingFromOffsetForNumPagesAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_System_Int32_">EthosProxyClient.DoPagingFromOffsetForNumPagesAsync(String, String, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingForNumRowsAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_">EthosProxyClient.DoPagingForNumRowsAsync(String, String, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_DoPagingFromOffsetForNumRowsAsync_System_String_System_String_System_Int32_System_Int32_System_Int32_System_Int32_">EthosProxyClient.DoPagingFromOffsetForNumRowsAsync(String, String, Int32, Int32, Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetHeaderValue_Ellucian_Ethos_Integration_Client_EthosResponse_System_String_">EthosProxyClient.GetHeaderValue(EthosResponse, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetPageSizeAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_EthosResponse_">EthosProxyClient.GetPageSizeAsync(String, String, EthosResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetMaxPageSizeAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_EthosResponse_">EthosProxyClient.GetMaxPageSizeAsync(String, String, EthosResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_GetTotalCountAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_EthosResponse_">EthosProxyClient.GetTotalCountAsync(String, String, EthosResponse)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ApiKey">EthosClient.ApiKey</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_expirationMinutes">EthosClient.expirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ExpirationMinutes">EthosClient.ExpirationMinutes</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AutoRefresh">EthosClient.AutoRefresh</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Token">EthosClient.Token</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_Region">EthosClient.Region</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HttpProtocolClientBuilder">EthosClient.HttpProtocolClientBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_EthosResponseBuilder">EthosClient.EthosResponseBuilder</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_ResponseHandlerAsync_HttpResponseMessage_">EthosClient.ResponseHandlerAsync(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AttachHeaders_HttpClient_Dictionary_System_String_System_String__">EthosClient.AttachHeaders(HttpClient, Dictionary&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAccessTokenAsync">EthosClient.GetAccessTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetNewTokenAsync">EthosClient.GetNewTokenAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetHttpClient">EthosClient.GetHttpClient()</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetStringAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetStringAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_Dictionary_System_String_System_String__System_String_">EthosClient.GetAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_GetAsync_System_String_">EthosClient.GetAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_HeadAsync_System_String_">EthosClient.HeadAsync(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PostAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PostAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_PutAsync_Dictionary_System_String_System_String__System_String_System_String_">EthosClient.PutAsync(Dictionary&lt;String, String&gt;, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_DeleteAsync_Dictionary_System_String_System_String__System_String_">EthosClient.DeleteAsync(Dictionary&lt;String, String&gt;, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClient.html#Ellucian_Ethos_Integration_Client_EthosClient_AddAccessTokenAuthHeaderAsync_Dictionary_System_String_System_String__">EthosClient.AddAccessTokenAuthHeaderAsync(Dictionary&lt;String, String&gt;)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.html">Ellucian.Ethos.Integration.Client.Proxy</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EthosFilterQueryClient : EthosProxyClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient__ctor_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient__ctor_System_String_HttpClient_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.#ctor(System.String,HttpClient)">EthosFilterQueryClient(String, HttpClient)</h4>
+  <div class="markdown level1 summary"><p>Instantiates this class using the given API key and HttpClient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosFilterQueryClient(string apiKey, HttpClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>A valid API key from Ethos Integration. This is required to be a valid 36 character GUID string.
+If it is null, empty, or not in a valid GUID format, then an <pre><code>IllegalArgumentException</code></pre> will be thrown.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A HttpClient. If it is null/empty, then an <see cref="!:ArgumentNullException"></see> will be thrown.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_CRITERIA_FILTER_PREFIX" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.CRITERIA_FILTER_PREFIX">CRITERIA_FILTER_PREFIX</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string CRITERIA_FILTER_PREFIX = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_EncodeCriteriaFilterStr_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeCriteriaFilterStr*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_EncodeCriteriaFilterStr_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeCriteriaFilterStr(System.String)">EncodeCriteriaFilterStr(String)</h4>
+  <div class="markdown level1 summary"><p><strong>Used internally by the SDK.</strong></p>
+<p>
+Encodes the given criteriaFilterStr. Supports criteria filter strings that begin with the CRITERIA_FILTER_PREFIX
+value &quot;?criteria=&quot;, and also those that do not. Encodes only the JSON criteria portion of the filter string, removing
+the CRITERIA_FILTER_PREFIX portion if the filter string starts with it. If the filter string does not start with
+the CRITERIA_FILTER_PREFIX, the criteriaFilterStr string is simply encoded.</p>
+<p>Returns a criteria filter string that begins with the CRITERIA_FILTER_PREFIX, with the JSON filter portion of the string
+encoded. Uses UTF-8 encoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string EncodeCriteriaFilterStr(string criteriaFilterStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaFilterStr</span></td>
+        <td><p>The criteria filter string to encode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A criteria filter string beginning with the CRITERIA_FILTER_PREFIX with the JSON filter syntax portion of the
+string encoded in UTF-8.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithCriteriaFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithCriteriaFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.Int32)">GetPagesFromOffsetWithCriteriaFilterAsync(String, CriteriaFilter, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource beginning at the given offset index, using the specified criteria filter.
+The page size is determined to be the length of the returned response of the request using the criteria filter.
+The default version of the resource is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesFromOffsetWithCriteriaFilterAsync(string resourceName, CriteriaFilter criteriaFilter, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>List&lt;EthosResponse&gt;</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithCriteriaFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithCriteriaFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.Int32,System.Int32)">GetPagesFromOffsetWithCriteriaFilterAsync(String, CriteriaFilter, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource beginning at the given offset index, using the specified criteria filter
+and page size for the given version. The default version of the resource is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesFromOffsetWithCriteriaFilterAsync(string resourceName, CriteriaFilter criteriaFilter, int pageSize, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The size (number of rows) of each page returned in the list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>List&lt;EthosResponse&gt;</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithCriteriaFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithCriteriaFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.Int32)">GetPagesFromOffsetWithCriteriaFilterAsync(String, String, CriteriaFilter, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource beginning at the given offset index, using the specified criteria filter
+for the given version. The page size is determined to be the length of the returned response of the request using
+the criteria filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesFromOffsetWithCriteriaFilterAsync(string resourceName, string version, CriteriaFilter criteriaFilter, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>List&lt;EthosResponse&gt;</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithCriteriaFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithCriteriaFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.Int32,System.Int32)">GetPagesFromOffsetWithCriteriaFilterAsync(String, String, CriteriaFilter, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource beginning at the given offset index, using the specified criteria filter
+and page size for the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesFromOffsetWithCriteriaFilterAsync(string resourceName, string version, CriteriaFilter criteriaFilter, int pageSize, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The size (number of rows) of each page returned in the list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>List&lt;EthosResponse&gt;</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithFilterMapAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithFilterMapAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithFilterMapAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterMap_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithFilterMapAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap,System.Int32)">GetPagesFromOffsetWithFilterMapAsync(String, String, FilterMap, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource beginning at the given offset index, using the specified filter map and
+page size for the given version. The page size is determined to be the length of the returned response of the request using
+the filter map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesFromOffsetWithFilterMapAsync(string resourceName, string version, FilterMap filterMap, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.html">FilterMap</a></td>
+        <td><span class="parametername">filterMap</span></td>
+        <td><p>A previously built FilterMap containing the filter parameters used in the request URL.
+A simple call to filterMap.tostring() should output the criteria filter portion of the request URL,
+e.g: <pre><code>?firstName=John&amp;lastName=Smith</code></pre>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>List&lt;EthosResponse&gt;</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithFilterMapAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithFilterMapAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithFilterMapAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterMap_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithFilterMapAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap,System.Int32,System.Int32)">GetPagesFromOffsetWithFilterMapAsync(String, String, FilterMap, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource beginning at the given offset index, using the specified filter map and
+page size for the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesFromOffsetWithFilterMapAsync(string resourceName, string version, FilterMap filterMap, int pageSize, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.html">FilterMap</a></td>
+        <td><span class="parametername">filterMap</span></td>
+        <td><p>A previously built FilterMap containing the filter parameters used in the request URL.
+A simple call to filterMap.tostring() should output the criteria filter portion of the request URL,
+e.g: <pre><code>?firstName=John&amp;lastName=Smith</code></pre>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The size (number of rows) of each page returned in the list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for the given resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>List&lt;EthosResponse&gt;</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithCriteriaFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithCriteriaFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)">GetPagesWithCriteriaFilterAsync(String, CriteriaFilter)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource using the specified criteria filter. Uses the default version of the resource,
+and the page size is derived from the length of the returned response of the request using the criteria filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesWithCriteriaFilterAsync(string resourceName, CriteriaFilter criteriaFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.
+A simple call to criteriaFilter.tostring() should output the criteria filter portion of the request URL,
+e.g: <pre><code>?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithCriteriaFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithCriteriaFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.Int32)">GetPagesWithCriteriaFilterAsync(String, CriteriaFilter, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource using the specified criteria filter and page size. The default version
+of the resource is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesWithCriteriaFilterAsync(string resourceName, CriteriaFilter criteriaFilter, int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The size (number of rows) of each page returned in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithCriteriaFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithCriteriaFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)">GetPagesWithCriteriaFilterAsync(String, String, CriteriaFilter)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource using the specified criteria filter for the given version. Uses the default
+page size, which is the length of the returned response of the request using the criteria filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesWithCriteriaFilterAsync(string resourceName, string version, CriteriaFilter criteriaFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithCriteriaFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithCriteriaFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.Int32)">GetPagesWithCriteriaFilterAsync(String, String, CriteriaFilter, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource using the specified criteria filter and page size for the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesWithCriteriaFilterAsync(string resourceName, string version, CriteriaFilter criteriaFilter, int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The size (number of rows) of each page returned in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>List&lt;EthosResponse&gt;</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithFilterMapAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithFilterMapAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithFilterMapAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterMap_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithFilterMapAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap)">GetPagesWithFilterMapAsync(String, String, FilterMap)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource using the specified filter map and page size for the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesWithFilterMapAsync(string resourceName, string version, FilterMap filterMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.html">FilterMap</a></td>
+        <td><span class="parametername">filterMap</span></td>
+        <td><p>A previously built FilterMap containing the filter parameters used in the request URL.
+A simple call to filterMap.tostring() should output the criteria filter portion of the request URL,
+e.g: <pre><code>?firstName=John&amp;lastName=Smith</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>List&lt;EthosResponse&gt;</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithFilterMapAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithFilterMapAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithFilterMapAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterMap_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithFilterMapAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap,System.Int32)">GetPagesWithFilterMapAsync(String, String, FilterMap, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all the pages for a given resource using the specified filter map and page size for the given version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;EthosResponse&gt;&gt; GetPagesWithFilterMapAsync(string resourceName, string version, FilterMap filterMap, int pageSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.html">FilterMap</a></td>
+        <td><span class="parametername">filterMap</span></td>
+        <td><p>A previously built FilterMap containing the filter parameters used in the request URL.
+A simple call to filterMap.tostring() should output the criteria filter portion of the request URL,
+e.g: <pre><code>?firstName=John&amp;lastName=Smith</code></pre>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pageSize</span></td>
+        <td><p>The size (number of rows) of each page returned in the list.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
+        <td><p>An <pre><code>List&lt;EthosResponse&gt;</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)">GetTotalCountAsync(String, CriteriaFilter)</h4>
+  <div class="markdown level1 summary"><p>Gets the total count of resources available using the given criteriaFilter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetTotalCountAsync(string resourceName, CriteriaFilter criteriaFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of resource instances available when making a GET request using the given criteriaFilter, or 0 if the
+given resourceName or criteriaFilter is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)">GetTotalCountAsync(String, String, CriteriaFilter)</h4>
+  <div class="markdown level1 summary"><p>Gets the total count of resources available using the given criteriaFilter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetTotalCountAsync(string resourceName, string version, CriteriaFilter criteriaFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of resource instances available when making a GET request using the given criteriaFilter, or 0 if the
+given resourceName or criteriaFilter is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterMap_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap)">GetTotalCountAsync(String, String, FilterMap)</h4>
+  <div class="markdown level1 summary"><p>Gets the total count of resources available using the given filterMap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;int&gt; GetTotalCountAsync(string resourceName, string version, FilterMap filterMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.html">FilterMap</a></td>
+        <td><span class="parametername">filterMap</span></td>
+        <td><p>A previously built FilterMap containing the filter parameters used in the request URL.
+A simple call to filterMap.tostring() should output the criteria filter portion of the request URL,
+e.g: <pre><code>?firstName=John&amp;lastName=Smith</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>The number of resource instances available when making a GET request using the given criteriaFilter, or 0 if the
+given resourceName or criteriaFilter is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithCriteriaFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithCriteriaFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)">GetWithCriteriaFilterAsync(String, CriteriaFilter)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name with the given filter. Uses the default version of the resource.
+Makes a non-filter API request if the given criteriaFilter is null.
+param resourceName The name of the resource to get data for.
+param criteriaFilter A previously built CriteriaFilter containing the filter criteria used in the request URL.
+A simple call to criteriaFilter.tostring() should output the criteria filter portion of the request URL,
+e.g: <pre><code>?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}</code></pre>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetWithCriteriaFilterAsync(string resourceName, CriteriaFilter criteriaFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.
+A simple call to criteriaFilter.tostring() should output the criteria filter portion of the request URL,
+e.g: <pre><code>?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithCriteriaFilterAsync_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithCriteriaFilterAsync(System.String,System.String)">GetWithCriteriaFilterAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource with the given filter. Uses the default version of the resource.
+Makes a non-filter API request if the given criteriaFilterStr is null or blank.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetWithCriteriaFilterAsync(string resourceName, string criteriaFilterStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaFilterStr</span></td>
+        <td><p>The string resource filter in JSON format contained in the URL, e.g: <pre>?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}</pre></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according to the requested version and filter of the resource.<br>
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithCriteriaFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithCriteriaFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)">GetWithCriteriaFilterAsync(String, String, CriteriaFilter)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version with the given filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetWithCriteriaFilterAsync(string resourceName, string version, CriteriaFilter criteriaFilter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></td>
+        <td><span class="parametername">criteriaFilter</span></td>
+        <td><p>A previously built CriteriaFilter containing the filter criteria used in the request URL.
+A simple call to criteriaFilter.toString() should output the criteria filter portion of the request URL,
+e.g: <pre><code>?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}</code></pre>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according to the requested version and filter of the resource.<br>
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithCriteriaFilterAsync_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithCriteriaFilterAsync(System.String,System.String,System.String)">GetWithCriteriaFilterAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets a page of data for the given resource by name and version with the given filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetWithCriteriaFilterAsync(string resourceName, string version, string criteriaFilterStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaFilterStr</span></td>
+        <td><p>The string resource filter in JSON format contained in the URL, e.g: <pre>?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}</pre></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according<br>
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithFilterMapAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithFilterMapAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithFilterMapAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterMap_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithFilterMapAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap)">GetWithFilterMapAsync(String, String, FilterMap)</h4>
+  <div class="markdown level1 summary"><p>Submits a GET request for the given resource and version using the given filterMap. The filterMap
+is intended to support the filter syntax for resources versions 7 and older. A FilterMap contains a map of
+one or many filter parameter pair(s).  An example of a filterMap string indicating the contents of the map is:</p>
+<pre><code>?firstName=James</code></pre>.
+<p>This is NOT intended to be used for resource versions after version 7 and/or for criteria filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetWithFilterMapAsync(string resourceName, string version, FilterMap filterMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.html">FilterMap</a></td>
+        <td><span class="parametername">filterMap</span></td>
+        <td><p>A string containing the filter syntax used for request URL filters with resource versions 7 or older.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithFilterMapAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithFilterMapAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithFilterMapAsync_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithFilterMapAsync(System.String,System.String,System.String)">GetWithFilterMapAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Submits a GET request for the given resource and version using the given filterMapStr. The filterMapStr
+is intended to support the filter syntax for resources versions 7 and older. An example of a filterMapStr is:</p>
+<pre><code>?firstName=James</code></pre>.
+<p>This is NOT intended to be used for resource versions after version 7 and/or for criteria filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetWithFilterMapAsync(string resourceName, string version, string filterMapStr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">filterMapStr</span></td>
+        <td><p>A string containing the filter syntax used for request URL filters with resource versions 7 or older.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSingleCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSingleCriteriaFilterAsync_System_String_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(System.String,System.String,System.String,System.String)">GetWithSingleCriteriaFilterAsync(String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Convenience method to submit a GET request with a single set of criteria filter. This is intended only to be used
+for a single set of criteria filter, e.g: <pre><code>?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}</code></pre>, where <strong>names</strong> is the
+criteriaSetName, <strong>firstName</strong> is the criteriaKey, and <strong>John</strong> is the criteriaValue. Requests requiring
+a more complex criteria filter should first build the CriteriaFilter with the necessary criteria, and then call</p>
+<pre><code>getWithCriteriaFilter(resourceName, criteriaFilter)</code></pre>.
+<p>The parameters criteriaSetName, criteriaKey, and criteriaValue should only specify the values within quotes of the
+JSON filter syntax. No JSON syntax (square or angeled braces etc.) should be contained within those parameter values.</p>
+<p>Uses the default version of the resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetWithSingleCriteriaFilterAsync(string resourceName, string criteriaSetName, string criteriaKey, string criteriaValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaSetName</span></td>
+        <td><p>The name of the criteria set that the given criteriaKey and criteriaValue are associated with,
+e.g: &quot;<strong>names</strong>&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}, where <strong>names</strong> is the criteriaSetName associated to the
+criteriaKey (firstName) and criteriaValue (John).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaKey</span></td>
+        <td><p>The JSON label key for the criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaValue</span></td>
+        <td><p>The value associated with the criteriaKey.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSingleCriteriaFilterAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSingleCriteriaFilterAsync_System_String_System_String_System_String_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(System.String,System.String,System.String,System.String,System.String)">GetWithSingleCriteriaFilterAsync(String, String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Convenience method to submit a GET request with a single set of criteria filter. This is intended only to be used
+for a single set of criteria filter, e.g: <pre><code>?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}</code></pre>, where <strong>names</strong> is the
+criteriaSetName, <strong>firstName</strong> is the criteriaKey, and <strong>John</strong> is the criteriaValue. Requests requiring
+a more complex criteria filter should first build the CriteriaFilter with the necessary criteria, and then call</p>
+<pre><code>getWithCriteriaFilter(resourceName, version, criteriaFilter)</code></pre>.
+<p>The parameters criteriaSetName, criteriaKey, and criteriaValue should only specify the values within quotes of the
+JSON filter syntax. No JSON syntax (square or angeled braces, etc) should be contained within those parameter values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;EthosResponse&gt; GetWithSingleCriteriaFilterAsync(string resourceName, string version, string criteriaSetName, string criteriaKey, string criteriaValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get data for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired resource version header to use, as provided in the HTTP Accept Header of the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaSetName</span></td>
+        <td><p>The name of the criteria set that the given criteriaKey and criteriaValue are associated with,
+e.g: &quot;<strong>names</strong>&quot;:[{&quot;firstName&quot;:&quot;John&quot;}]}, where <strong>names</strong> is the criteriaSetName associated to the
+criteriaKey (firstName) and criteriaValue (John).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaKey</span></td>
+        <td><p>The JSON label key for the criteria.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">criteriaValue</span></td>
+        <td><p>The value associated with the criteriaKey.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><p>An <pre><code>EthosResponse</code></pre> containing an initial page (EthosResponse content) of resource data according
+to the requested version and filter of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_PrepareForPagingAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.PrepareForPagingAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_PrepareForPagingAsync_Ellucian_Ethos_Integration_Client_Proxy_Pager_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.PrepareForPagingAsync(Ellucian.Ethos.Integration.Client.Proxy.Pager)">PrepareForPagingAsync(Pager)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally within the SDK.</strong>
+</p>
+Overrides the <pre><code>prepareForPaging()</code></pre> method in the EthosProxyClient super class.
+<p>
+Uses the given pager object to prepare for paging operations. The pager object is used to contain various
+fields required for paging. If the given pager is null, returns the same pager. Sets default values for the
+version and offset within the pager as needed and makes an initial resource call using the provided pager filter
+to get metadata about the resource used for paging. Also sets the page size and the total count within the pager,
+and encodes the filter within the pager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;Pager&gt; PrepareForPagingAsync(Pager pager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><span class="parametername">pager</span></td>
+        <td><p>The Pager object used holding the required fields for paging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a>&gt;</td>
+        <td><p>The same pager object with the version and offset validated, the page size and total count set, and the filter encoded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_PreparePagerForPageSize_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.PreparePagerForPageSize*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_PreparePagerForPageSize_Ellucian_Ethos_Integration_Client_Proxy_Pager_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.PreparePagerForPageSize(Ellucian.Ethos.Integration.Client.Proxy.Pager)">PreparePagerForPageSize(Pager)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally by the SDK.</strong></p>
+<p>
+If the page size specified in the pager is &lt;= DEFAULT_PAGE_SIZE, then this method prepares the pager object for the
+page size required for paging calculations. The page size is derived from the response body length after making an initial request using filters
+(in this case). If the response is null, the DEFAULT_MAX_PAGE_SIZE is used. If the response body is null, the
+x-max-page-size header is used.</p>
+<p>If the page size specified in the pager is > DEFAULT_PAGE_SIZE, this method does nothing and just returns the given pager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Pager PreparePagerForPageSize(Pager pager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><span class="parametername">pager</span></td>
+        <td><p>The pager object used to contain the page size for paging operations.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>The pager object containing the page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_PreparePagerForTotalCountAsync_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.PreparePagerForTotalCountAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_PreparePagerForTotalCountAsync_Ellucian_Ethos_Integration_Client_Proxy_Pager_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.PreparePagerForTotalCountAsync(Ellucian.Ethos.Integration.Client.Proxy.Pager)">PreparePagerForTotalCountAsync(Pager)</h4>
+  <div class="markdown level1 summary"><p><strong>Intended to be used internally by the SDK.</strong></p>
+<p>Prepares the pager object for the total count required for paging calculations.
+The total count is derived from the response x-total-count header after making an initial request using filters</p>
+(in this case).
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Task&lt;Pager&gt; PreparePagerForTotalCountAsync(Pager pager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><span class="parametername">pager</span></td>
+        <td><p>The Pager object used holding the required fields for paging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a>&gt;</td>
+        <td><p>The pager object containing the total count. If neither a criteria filter nor a filter map is specified
+in the pager, then the total count will be 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

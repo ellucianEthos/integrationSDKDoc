@@ -1,0 +1,896 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EthosResponseConverter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EthosResponseConverter
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter" class="text-break">Class EthosResponseConverter
+  </h1>
+  <div class="markdown level0 summary"><p>Converter class extending the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html">EthosResponseBuilder</a>, the primary purpose of which is to handle manipulation
+of the response body content for paging calculations, such as trimming the response body content for a given offset or
+number of rows.Also converts an <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to <see cref="!:System.String"></see> format.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html">EthosResponseBuilder</a></div>
+    <div class="level2"><span class="xref">EthosResponseConverter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html#Ellucian_Ethos_Integration_Client_EthosResponseBuilder_BuildEthosResponseAsync_HttpResponseMessage_">EthosResponseBuilder.BuildEthosResponseAsync(HttpResponseMessage)</a>
+    </div>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html#Ellucian_Ethos_Integration_Client_EthosResponseBuilder_BuildHeaderDictionary_HttpResponseHeaders_">EthosResponseBuilder.BuildHeaderDictionary(HttpResponseHeaders)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Client.html">Ellucian.Ethos.Integration.Client</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EthosResponseConverter : EthosResponseBuilder</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_CopyHeaders_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.CopyHeaders*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_CopyHeaders_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.CopyHeaders(Ellucian.Ethos.Integration.Client.EthosResponse)">CopyHeaders(EthosResponse)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of the headers map from the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>. Uses the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_Headers">Headers</a>
+in the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html">EthosResponseBuilder</a> class to copy headers into the returned headers map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HttpResponseHeaders CopyHeaders(EthosResponse sourceResponse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">sourceResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpResponseHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ParamsValid_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ParamsValid*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ParamsValid_Ellucian_Ethos_Integration_Client_EthosResponse_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ParamsValid(Ellucian.Ethos.Integration.Client.EthosResponse,System.Int32)">ParamsValid(EthosResponse, Int32)</h4>
+  <div class="markdown level1 summary"><p>Validates whether the given params are valid. If the given <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> is not null, and
+contains content that is not null or empty, and if the positiveParam( which is intended to be either the offset
+or numRows ) is not less than 0 (positive), then returns true. Otherwise returns false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ParamsValid(EthosResponse sourceResponse, int positiveParam)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">sourceResponse</span></td>
+        <td><p>The <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to validate the content for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">positiveParam</span></td>
+        <td><p>Should be either the offset or numRows as called from other methods.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>False if the given <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> is null, or contains null or empty content, or if the
+positive param is less than 0, true otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToCNList_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToCNList*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToCNList_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToCNList(Ellucian.Ethos.Integration.Client.EthosResponse)">ToCNList(EthosResponse)</h4>
+  <div class="markdown level1 summary"><p>Converts the given ethosResponse to a list of ChangeNotification object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ChangeNotification&gt; ToCNList(EthosResponse ethosResponse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>The EthosResponse to convert containing content for the ChangeNotifications.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>&gt;</td>
+        <td><p>A list of ChangeNotifications from the content of the given ethosResponse,
+or null if the ethosResponse is null or it's content is null or blank.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToContentString_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToContentString*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToContentString_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToContentString(Ellucian.Ethos.Integration.Client.EthosResponse)">ToContentString(EthosResponse)</h4>
+  <div class="markdown level1 summary"><p>Returns the content body of the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>, or null if the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> is null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToContentString(EthosResponse ethosResponse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>The <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to get the content body from.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The content body of the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToEthosErrorList_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToEthosErrorList*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToEthosErrorList_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToEthosErrorList(Ellucian.Ethos.Integration.Client.EthosResponse)">ToEthosErrorList(EthosResponse)</h4>
+  <div class="markdown level1 summary"><p>Converts an ethosResponse to a list of EthosError objects. The given ethosResponse.getContent() should contain
+an entire page of errors as an errors array in JSON format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;EthosError&gt; ToEthosErrorList(EthosResponse ethosResponse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>The EthosResponse to convert containing content for a page of EthosErrors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.EthosError.html">EthosError</a>&gt;</td>
+        <td><p>An IEnumerable of EthosErrors from the content of the given ethosResponse, or an empty list if the ethosResponse
+is null or it's content is null or blank.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToJArray_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToJArray*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToJArray_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToJArray(Ellucian.Ethos.Integration.Client.EthosResponse)">ToJArray(EthosResponse)</h4>
+  <div class="markdown level1 summary"><p>Returns a <see cref="!:JArray"></see> representation of the content body of the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JArray ToJArray(EthosResponse ethosResponse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>The given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to convert to a <see cref="!:JObject"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JArray</span></td>
+        <td><p>A <see cref="!:JObject"></see> containing the content body of the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToJArray_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToJArray*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToJArray_IEnumerable_Ellucian_Ethos_Integration_Client_EthosResponse__" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToJArray(IEnumerable{Ellucian.Ethos.Integration.Client.EthosResponse})">ToJArray(IEnumerable&lt;EthosResponse&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converts the given list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> objects into a <see cref="!:JArray"></see>, where
+each item in the array is a single resource.  This combines all the pages of data from each response object
+into a top-level array of resources.
+It is expected that the EthosResponse objects have a content in a JSON array format.  If the response is not a JSON array, an
+exception will be thrown while trying to deserialize it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JArray ToJArray(IEnumerable&lt;EthosResponse&gt; ethosResponseList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><span class="parametername">ethosResponseList</span></td>
+        <td><p>The list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> objects to convert to a <see cref="!:JArray"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JArray</span></td>
+        <td><p>a <see cref="!:JArray"></see> where each item in the array is a single resource, or an empty list
+if the given ethosResponseList is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToJArrayList_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToJArrayList*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToJArrayList_IEnumerable_Ellucian_Ethos_Integration_Client_EthosResponse__" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToJArrayList(IEnumerable{Ellucian.Ethos.Integration.Client.EthosResponse})">ToJArrayList(IEnumerable&lt;EthosResponse&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converts the given list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> objects into a list of <see cref="!:JArray"></see>, where
+each <see cref="!:JArray"></see> in the list contains the content body of the given<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> in the
+ethosResponseList.
+The expectation is that each EthosResponse in the given list contains a page
+of resources, and therefore each JArray in the returned list contains that same page of resources as a JArray.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;JArray&gt; ToJArrayList(IEnumerable&lt;EthosResponse&gt; ethosResponseList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><span class="parametername">ethosResponseList</span></td>
+        <td><p>The list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> objects to convert to a list of <see cref="!:JArray"></see></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">JArray</span>&gt;</td>
+        <td><p>A list of <see cref="!:JArray"></see> where each <see cref="!:JArray"></see> in the list contains a page of resources from the
+corresponding <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> object in the ethosResponseList, or an empty list
+if the given ethosResponseList is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToJObjectSingle_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToJObjectSingle*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToJObjectSingle_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToJObjectSingle(Ellucian.Ethos.Integration.Client.EthosResponse)">ToJObjectSingle(EthosResponse)</h4>
+  <div class="markdown level1 summary"><p>Returns a <see cref="!:JObject"></see> representation of the content body of the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JObject ToJObjectSingle(EthosResponse ethosResponse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>The given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to convert to a <see cref="!:JObject"></see>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">JObject</span></td>
+        <td><p>A <see cref="!:JObject"></see> containing the content body of the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToPagedStringList_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToPagedStringList*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToPagedStringList_IEnumerable_Ellucian_Ethos_Integration_Client_EthosResponse__" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToPagedStringList(IEnumerable{Ellucian.Ethos.Integration.Client.EthosResponse})">ToPagedStringList(IEnumerable&lt;EthosResponse&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converts the given list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> objects into a list of <see cref="!:System.String"></see>, where
+each <see cref="!:System.String"></see> in the list is the content body of the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> in the
+ethosResponseList.
+The expectation is that each EthosResponse in the given list contains a page
+of resources, and therefore each String in the returned list contains that same page of resources as a String.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ToPagedStringList(IEnumerable&lt;EthosResponse&gt; ethosResponseList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><span class="parametername">ethosResponseList</span></td>
+        <td><p>The list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> objects to convert to a list of <see cref="!:System.String"></see>(s).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>a list of <see cref="!:System.String"></see> where each <see cref="!:System.String"></see> in the list contains a page of resources from the
+corresponding <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> object in the ethosResponseList, or an empty list
+if the given ethosResponseList is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToSingleEthosError_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToSingleEthosError*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToSingleEthosError_Ellucian_Ethos_Integration_Client_EthosResponse_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToSingleEthosError(Ellucian.Ethos.Integration.Client.EthosResponse)">ToSingleEthosError(EthosResponse)</h4>
+  <div class="markdown level1 summary"><p>Converts an EthosResponse to an EthosError object. The given ethosResponse.Content should contain
+data for only a single error, and not an entire page of errors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosError ToSingleEthosError(EthosResponse ethosResponse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>An EthosError from the content of the given ethosResponse, or null if the ethosResponse is
+null or its content is null or blank.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.EthosError.html">EthosError</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToStringList_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToStringList*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_ToStringList_IEnumerable_Ellucian_Ethos_Integration_Client_EthosResponse__" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.ToStringList(IEnumerable{Ellucian.Ethos.Integration.Client.EthosResponse})">ToStringList(IEnumerable&lt;EthosResponse&gt;)</h4>
+  <div class="markdown level1 summary"><p>Converts the given list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> objects into a list of <see cref="!:System.String"></see>, where
+each <see cref="!:System.String"></see> in the list is a single resource.  This combines all the pages of data from each response object
+into a top-level list of resources.
+It is expected that the EthosResponse objects have a content in a JSON array format.  If the response is not a JSON array, an
+exception will be thrown while trying to deserialize it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ToStringList(IEnumerable&lt;EthosResponse&gt; ethosResponseList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
+        <td><span class="parametername">ethosResponseList</span></td>
+        <td><p>The list of <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> objects to convert to a list of <see cref="!:System.String"></see>(s).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>a list of <see cref="!:System.String"></see> where each <see cref="!:System.String"></see> in the list is a single resource, or an empty list
+if the given ethosResponseList is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_TrimContentForNumRows_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.TrimContentForNumRows*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_TrimContentForNumRows_Ellucian_Ethos_Integration_Client_EthosResponse_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.TrimContentForNumRows(Ellucian.Ethos.Integration.Client.EthosResponse,System.Int32)">TrimContentForNumRows(EthosResponse, Int32)</h4>
+  <div class="markdown level1 summary"><p>Takes the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> and trims it's content for the given number of rows.<br>
+For example, if the given content contains 10 rows, and numRows is 7, the returned <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> content will
+contain rows 0 through 6 (for a total of 7) of the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> content. The returned <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>
+will also contain the headers and Http status code from the given <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosResponse TrimContentForNumRows(EthosResponse sourceResponse, int numRows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">sourceResponse</span></td>
+        <td><p>The <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to trim content for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td><p>The number of rows to trim the content for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><p>An <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> containing the same content as the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>, minus the rows
+in the<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> which occur after numRows - 1. The returned <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>
+will also contain the headers and Http status code from the given<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>. If the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>
+is null, if the<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> content is null or empty, or if the numRows is negative, the original
+<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> will be returned unchanged.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_TrimContentFromOffset_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.TrimContentFromOffset*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_TrimContentFromOffset_Ellucian_Ethos_Integration_Client_EthosResponse_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.TrimContentFromOffset(Ellucian.Ethos.Integration.Client.EthosResponse,System.Int32)">TrimContentFromOffset(EthosResponse, Int32)</h4>
+  <div class="markdown level1 summary"><p>Takes the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> and trims it's content from the given offset. For example,
+if the given content contains 10 rows, and the offset is 3, the returned <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> content will
+contain rows 3 through the end of the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> content.
+The returned <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> will also contain the headers and Http status code from the given <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosResponse TrimContentFromOffset(EthosResponse sourceResponse, int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">sourceResponse</span></td>
+        <td><p>The <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to trim content for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The offset (row num) from which to begin trimming content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><p>An <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> containing the same content as the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>, minus the rows
+in the<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> which occurred before the given offset. The returned <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>
+will also contain the headers and Http status code from the given<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>. If the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>
+is null, if the<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> content is null or empty, or if the offset is negative, the original
+<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> will be returned unchanged.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_TrimContentFromOffsetForNumRows_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.TrimContentFromOffsetForNumRows*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseConverter_TrimContentFromOffsetForNumRows_Ellucian_Ethos_Integration_Client_EthosResponse_System_Int32_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseConverter.TrimContentFromOffsetForNumRows(Ellucian.Ethos.Integration.Client.EthosResponse,System.Int32,System.Int32)">TrimContentFromOffsetForNumRows(EthosResponse, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Takes the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> and trims it's content from the given offset for the given number of rows. For example,
+if the given content contains 10 rows, the offset is 3, and numRows is 7, the returned<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> content will
+contain rows 3 through 6 (for a total of 4) of the<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> content.
+The returned <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> will also contain the headers and Http status code from the given <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosResponse TrimContentFromOffsetForNumRows(EthosResponse sourceResponse, int offset, int numRows)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">sourceResponse</span></td>
+        <td><p>The <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> to trim content for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The offset (row num) from which to begin trimming content.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numRows</span></td>
+        <td><p>The number of rows to trim the content for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><p>An <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> containing the same content as the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>, minus the rows
+in the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> which occur before the offset and after numRows - 1. The returned <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>
+will also contain the headers and Http status code from the given <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>. If the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>
+is null, if the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> content is null or empty, or if the offset is negative, the original
+<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> will be returned unchanged. If the offset is positive but the numRows is negative, then the
+<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> will contain the same content as the <code data-dev-comment-type="paramref" class="paramref">sourceResponse</code>, minus the rows in the
+<code data-dev-comment-type="paramref" class="paramref">sourceResponse</code> which occur before the offset, just as what <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseConverter.html#Ellucian_Ethos_Integration_Client_EthosResponseConverter_TrimContentFromOffset_Ellucian_Ethos_Integration_Client_EthosResponse_System_Int32_">TrimContentFromOffset(EthosResponse, Int32)</a> returns.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

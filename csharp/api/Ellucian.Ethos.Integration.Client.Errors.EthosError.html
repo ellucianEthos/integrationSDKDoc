@@ -1,0 +1,691 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EthosError
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EthosError
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Client_Errors_EthosError" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError" class="text-break">Class EthosError
+  </h1>
+  <div class="markdown level0 summary"><p>An Ellucian Ethos Integration Error object.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EthosError</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.html">Ellucian.Ethos.Integration.Client.Errors</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EthosError : object</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError__ctor_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError__ctor_System_String_System_String_System_Int32_System_String_System_String_System_String_System_String_System_String_System_String_System_String_Ellucian_Ethos_Integration_Client_Errors_Resource_Ellucian_Ethos_Integration_Client_Errors_Request_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.#ctor(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,Ellucian.Ethos.Integration.Client.Errors.Resource,Ellucian.Ethos.Integration.Client.Errors.Request)">EthosError(String, String, Int32, String, String, String, String, String, String, String, Resource, Request)</h4>
+  <div class="markdown level1 summary"><p>An Ellucian Ethos Integration Error object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosError(string id, string severity, int responseCode, string description, string details, string applicationId, string applicationName, string dateTime, string correlationId, string applicationSubType, Resource resource, Request request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>A GUID for this error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">severity</span></td>
+        <td><p>(required) The severity of this error. This should be one of info, warning, or error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">responseCode</span></td>
+        <td><p>(required) An integer response code associated with this error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">description</span></td>
+        <td><p>(required) A description for this error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">details</span></td>
+        <td><p>A detailed message for this error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">applicationId</span></td>
+        <td><p>The ID of the application reporting this error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">applicationName</span></td>
+        <td><p>The name of the application reporting this error.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dateTime</span></td>
+        <td><p>The Date that the error occurred.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">correlationId</span></td>
+        <td><p>The id of the original operation (event or message) to which this error can be traced.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">applicationSubType</span></td>
+        <td><p>The sub-type of the application reporting this error. This could be used to describe a sub-system</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.Resource.html">Resource</a></td>
+        <td><span class="parametername">resource</span></td>
+        <td><p>The Resource associated with this error</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.Request.html">Request</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The Request that caused this error</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_description" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.description">description</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string description</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ErrorLevel" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ErrorLevel">ErrorLevel</h4>
+  <div class="markdown level1 summary"><p>The Error level severity for an Error object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ErrorLevel = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_InfoLevel" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.InfoLevel">InfoLevel</h4>
+  <div class="markdown level1 summary"><p>The Info level severity for an Error object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string InfoLevel = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_severity" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.severity">severity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string severity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_WarningLevel" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.WarningLevel">WarningLevel</h4>
+  <div class="markdown level1 summary"><p>The Warning level severity for an Error object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string WarningLevel = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ApplicationId_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ApplicationId*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ApplicationId" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ApplicationId">ApplicationId</h4>
+  <div class="markdown level1 summary"><p>Get the ID of the application that reported the error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApplicationId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ApplicationName_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ApplicationName*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ApplicationName" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ApplicationName">ApplicationName</h4>
+  <div class="markdown level1 summary"><p>Get the name of the application that reported the error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApplicationName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ApplicationSubType_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ApplicationSubType*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ApplicationSubType" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ApplicationSubType">ApplicationSubType</h4>
+  <div class="markdown level1 summary"><p>Get the sub-type of the application that reported the error. This could be used to describe a sub-system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApplicationSubType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_CorrelationId_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.CorrelationId*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_CorrelationId" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.CorrelationId">CorrelationId</h4>
+  <div class="markdown level1 summary"><p>Get the correlation ID for this error. This is the ID of the original operation (event or message) to which this error can be traced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CorrelationId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_DateTime_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.DateTime*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_DateTime" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.DateTime">DateTime</h4>
+  <div class="markdown level1 summary"><p>Get the date and time that the error was reported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DateTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Description_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Description*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Description" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Description">Description</h4>
+  <div class="markdown level1 summary"><p>Get the description for this error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Description { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Details_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Details*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Details" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Details">Details</h4>
+  <div class="markdown level1 summary"><p>Get the detailed message for this error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Details { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Id_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Id*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Id" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Get the ID for this error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Request_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Request*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Request" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Request">Request</h4>
+  <div class="markdown level1 summary"><p>Get original request that caused the error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Request Request { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.Request.html">Request</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Resource_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Resource*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Resource" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Resource">Resource</h4>
+  <div class="markdown level1 summary"><p>Get the resource associated with this error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Resource Resource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.Resource.html">Resource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ResponseCode_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ResponseCode*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ResponseCode" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ResponseCode">ResponseCode</h4>
+  <div class="markdown level1 summary"><p>Get the response code associated with this error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ResponseCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Severity_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Severity*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_Severity" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.Severity">Severity</h4>
+  <div class="markdown level1 summary"><p>Get the Severity for the error. This should be one of info, warning, or error.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Severity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ToString_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ToString*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosError_ToString" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosError.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Get the Error object as a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>JSON string for the error object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
