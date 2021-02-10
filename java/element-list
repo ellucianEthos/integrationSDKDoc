@@ -6,4 +6,5 @@ com.ellucian.ethos.integration.client.errors
 com.ellucian.ethos.integration.client.messages
 com.ellucian.ethos.integration.client.proxy
 com.ellucian.ethos.integration.client.proxy.filter
-com.ellucian.ethos.integration.sample.commandline
+com.ellucian.ethos.integration.notification
+com.ellucian.ethos.integration.service
