@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Ellucian.Ethos.Integration.Notification
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Ellucian.Ethos.Integration.Notification
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Notification">
+  
+  <h1 id="Ellucian_Ethos_Integration_Notification" data-uid="Ellucian.Ethos.Integration.Notification" class="text-break">Namespace Ellucian.Ethos.Integration.Notification
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html">AbstractEthosChangeNotificationSubscriber&lt;T&gt;</a></h4>
+      <section><p>This is an abstract class implements an <see cref="!:IObserver&lt;T>"></see> interface. The methods <a class="xref" href="Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnChangeNotification__0_">OnChangeNotification(T)</a> and <a class="xref" href="Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnChangeNotificationError_Exception_">OnChangeNotificationError(Exception)</a>
+are to be implemented in the client application.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.html">AbstractEthosNotificationPollService</a></h4>
+      <section><p>Abstract class for change notification.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html">AbstractEthosNotificationSubscription&lt;T&gt;</a></h4>
+      <section><p>Abstract class for change notification. It implements the <see cref="!:IObservable&lt;T>"></see> interface.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.Unsubscriber.html">AbstractEthosNotificationSubscription&lt;T&gt;.Unsubscriber</a></h4>
+      <section><p>An IDisposable implementation that enables observers to stop receiving notifications.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html">EthosChangeNotificationListPollService</a></h4>
+      <section><p>Service for distributing Ethos ChangeNotifications retrieved from Ethos Integration. An instance of this class should be used to subscribe client application
+ChangeNotification subscribers implements <see cref="!:IObservable&lt;T>"></see> where T is <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>. Service class used for retrieving ChangeNotifications.
+Uses the <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a> and <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a> to do so. If a specific version of a resource is requested for change notifications,
+this service will retrieve the desired version of the resource and return the content of that resource (and version) in the
+corresponding change notification. For example, if persons v12 is requested but the change notification retrieved is for
+persons v8, this service will retrieve persons v12 and replace the content in the persons v8 notification with the content
+of persons v12.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.html">EthosChangeNotificationListSubscription</a></h4>
+      <section><p>Subscription for list of ChangeNotifications processing.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html">EthosChangeNotificationPollService</a></h4>
+      <section><p>Service for distributing Ethos ChangeNotifications retrieved from Ethos Integration. An instance of this class should be used to subscribe client application
+ChangeNotification subscribers implements <see cref="!:IObservable&lt;T>"></see> where T is <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>. Service class used for retrieving ChangeNotifications.
+Uses the <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a> and <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a> to do so. If a specific version of a resource is requested for change notifications,
+this service will retrieve the desired version of the resource and return the content of that resource (and version) in the
+corresponding change notification. For example, if persons v12 is requested but the change notification retrieved is for
+persons v8, this service will retrieve persons v12 and replace the content in the persons v8 notification with the content
+of persons v12.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.html">EthosChangeNotificationSubscription</a></h4>
+      <section><p>Subscription for ChangeNotification processing. This subscription runs in a separate thread as configured by the scheduledExecutorService.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.html">EthosChangeNotificationSubscriptionException</a></h4>
+      <section><p>A RuntimeException that can be throws during subscription processing for ChangeNotifications.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

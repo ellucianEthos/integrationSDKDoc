@@ -465,6 +465,19 @@ references:
   commentId: F:Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.ethosResponseConverter
   fullName: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.ethosResponseConverter
   nameWithType: EthosErrorsClient.ethosResponseConverter
+- uid: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync
+  name: GetAllErrorsAsEthosErrorsAsync()
+  href: api/Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html#Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsEthosErrorsAsync
+  commentId: M:Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync
+  fullName: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync()
+  nameWithType: EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync()
+- uid: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync*
+  name: GetAllErrorsAsEthosErrorsAsync
+  href: api/Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html#Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsEthosErrorsAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync
+  nameWithType: EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync
 - uid: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsJArrayAsync
   name: GetAllErrorsAsJArrayAsync()
   href: api/Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html#Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsJArrayAsync
@@ -543,6 +556,19 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsWithPageSizeAsync
   nameWithType: EthosErrorsClient.GetAllErrorsWithPageSizeAsync
+- uid: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsEthosErrorsAsync
+  name: GetAsEthosErrorsAsync()
+  href: api/Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html#Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsEthosErrorsAsync
+  commentId: M:Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsEthosErrorsAsync
+  fullName: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsEthosErrorsAsync()
+  nameWithType: EthosErrorsClient.GetAsEthosErrorsAsync()
+- uid: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsEthosErrorsAsync*
+  name: GetAsEthosErrorsAsync
+  href: api/Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html#Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsEthosErrorsAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsEthosErrorsAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsEthosErrorsAsync
+  nameWithType: EthosErrorsClient.GetAsEthosErrorsAsync
 - uid: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsJArrayAsync
   name: GetAsJArrayAsync()
   href: api/Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html#Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsJArrayAsync
@@ -634,6 +660,19 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetByIdAsync
   nameWithType: EthosErrorsClient.GetByIdAsync
+- uid: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync(System.Int32)
+  name: GetErrorsFromOffsetAsEthosErrorsAsync(Int32)
+  href: api/Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html#Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsEthosErrorsAsync_System_Int32_
+  commentId: M:Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync(System.Int32)
+  fullName: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync(System.Int32)
+  nameWithType: EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync(Int32)
+- uid: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync*
+  name: GetErrorsFromOffsetAsEthosErrorsAsync
+  href: api/Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html#Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsEthosErrorsAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync
+  nameWithType: EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync
 - uid: Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsJArrayAsync(System.Int32)
   name: GetErrorsFromOffsetAsJArrayAsync(Int32)
   href: api/Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.html#Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsJArrayAsync_System_Int32_
@@ -1209,6 +1248,19 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosFilterQueryClient
   nameWithType: EthosClientBuilder.BuildEthosFilterQueryClient
+- uid: Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosMessagesClient
+  name: BuildEthosMessagesClient()
+  href: api/Ellucian.Ethos.Integration.Client.EthosClientBuilder.html#Ellucian_Ethos_Integration_Client_EthosClientBuilder_BuildEthosMessagesClient
+  commentId: M:Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosMessagesClient
+  fullName: Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosMessagesClient()
+  nameWithType: EthosClientBuilder.BuildEthosMessagesClient()
+- uid: Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosMessagesClient*
+  name: BuildEthosMessagesClient
+  href: api/Ellucian.Ethos.Integration.Client.EthosClientBuilder.html#Ellucian_Ethos_Integration_Client_EthosClientBuilder_BuildEthosMessagesClient_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosMessagesClient
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosMessagesClient
+  nameWithType: EthosClientBuilder.BuildEthosMessagesClient
 - uid: Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosProxyClient
   name: BuildEthosProxyClient()
   href: api/Ellucian.Ethos.Integration.Client.EthosClientBuilder.html#Ellucian_Ethos_Integration_Client_EthosClientBuilder_BuildEthosProxyClient
@@ -1228,19 +1280,6 @@ references:
   commentId: F:Ellucian.Ethos.Integration.Client.EthosClientBuilder.ConnectionTimeout
   fullName: Ellucian.Ethos.Integration.Client.EthosClientBuilder.ConnectionTimeout
   nameWithType: EthosClientBuilder.ConnectionTimeout
-- uid: Ellucian.Ethos.Integration.Client.EthosClientBuilder.GetEthosMessagesClient
-  name: GetEthosMessagesClient()
-  href: api/Ellucian.Ethos.Integration.Client.EthosClientBuilder.html#Ellucian_Ethos_Integration_Client_EthosClientBuilder_GetEthosMessagesClient
-  commentId: M:Ellucian.Ethos.Integration.Client.EthosClientBuilder.GetEthosMessagesClient
-  fullName: Ellucian.Ethos.Integration.Client.EthosClientBuilder.GetEthosMessagesClient()
-  nameWithType: EthosClientBuilder.GetEthosMessagesClient()
-- uid: Ellucian.Ethos.Integration.Client.EthosClientBuilder.GetEthosMessagesClient*
-  name: GetEthosMessagesClient
-  href: api/Ellucian.Ethos.Integration.Client.EthosClientBuilder.html#Ellucian_Ethos_Integration_Client_EthosClientBuilder_GetEthosMessagesClient_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.EthosClientBuilder.GetEthosMessagesClient
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.EthosClientBuilder.GetEthosMessagesClient
-  nameWithType: EthosClientBuilder.GetEthosMessagesClient
 - uid: Ellucian.Ethos.Integration.Client.EthosClientBuilder.WithConnectionTimeout(System.Int32)
   name: WithConnectionTimeout(Int32)
   href: api/Ellucian.Ethos.Integration.Client.EthosClientBuilder.html#Ellucian_Ethos_Integration_Client_EthosClientBuilder_WithConnectionTimeout_System_Int32_
@@ -1266,15 +1305,6 @@ references:
   commentId: M:Ellucian.Ethos.Integration.Client.EthosResponse.#ctor(HttpResponseHeaders,System.String,System.Int32)
   fullName: Ellucian.Ethos.Integration.Client.EthosResponse.EthosResponse(HttpResponseHeaders, System.String, System.Int32)
   nameWithType: EthosResponse.EthosResponse(HttpResponseHeaders, String, Int32)
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.#ctor(System.Int32,System.String,Dictionary{System.String,System.String})
-  name: EthosResponse(Int32, String, Dictionary<String, String>)
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse__ctor_System_Int32_System_String_Dictionary_System_String_System_String__
-  commentId: M:Ellucian.Ethos.Integration.Client.EthosResponse.#ctor(System.Int32,System.String,Dictionary{System.String,System.String})
-  name.vb: EthosResponse(Int32, String, Dictionary(Of String, String))
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.EthosResponse(System.Int32, System.String, Dictionary<System.String, System.String>)
-  fullName.vb: Ellucian.Ethos.Integration.Client.EthosResponse.EthosResponse(System.Int32, System.String, Dictionary(Of System.String, System.String))
-  nameWithType: EthosResponse.EthosResponse(Int32, String, Dictionary<String, String>)
-  nameWithType.vb: EthosResponse.EthosResponse(Int32, String, Dictionary(Of String, String))
 - uid: Ellucian.Ethos.Integration.Client.EthosResponse.#ctor*
   name: EthosResponse
   href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse__ctor_
@@ -1334,67 +1364,6 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.EthosResponse.GetHeaderMapKeys
   nameWithType: EthosResponse.GetHeaderMapKeys
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_APPLICATION_CONTEXT
-  name: HDR_APPLICATION_CONTEXT
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_HDR_APPLICATION_CONTEXT
-  commentId: F:Ellucian.Ethos.Integration.Client.EthosResponse.HDR_APPLICATION_CONTEXT
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_APPLICATION_CONTEXT
-  nameWithType: EthosResponse.HDR_APPLICATION_CONTEXT
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_CONTENT_TYPE
-  name: HDR_CONTENT_TYPE
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_HDR_CONTENT_TYPE
-  commentId: F:Ellucian.Ethos.Integration.Client.EthosResponse.HDR_CONTENT_TYPE
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_CONTENT_TYPE
-  nameWithType: EthosResponse.HDR_CONTENT_TYPE
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_DATE
-  name: HDR_DATE
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_HDR_DATE
-  commentId: F:Ellucian.Ethos.Integration.Client.EthosResponse.HDR_DATE
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_DATE
-  nameWithType: EthosResponse.HDR_DATE
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID
-  name: HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID
-  commentId: F:Ellucian.Ethos.Integration.Client.EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID
-  nameWithType: EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME
-  name: HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME
-  commentId: F:Ellucian.Ethos.Integration.Client.EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME
-  nameWithType: EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_MAX_PAGE_SIZE
-  name: HDR_X_MAX_PAGE_SIZE
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_HDR_X_MAX_PAGE_SIZE
-  commentId: F:Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_MAX_PAGE_SIZE
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_MAX_PAGE_SIZE
-  nameWithType: EthosResponse.HDR_X_MAX_PAGE_SIZE
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_MEDIA_TYPE
-  name: HDR_X_MEDIA_TYPE
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_HDR_X_MEDIA_TYPE
-  commentId: F:Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_MEDIA_TYPE
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_MEDIA_TYPE
-  nameWithType: EthosResponse.HDR_X_MEDIA_TYPE
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_TOTAL_COUNT
-  name: HDR_X_TOTAL_COUNT
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_HDR_X_TOTAL_COUNT
-  commentId: F:Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_TOTAL_COUNT
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_TOTAL_COUNT
-  nameWithType: EthosResponse.HDR_X_TOTAL_COUNT
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.Headers
-  name: Headers
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_Headers
-  commentId: P:Ellucian.Ethos.Integration.Client.EthosResponse.Headers
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.Headers
-  nameWithType: EthosResponse.Headers
-- uid: Ellucian.Ethos.Integration.Client.EthosResponse.Headers*
-  name: Headers
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_Headers_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.EthosResponse.Headers
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponse.Headers
-  nameWithType: EthosResponse.Headers
 - uid: Ellucian.Ethos.Integration.Client.EthosResponse.HeadersMap
   name: HeadersMap
   href: api/Ellucian.Ethos.Integration.Client.EthosResponse.html#Ellucian_Ethos_Integration_Client_EthosResponse_HeadersMap
@@ -1453,19 +1422,6 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.EthosResponseBuilder.BuildEthosResponseAsync
   nameWithType: EthosResponseBuilder.BuildEthosResponseAsync
-- uid: Ellucian.Ethos.Integration.Client.EthosResponseBuilder.BuildHeaderDictionary(HttpResponseHeaders)
-  name: BuildHeaderDictionary(HttpResponseHeaders)
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html#Ellucian_Ethos_Integration_Client_EthosResponseBuilder_BuildHeaderDictionary_HttpResponseHeaders_
-  commentId: M:Ellucian.Ethos.Integration.Client.EthosResponseBuilder.BuildHeaderDictionary(HttpResponseHeaders)
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponseBuilder.BuildHeaderDictionary(HttpResponseHeaders)
-  nameWithType: EthosResponseBuilder.BuildHeaderDictionary(HttpResponseHeaders)
-- uid: Ellucian.Ethos.Integration.Client.EthosResponseBuilder.BuildHeaderDictionary*
-  name: BuildHeaderDictionary
-  href: api/Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html#Ellucian_Ethos_Integration_Client_EthosResponseBuilder_BuildHeaderDictionary_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.EthosResponseBuilder.BuildHeaderDictionary
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.EthosResponseBuilder.BuildHeaderDictionary
-  nameWithType: EthosResponseBuilder.BuildHeaderDictionary
 - uid: Ellucian.Ethos.Integration.Client.EthosResponseConverter
   name: EthosResponseConverter
   href: api/Ellucian.Ethos.Integration.Client.EthosResponseConverter.html
@@ -3159,6 +3115,12 @@ references:
   commentId: F:Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME
   fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME
   nameWithType: EthosProxyClient.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_X_CONTENT_RESTRICTED
+  name: HDR_X_CONTENT_RESTRICTED
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_X_CONTENT_RESTRICTED
+  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_X_CONTENT_RESTRICTED
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_X_CONTENT_RESTRICTED
+  nameWithType: EthosProxyClient.HDR_X_CONTENT_RESTRICTED
 - uid: Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.HDR_X_MAX_PAGE_SIZE
   name: HDR_X_MAX_PAGE_SIZE
   href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosProxyClient_HDR_X_MAX_PAGE_SIZE
@@ -5019,6 +4981,1061 @@ references:
   commentId: F:Ellucian.Ethos.Integration.EthosIntegrationUrls.RegionUrlPostFix
   fullName: Ellucian.Ethos.Integration.EthosIntegrationUrls.RegionUrlPostFix
   nameWithType: EthosIntegrationUrls.RegionUrlPostFix
+- uid: Ellucian.Ethos.Integration.Notification
+  name: Ellucian.Ethos.Integration.Notification
+  href: api/Ellucian.Ethos.Integration.Notification.html
+  commentId: N:Ellucian.Ethos.Integration.Notification
+  fullName: Ellucian.Ethos.Integration.Notification
+  nameWithType: Ellucian.Ethos.Integration.Notification
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1
+  name: AbstractEthosChangeNotificationSubscriber<T>
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html
+  commentId: T:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1
+  name.vb: AbstractEthosChangeNotificationSubscriber(Of T)
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T)
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T)
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.CancelSubscription
+  name: CancelSubscription()
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_CancelSubscription
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.CancelSubscription
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.CancelSubscription()
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).CancelSubscription()
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.CancelSubscription()
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).CancelSubscription()
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.CancelSubscription*
+  name: CancelSubscription
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_CancelSubscription_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.CancelSubscription
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.CancelSubscription
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).CancelSubscription
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.CancelSubscription
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).CancelSubscription
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.IsSubscriptionRunning
+  name: IsSubscriptionRunning()
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_IsSubscriptionRunning
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.IsSubscriptionRunning
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.IsSubscriptionRunning()
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).IsSubscriptionRunning()
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.IsSubscriptionRunning()
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).IsSubscriptionRunning()
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.IsSubscriptionRunning*
+  name: IsSubscriptionRunning
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_IsSubscriptionRunning_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.IsSubscriptionRunning
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.IsSubscriptionRunning
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).IsSubscriptionRunning
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.IsSubscriptionRunning
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).IsSubscriptionRunning
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnChangeNotification(`0)
+  name: OnChangeNotification(T)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnChangeNotification__0_
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnChangeNotification(`0)
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnChangeNotification(T)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnChangeNotification(T)
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnChangeNotification(T)
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnChangeNotification(T)
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnChangeNotification*
+  name: OnChangeNotification
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnChangeNotification_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnChangeNotification
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnChangeNotification
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnChangeNotification
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnChangeNotification
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnChangeNotification
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnChangeNotificationError(Exception)
+  name: OnChangeNotificationError(Exception)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnChangeNotificationError_Exception_
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnChangeNotificationError(Exception)
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnChangeNotificationError(Exception)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnChangeNotificationError(Exception)
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnChangeNotificationError(Exception)
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnChangeNotificationError(Exception)
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnChangeNotificationError*
+  name: OnChangeNotificationError
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnChangeNotificationError_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnChangeNotificationError
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnChangeNotificationError
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnChangeNotificationError
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnChangeNotificationError
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnChangeNotificationError
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnCompleted
+  name: OnCompleted()
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnCompleted
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnCompleted
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnCompleted()
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnCompleted()
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnCompleted()
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnCompleted()
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnCompleted*
+  name: OnCompleted
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnCompleted_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnCompleted
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnCompleted
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnCompleted
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnCompleted
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnCompleted
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnError(Exception)
+  name: OnError(Exception)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnError_Exception_
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnError(Exception)
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnError(Exception)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnError(Exception)
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnError(Exception)
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnError(Exception)
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnError*
+  name: OnError
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnError_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnError
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnError
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnError
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnError
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnError
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnNext(`0)
+  name: OnNext(T)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnNext__0_
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnNext(`0)
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnNext(T)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnNext(T)
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnNext(T)
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnNext(T)
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnNext*
+  name: OnNext
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnNext_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnNext
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnNext
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnNext
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnNext
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnNext
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnSubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription{`0})
+  name: OnSubscribe(AbstractEthosNotificationSubscription<T>)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnSubscribe_Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription__0__
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnSubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription{`0})
+  name.vb: OnSubscribe(AbstractEthosNotificationSubscription(Of T))
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnSubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnSubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T))
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnSubscribe(AbstractEthosNotificationSubscription<T>)
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnSubscribe(AbstractEthosNotificationSubscription(Of T))
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnSubscribe*
+  name: OnSubscribe
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_OnSubscribe_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.OnSubscribe
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.OnSubscribe
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).OnSubscribe
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.OnSubscribe
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).OnSubscribe
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.Subscription
+  name: Subscription
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_Subscription
+  commentId: F:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.Subscription
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.Subscription
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).Subscription
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.Subscription
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).Subscription
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.Unsubscribe
+  name: Unsubscribe()
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_Unsubscribe
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.Unsubscribe
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.Unsubscribe()
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).Unsubscribe()
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.Unsubscribe()
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).Unsubscribe()
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.Unsubscribe*
+  name: Unsubscribe
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_Unsubscribe_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.Unsubscribe
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.Unsubscribe
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).Unsubscribe
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.Unsubscribe
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).Unsubscribe
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.Unsubscriber
+  name: Unsubscriber
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_1_Unsubscriber
+  commentId: F:Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber`1.Unsubscriber
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<T>.Unsubscriber
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of T).Unsubscriber
+  nameWithType: AbstractEthosChangeNotificationSubscriber<T>.Unsubscriber
+  nameWithType.vb: AbstractEthosChangeNotificationSubscriber(Of T).Unsubscriber
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService
+  name: AbstractEthosNotificationPollService
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.html
+  commentId: T:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService
+  nameWithType: AbstractEthosNotificationPollService
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.Limit
+  name: Limit
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationPollService_Limit
+  commentId: P:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.Limit
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.Limit
+  nameWithType: AbstractEthosNotificationPollService.Limit
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.Limit*
+  name: Limit
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationPollService_Limit_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.Limit
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationPollService.Limit
+  nameWithType: AbstractEthosNotificationPollService.Limit
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1
+  name: AbstractEthosNotificationSubscription<T>
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html
+  commentId: T:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1
+  name.vb: AbstractEthosNotificationSubscription(Of T)
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T)
+  nameWithType: AbstractEthosNotificationSubscription<T>
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T)
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Cancel
+  name: Cancel
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Cancel
+  commentId: P:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Cancel
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Cancel
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Cancel
+  nameWithType: AbstractEthosNotificationSubscription<T>.Cancel
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Cancel
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Cancel*
+  name: Cancel
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Cancel_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Cancel
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Cancel
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Cancel
+  nameWithType: AbstractEthosNotificationSubscription<T>.Cancel
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Cancel
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.EndTransmission
+  name: EndTransmission()
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_EndTransmission
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.EndTransmission
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.EndTransmission()
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).EndTransmission()
+  nameWithType: AbstractEthosNotificationSubscription<T>.EndTransmission()
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).EndTransmission()
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.EndTransmission*
+  name: EndTransmission
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_EndTransmission_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.EndTransmission
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.EndTransmission
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).EndTransmission
+  nameWithType: AbstractEthosNotificationSubscription<T>.EndTransmission
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).EndTransmission
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.EthosChangeNotificationService
+  name: EthosChangeNotificationService
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_EthosChangeNotificationService
+  commentId: P:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.EthosChangeNotificationService
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.EthosChangeNotificationService
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).EthosChangeNotificationService
+  nameWithType: AbstractEthosNotificationSubscription<T>.EthosChangeNotificationService
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).EthosChangeNotificationService
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.EthosChangeNotificationService*
+  name: EthosChangeNotificationService
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_EthosChangeNotificationService_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.EthosChangeNotificationService
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.EthosChangeNotificationService
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).EthosChangeNotificationService
+  nameWithType: AbstractEthosNotificationSubscription<T>.EthosChangeNotificationService
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).EthosChangeNotificationService
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Notify(`0)
+  name: Notify(T)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Notify__0_
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Notify(`0)
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Notify(T)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Notify(T)
+  nameWithType: AbstractEthosNotificationSubscription<T>.Notify(T)
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Notify(T)
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Notify*
+  name: Notify
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Notify_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Notify
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Notify
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Notify
+  nameWithType: AbstractEthosNotificationSubscription<T>.Notify
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Notify
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Observers
+  name: Observers
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Observers
+  commentId: F:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Observers
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Observers
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Observers
+  nameWithType: AbstractEthosNotificationSubscription<T>.Observers
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Observers
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.PollingInterval
+  name: PollingInterval
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_PollingInterval
+  commentId: P:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.PollingInterval
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.PollingInterval
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).PollingInterval
+  nameWithType: AbstractEthosNotificationSubscription<T>.PollingInterval
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).PollingInterval
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.PollingInterval*
+  name: PollingInterval
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_PollingInterval_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.PollingInterval
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.PollingInterval
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).PollingInterval
+  nameWithType: AbstractEthosNotificationSubscription<T>.PollingInterval
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).PollingInterval
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.ProcessAsync(System.Nullable{System.Int32})
+  name: ProcessAsync(Nullable<Int32>)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_ProcessAsync_System_Nullable_System_Int32__
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.ProcessAsync(System.Nullable{System.Int32})
+  name.vb: ProcessAsync(Nullable(Of Int32))
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.ProcessAsync(System.Nullable<System.Int32>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).ProcessAsync(System.Nullable(Of System.Int32))
+  nameWithType: AbstractEthosNotificationSubscription<T>.ProcessAsync(Nullable<Int32>)
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).ProcessAsync(Nullable(Of Int32))
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.ProcessAsync*
+  name: ProcessAsync
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_ProcessAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.ProcessAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.ProcessAsync
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).ProcessAsync
+  nameWithType: AbstractEthosNotificationSubscription<T>.ProcessAsync
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).ProcessAsync
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.RequestAsync(System.Nullable{System.Int32})
+  name: RequestAsync(Nullable<Int32>)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_RequestAsync_System_Nullable_System_Int32__
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.RequestAsync(System.Nullable{System.Int32})
+  name.vb: RequestAsync(Nullable(Of Int32))
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.RequestAsync(System.Nullable<System.Int32>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).RequestAsync(System.Nullable(Of System.Int32))
+  nameWithType: AbstractEthosNotificationSubscription<T>.RequestAsync(Nullable<Int32>)
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).RequestAsync(Nullable(Of Int32))
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.RequestAsync*
+  name: RequestAsync
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_RequestAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.RequestAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.RequestAsync
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).RequestAsync
+  nameWithType: AbstractEthosNotificationSubscription<T>.RequestAsync
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).RequestAsync
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Subscribe(IObserver{`0})
+  name: Subscribe(IObserver<T>)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Subscribe_IObserver__0__
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Subscribe(IObserver{`0})
+  name.vb: Subscribe(IObserver(Of T))
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Subscribe(IObserver<T>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Subscribe(IObserver(Of T))
+  nameWithType: AbstractEthosNotificationSubscription<T>.Subscribe(IObserver<T>)
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Subscribe(IObserver(Of T))
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Subscribe*
+  name: Subscribe
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Subscribe_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Subscribe
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Subscribe
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Subscribe
+  nameWithType: AbstractEthosNotificationSubscription<T>.Subscribe
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Subscribe
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber
+  name: AbstractEthosNotificationSubscription<T>.Unsubscriber
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.Unsubscriber.html
+  commentId: T:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber
+  name.vb: AbstractEthosNotificationSubscription(Of T).Unsubscriber
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Unsubscriber
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Unsubscriber
+  nameWithType: AbstractEthosNotificationSubscription<T>.Unsubscriber
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Unsubscriber
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber.#ctor(List{IObserver{`0}},IObserver{`0})
+  name: Unsubscriber(List<IObserver<T>>, IObserver<T>)
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.Unsubscriber.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Unsubscriber__ctor_List_IObserver__0___IObserver__0__
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber.#ctor(List{IObserver{`0}},IObserver{`0})
+  name.vb: Unsubscriber(List(Of IObserver(Of T)), IObserver(Of T))
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Unsubscriber.Unsubscriber(List<IObserver<T>>, IObserver<T>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Unsubscriber.Unsubscriber(List(Of IObserver(Of T)), IObserver(Of T))
+  nameWithType: AbstractEthosNotificationSubscription<T>.Unsubscriber.Unsubscriber(List<IObserver<T>>, IObserver<T>)
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Unsubscriber.Unsubscriber(List(Of IObserver(Of T)), IObserver(Of T))
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber.#ctor*
+  name: Unsubscriber
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.Unsubscriber.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Unsubscriber__ctor_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber.#ctor
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Unsubscriber.Unsubscriber
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Unsubscriber.Unsubscriber
+  nameWithType: AbstractEthosNotificationSubscription<T>.Unsubscriber.Unsubscriber
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Unsubscriber.Unsubscriber
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber._observer
+  name: _observer
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.Unsubscriber.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Unsubscriber__observer
+  commentId: F:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber._observer
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Unsubscriber._observer
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Unsubscriber._observer
+  nameWithType: AbstractEthosNotificationSubscription<T>.Unsubscriber._observer
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Unsubscriber._observer
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber._observers
+  name: _observers
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.Unsubscriber.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Unsubscriber__observers
+  commentId: F:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber._observers
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Unsubscriber._observers
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Unsubscriber._observers
+  nameWithType: AbstractEthosNotificationSubscription<T>.Unsubscriber._observers
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Unsubscriber._observers
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber.Dispose
+  name: Dispose()
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.Unsubscriber.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Unsubscriber_Dispose
+  commentId: M:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber.Dispose
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Unsubscriber.Dispose()
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Unsubscriber.Dispose()
+  nameWithType: AbstractEthosNotificationSubscription<T>.Unsubscriber.Dispose()
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Unsubscriber.Dispose()
+- uid: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber.Dispose*
+  name: Dispose
+  href: api/Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription-1.Unsubscriber.html#Ellucian_Ethos_Integration_Notification_AbstractEthosNotificationSubscription_1_Unsubscriber_Dispose_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription`1.Unsubscriber.Dispose
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription<T>.Unsubscriber.Dispose
+  fullName.vb: Ellucian.Ethos.Integration.Notification.AbstractEthosNotificationSubscription(Of T).Unsubscriber.Dispose
+  nameWithType: AbstractEthosNotificationSubscription<T>.Unsubscriber.Dispose
+  nameWithType.vb: AbstractEthosNotificationSubscription(Of T).Unsubscriber.Dispose
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService
+  name: EthosChangeNotificationListPollService
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html
+  commentId: T:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService
+  nameWithType: EthosChangeNotificationListPollService
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.#ctor(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: EthosChangeNotificationListPollService(EthosChangeNotificationService, Nullable<Int32>, Nullable<Int32>)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService__ctor_Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.#ctor(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: EthosChangeNotificationListPollService(EthosChangeNotificationService, Nullable(Of Int32), Nullable(Of Int32))
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.EthosChangeNotificationListPollService(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.EthosChangeNotificationListPollService(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
+  nameWithType: EthosChangeNotificationListPollService.EthosChangeNotificationListPollService(EthosChangeNotificationService, Nullable<Int32>, Nullable<Int32>)
+  nameWithType.vb: EthosChangeNotificationListPollService.EthosChangeNotificationListPollService(EthosChangeNotificationService, Nullable(Of Int32), Nullable(Of Int32))
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.#ctor*
+  name: EthosChangeNotificationListPollService
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService__ctor_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.#ctor
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.EthosChangeNotificationListPollService
+  nameWithType: EthosChangeNotificationListPollService.EthosChangeNotificationListPollService
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.AddSubscriber(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber{IEnumerable{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification}})
+  name: AddSubscriber(AbstractEthosChangeNotificationSubscriber<IEnumerable<ChangeNotification>>)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_AddSubscriber_Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_IEnumerable_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification___
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.AddSubscriber(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber{IEnumerable{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification}})
+  name.vb: AddSubscriber(AbstractEthosChangeNotificationSubscriber(Of IEnumerable(Of ChangeNotification)))
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.AddSubscriber(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<IEnumerable<Ellucian.Ethos.Integration.Client.Messages.ChangeNotification>>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.AddSubscriber(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of IEnumerable(Of Ellucian.Ethos.Integration.Client.Messages.ChangeNotification)))
+  nameWithType: EthosChangeNotificationListPollService.AddSubscriber(AbstractEthosChangeNotificationSubscriber<IEnumerable<ChangeNotification>>)
+  nameWithType.vb: EthosChangeNotificationListPollService.AddSubscriber(AbstractEthosChangeNotificationSubscriber(Of IEnumerable(Of ChangeNotification)))
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.AddSubscriber*
+  name: AddSubscriber
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_AddSubscriber_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.AddSubscriber
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.AddSubscriber
+  nameWithType: EthosChangeNotificationListPollService.AddSubscriber
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetNumberOfSubscribers
+  name: GetNumberOfSubscribers()
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_GetNumberOfSubscribers
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetNumberOfSubscribers
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetNumberOfSubscribers()
+  nameWithType: EthosChangeNotificationListPollService.GetNumberOfSubscribers()
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetNumberOfSubscribers*
+  name: GetNumberOfSubscribers
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_GetNumberOfSubscribers_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetNumberOfSubscribers
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetNumberOfSubscribers
+  nameWithType: EthosChangeNotificationListPollService.GetNumberOfSubscribers
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetSubscribers*
+  name: GetSubscribers
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_GetSubscribers_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetSubscribers
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetSubscribers
+  nameWithType: EthosChangeNotificationListPollService.GetSubscribers
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetSubscribers``1
+  name: GetSubscribers<T>()
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_GetSubscribers__1
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetSubscribers``1
+  name.vb: GetSubscribers(Of T)()
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetSubscribers<T>()
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.GetSubscribers(Of T)()
+  nameWithType: EthosChangeNotificationListPollService.GetSubscribers<T>()
+  nameWithType.vb: EthosChangeNotificationListPollService.GetSubscribers(Of T)()
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.SubscribeAsync
+  name: SubscribeAsync()
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_SubscribeAsync
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.SubscribeAsync
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.SubscribeAsync()
+  nameWithType: EthosChangeNotificationListPollService.SubscribeAsync()
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.SubscribeAsync*
+  name: SubscribeAsync
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_SubscribeAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.SubscribeAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.SubscribeAsync
+  nameWithType: EthosChangeNotificationListPollService.SubscribeAsync
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Subscription
+  name: Subscription
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_Subscription
+  commentId: P:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Subscription
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Subscription
+  nameWithType: EthosChangeNotificationListPollService.Subscription
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Subscription*
+  name: Subscription
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_Subscription_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Subscription
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Subscription
+  nameWithType: EthosChangeNotificationListPollService.Subscription
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Unsubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber{IEnumerable{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification}})
+  name: Unsubscribe(AbstractEthosChangeNotificationSubscriber<IEnumerable<ChangeNotification>>)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_Unsubscribe_Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_IEnumerable_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification___
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Unsubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber{IEnumerable{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification}})
+  name.vb: Unsubscribe(AbstractEthosChangeNotificationSubscriber(Of IEnumerable(Of ChangeNotification)))
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Unsubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<IEnumerable<Ellucian.Ethos.Integration.Client.Messages.ChangeNotification>>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Unsubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of IEnumerable(Of Ellucian.Ethos.Integration.Client.Messages.ChangeNotification)))
+  nameWithType: EthosChangeNotificationListPollService.Unsubscribe(AbstractEthosChangeNotificationSubscriber<IEnumerable<ChangeNotification>>)
+  nameWithType.vb: EthosChangeNotificationListPollService.Unsubscribe(AbstractEthosChangeNotificationSubscriber(Of IEnumerable(Of ChangeNotification)))
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Unsubscribe*
+  name: Unsubscribe
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListPollService_Unsubscribe_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Unsubscribe
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListPollService.Unsubscribe
+  nameWithType: EthosChangeNotificationListPollService.Unsubscribe
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription
+  name: EthosChangeNotificationListSubscription
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.html
+  commentId: T:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription
+  nameWithType: EthosChangeNotificationListSubscription
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.#ctor(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService)
+  name: EthosChangeNotificationListSubscription(EthosChangeNotificationService)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListSubscription__ctor_Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.#ctor(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService)
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.EthosChangeNotificationListSubscription(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService)
+  nameWithType: EthosChangeNotificationListSubscription.EthosChangeNotificationListSubscription(EthosChangeNotificationService)
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.#ctor*
+  name: EthosChangeNotificationListSubscription
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListSubscription__ctor_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.#ctor
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.EthosChangeNotificationListSubscription
+  nameWithType: EthosChangeNotificationListSubscription.EthosChangeNotificationListSubscription
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.ProcessAsync(System.Nullable{System.Int32})
+  name: ProcessAsync(Nullable<Int32>)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListSubscription_ProcessAsync_System_Nullable_System_Int32__
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.ProcessAsync(System.Nullable{System.Int32})
+  name.vb: ProcessAsync(Nullable(Of Int32))
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.ProcessAsync(System.Nullable<System.Int32>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.ProcessAsync(System.Nullable(Of System.Int32))
+  nameWithType: EthosChangeNotificationListSubscription.ProcessAsync(Nullable<Int32>)
+  nameWithType.vb: EthosChangeNotificationListSubscription.ProcessAsync(Nullable(Of Int32))
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.ProcessAsync*
+  name: ProcessAsync
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationListSubscription_ProcessAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.ProcessAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationListSubscription.ProcessAsync
+  nameWithType: EthosChangeNotificationListSubscription.ProcessAsync
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService
+  name: EthosChangeNotificationPollService
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html
+  commentId: T:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService
+  nameWithType: EthosChangeNotificationPollService
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.#ctor(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name: EthosChangeNotificationPollService(EthosChangeNotificationService, Nullable<Int32>, Nullable<Int32>)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService__ctor_Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_System_Nullable_System_Int32__System_Nullable_System_Int32__
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.#ctor(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService,System.Nullable{System.Int32},System.Nullable{System.Int32})
+  name.vb: EthosChangeNotificationPollService(EthosChangeNotificationService, Nullable(Of Int32), Nullable(Of Int32))
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.EthosChangeNotificationPollService(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService, System.Nullable<System.Int32>, System.Nullable<System.Int32>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.EthosChangeNotificationPollService(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService, System.Nullable(Of System.Int32), System.Nullable(Of System.Int32))
+  nameWithType: EthosChangeNotificationPollService.EthosChangeNotificationPollService(EthosChangeNotificationService, Nullable<Int32>, Nullable<Int32>)
+  nameWithType.vb: EthosChangeNotificationPollService.EthosChangeNotificationPollService(EthosChangeNotificationService, Nullable(Of Int32), Nullable(Of Int32))
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.#ctor*
+  name: EthosChangeNotificationPollService
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService__ctor_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.#ctor
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.EthosChangeNotificationPollService
+  nameWithType: EthosChangeNotificationPollService.EthosChangeNotificationPollService
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.AddSubscriber(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification})
+  name: AddSubscriber(AbstractEthosChangeNotificationSubscriber<ChangeNotification>)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_AddSubscriber_Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification__
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.AddSubscriber(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification})
+  name.vb: AddSubscriber(AbstractEthosChangeNotificationSubscriber(Of ChangeNotification))
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.AddSubscriber(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<Ellucian.Ethos.Integration.Client.Messages.ChangeNotification>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.AddSubscriber(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of Ellucian.Ethos.Integration.Client.Messages.ChangeNotification))
+  nameWithType: EthosChangeNotificationPollService.AddSubscriber(AbstractEthosChangeNotificationSubscriber<ChangeNotification>)
+  nameWithType.vb: EthosChangeNotificationPollService.AddSubscriber(AbstractEthosChangeNotificationSubscriber(Of ChangeNotification))
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.AddSubscriber*
+  name: AddSubscriber
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_AddSubscriber_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.AddSubscriber
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.AddSubscriber
+  nameWithType: EthosChangeNotificationPollService.AddSubscriber
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetNumberOfSubscribers
+  name: GetNumberOfSubscribers()
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_GetNumberOfSubscribers
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetNumberOfSubscribers
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetNumberOfSubscribers()
+  nameWithType: EthosChangeNotificationPollService.GetNumberOfSubscribers()
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetNumberOfSubscribers*
+  name: GetNumberOfSubscribers
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_GetNumberOfSubscribers_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetNumberOfSubscribers
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetNumberOfSubscribers
+  nameWithType: EthosChangeNotificationPollService.GetNumberOfSubscribers
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetSubscribers*
+  name: GetSubscribers
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_GetSubscribers_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetSubscribers
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetSubscribers
+  nameWithType: EthosChangeNotificationPollService.GetSubscribers
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetSubscribers``1
+  name: GetSubscribers<T>()
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_GetSubscribers__1
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetSubscribers``1
+  name.vb: GetSubscribers(Of T)()
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetSubscribers<T>()
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.GetSubscribers(Of T)()
+  nameWithType: EthosChangeNotificationPollService.GetSubscribers<T>()
+  nameWithType.vb: EthosChangeNotificationPollService.GetSubscribers(Of T)()
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.SubscribeAsync
+  name: SubscribeAsync()
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_SubscribeAsync
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.SubscribeAsync
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.SubscribeAsync()
+  nameWithType: EthosChangeNotificationPollService.SubscribeAsync()
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.SubscribeAsync*
+  name: SubscribeAsync
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_SubscribeAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.SubscribeAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.SubscribeAsync
+  nameWithType: EthosChangeNotificationPollService.SubscribeAsync
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Subscription
+  name: Subscription
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_Subscription
+  commentId: P:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Subscription
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Subscription
+  nameWithType: EthosChangeNotificationPollService.Subscription
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Subscription*
+  name: Subscription
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_Subscription_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Subscription
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Subscription
+  nameWithType: EthosChangeNotificationPollService.Subscription
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Unsubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification})
+  name: Unsubscribe(AbstractEthosChangeNotificationSubscriber<ChangeNotification>)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_Unsubscribe_Ellucian_Ethos_Integration_Notification_AbstractEthosChangeNotificationSubscriber_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification__
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Unsubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification})
+  name.vb: Unsubscribe(AbstractEthosChangeNotificationSubscriber(Of ChangeNotification))
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Unsubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber<Ellucian.Ethos.Integration.Client.Messages.ChangeNotification>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Unsubscribe(Ellucian.Ethos.Integration.Notification.AbstractEthosChangeNotificationSubscriber(Of Ellucian.Ethos.Integration.Client.Messages.ChangeNotification))
+  nameWithType: EthosChangeNotificationPollService.Unsubscribe(AbstractEthosChangeNotificationSubscriber<ChangeNotification>)
+  nameWithType.vb: EthosChangeNotificationPollService.Unsubscribe(AbstractEthosChangeNotificationSubscriber(Of ChangeNotification))
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Unsubscribe*
+  name: Unsubscribe
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationPollService_Unsubscribe_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Unsubscribe
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationPollService.Unsubscribe
+  nameWithType: EthosChangeNotificationPollService.Unsubscribe
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription
+  name: EthosChangeNotificationSubscription
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.html
+  commentId: T:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription
+  nameWithType: EthosChangeNotificationSubscription
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.#ctor(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService)
+  name: EthosChangeNotificationSubscription(EthosChangeNotificationService)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscription__ctor_Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.#ctor(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService)
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.EthosChangeNotificationSubscription(Ellucian.Ethos.Integration.Service.EthosChangeNotificationService)
+  nameWithType: EthosChangeNotificationSubscription.EthosChangeNotificationSubscription(EthosChangeNotificationService)
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.#ctor*
+  name: EthosChangeNotificationSubscription
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscription__ctor_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.#ctor
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.EthosChangeNotificationSubscription
+  nameWithType: EthosChangeNotificationSubscription.EthosChangeNotificationSubscription
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.ProcessAsync(System.Nullable{System.Int32})
+  name: ProcessAsync(Nullable<Int32>)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscription_ProcessAsync_System_Nullable_System_Int32__
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.ProcessAsync(System.Nullable{System.Int32})
+  name.vb: ProcessAsync(Nullable(Of Int32))
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.ProcessAsync(System.Nullable<System.Int32>)
+  fullName.vb: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.ProcessAsync(System.Nullable(Of System.Int32))
+  nameWithType: EthosChangeNotificationSubscription.ProcessAsync(Nullable<Int32>)
+  nameWithType.vb: EthosChangeNotificationSubscription.ProcessAsync(Nullable(Of Int32))
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.ProcessAsync*
+  name: ProcessAsync
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscription_ProcessAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.ProcessAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscription.ProcessAsync
+  nameWithType: EthosChangeNotificationSubscription.ProcessAsync
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException
+  name: EthosChangeNotificationSubscriptionException
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.html
+  commentId: T:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException
+  nameWithType: EthosChangeNotificationSubscriptionException
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor(System.String)
+  name: EthosChangeNotificationSubscriptionException(String)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscriptionException__ctor_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor(System.String)
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.EthosChangeNotificationSubscriptionException(System.String)
+  nameWithType: EthosChangeNotificationSubscriptionException.EthosChangeNotificationSubscriptionException(String)
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor(System.String,Exception)
+  name: EthosChangeNotificationSubscriptionException(String, Exception)
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscriptionException__ctor_System_String_Exception_
+  commentId: M:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor(System.String,Exception)
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.EthosChangeNotificationSubscriptionException(System.String, Exception)
+  nameWithType: EthosChangeNotificationSubscriptionException.EthosChangeNotificationSubscriptionException(String, Exception)
+- uid: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor*
+  name: EthosChangeNotificationSubscriptionException
+  href: api/Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.html#Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscriptionException__ctor_
+  commentId: Overload:Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.EthosChangeNotificationSubscriptionException
+  nameWithType: EthosChangeNotificationSubscriptionException.EthosChangeNotificationSubscriptionException
+- uid: Ellucian.Ethos.Integration.Service
+  name: Ellucian.Ethos.Integration.Service
+  href: api/Ellucian.Ethos.Integration.Service.html
+  commentId: N:Ellucian.Ethos.Integration.Service
+  fullName: Ellucian.Ethos.Integration.Service
+  nameWithType: Ellucian.Ethos.Integration.Service
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService
+  name: EthosChangeNotificationService
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html
+  commentId: T:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService
+  nameWithType: EthosChangeNotificationService
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  name: EthosChangeNotificationService(EthosClientBuilder)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService__ctor_Ellucian_Ethos_Integration_Client_EthosClientBuilder_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosChangeNotificationService(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  nameWithType: EthosChangeNotificationService.EthosChangeNotificationService(EthosClientBuilder)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor(System.String)
+  name: EthosChangeNotificationService(String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService__ctor_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor(System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosChangeNotificationService(System.String)
+  nameWithType: EthosChangeNotificationService.EthosChangeNotificationService(String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor*
+  name: EthosChangeNotificationService
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService__ctor_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosChangeNotificationService
+  nameWithType: EthosChangeNotificationService.EthosChangeNotificationService
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride(System.String,System.String)
+  name: AddResourceAbbreviatedVersionOverride(String, String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddResourceAbbreviatedVersionOverride_System_String_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride(System.String,System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride(System.String, System.String)
+  nameWithType: EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride(String, String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride*
+  name: AddResourceAbbreviatedVersionOverride
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddResourceAbbreviatedVersionOverride_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride
+  nameWithType: EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceVersionOverride(System.String,System.String)
+  name: AddResourceVersionOverride(String, String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddResourceVersionOverride_System_String_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceVersionOverride(System.String,System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceVersionOverride(System.String, System.String)
+  nameWithType: EthosChangeNotificationService.AddResourceVersionOverride(String, String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceVersionOverride*
+  name: AddResourceVersionOverride
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddResourceVersionOverride_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceVersionOverride
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceVersionOverride
+  nameWithType: EthosChangeNotificationService.AddResourceVersionOverride
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddToDictionary(System.String,System.String)
+  name: AddToDictionary(String, String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddToDictionary_System_String_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddToDictionary(System.String,System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddToDictionary(System.String, System.String)
+  nameWithType: EthosChangeNotificationService.AddToDictionary(String, String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddToDictionary*
+  name: AddToDictionary
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddToDictionary_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddToDictionary
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddToDictionary
+  nameWithType: EthosChangeNotificationService.AddToDictionary
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.Build(Action{Ellucian.Ethos.Integration.Service.EthosChangeNotificationService},System.String)
+  name: Build(Action<EthosChangeNotificationService>, String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_Build_Action_Ellucian_Ethos_Integration_Service_EthosChangeNotificationService__System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.Build(Action{Ellucian.Ethos.Integration.Service.EthosChangeNotificationService},System.String)
+  name.vb: Build(Action(Of EthosChangeNotificationService), String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.Build(Action<Ellucian.Ethos.Integration.Service.EthosChangeNotificationService>, System.String)
+  fullName.vb: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.Build(Action(Of Ellucian.Ethos.Integration.Service.EthosChangeNotificationService), System.String)
+  nameWithType: EthosChangeNotificationService.Build(Action<EthosChangeNotificationService>, String)
+  nameWithType.vb: EthosChangeNotificationService.Build(Action(Of EthosChangeNotificationService), String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.Build*
+  name: Build
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_Build_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.Build
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.Build
+  nameWithType: EthosChangeNotificationService.Build
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.BuildService(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  name: BuildService(EthosClientBuilder)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_BuildService_Ellucian_Ethos_Integration_Client_EthosClientBuilder_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.BuildService(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.BuildService(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  nameWithType: EthosChangeNotificationService.BuildService(EthosClientBuilder)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.BuildService*
+  name: BuildService
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_BuildService_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.BuildService
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.BuildService
+  nameWithType: EthosChangeNotificationService.BuildService
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosMessagesClient
+  name: EthosMessagesClient
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_EthosMessagesClient
+  commentId: F:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosMessagesClient
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosMessagesClient
+  nameWithType: EthosChangeNotificationService.EthosMessagesClient
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosProxyClient
+  name: EthosProxyClient
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_EthosProxyClient
+  commentId: F:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosProxyClient
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosProxyClient
+  nameWithType: EthosChangeNotificationService.EthosProxyClient
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetChangeNotificationsAsync(System.Nullable{System.Int32})
+  name: GetChangeNotificationsAsync(Nullable<Int32>)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetChangeNotificationsAsync_System_Nullable_System_Int32__
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetChangeNotificationsAsync(System.Nullable{System.Int32})
+  name.vb: GetChangeNotificationsAsync(Nullable(Of Int32))
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetChangeNotificationsAsync(System.Nullable<System.Int32>)
+  fullName.vb: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetChangeNotificationsAsync(System.Nullable(Of System.Int32))
+  nameWithType: EthosChangeNotificationService.GetChangeNotificationsAsync(Nullable<Int32>)
+  nameWithType.vb: EthosChangeNotificationService.GetChangeNotificationsAsync(Nullable(Of Int32))
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetChangeNotificationsAsync*
+  name: GetChangeNotificationsAsync
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetChangeNotificationsAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetChangeNotificationsAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetChangeNotificationsAsync
+  nameWithType: EthosChangeNotificationService.GetChangeNotificationsAsync
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResources
+  name: GetOverriddenResources()
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetOverriddenResources
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResources
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResources()
+  nameWithType: EthosChangeNotificationService.GetOverriddenResources()
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResources*
+  name: GetOverriddenResources
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetOverriddenResources_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResources
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResources
+  nameWithType: EthosChangeNotificationService.GetOverriddenResources
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResourcesVersion(System.String)
+  name: GetOverriddenResourcesVersion(String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetOverriddenResourcesVersion_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResourcesVersion(System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResourcesVersion(System.String)
+  nameWithType: EthosChangeNotificationService.GetOverriddenResourcesVersion(String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResourcesVersion*
+  name: GetOverriddenResourcesVersion
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetOverriddenResourcesVersion_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResourcesVersion
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResourcesVersion
+  nameWithType: EthosChangeNotificationService.GetOverriddenResourcesVersion
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OPERATION_DELETED
+  name: OPERATION_DELETED
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_OPERATION_DELETED
+  commentId: F:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OPERATION_DELETED
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OPERATION_DELETED
+  nameWithType: EthosChangeNotificationService.OPERATION_DELETED
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OverrideChangeNotification(Ellucian.Ethos.Integration.Client.Messages.ChangeNotification,Ellucian.Ethos.Integration.Client.EthosResponse,System.String)
+  name: OverrideChangeNotification(ChangeNotification, EthosResponse, String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_OverrideChangeNotification_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification_Ellucian_Ethos_Integration_Client_EthosResponse_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OverrideChangeNotification(Ellucian.Ethos.Integration.Client.Messages.ChangeNotification,Ellucian.Ethos.Integration.Client.EthosResponse,System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OverrideChangeNotification(Ellucian.Ethos.Integration.Client.Messages.ChangeNotification, Ellucian.Ethos.Integration.Client.EthosResponse, System.String)
+  nameWithType: EthosChangeNotificationService.OverrideChangeNotification(ChangeNotification, EthosResponse, String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OverrideChangeNotification*
+  name: OverrideChangeNotification
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_OverrideChangeNotification_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OverrideChangeNotification
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OverrideChangeNotification
+  nameWithType: EthosChangeNotificationService.OverrideChangeNotification
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync(Ellucian.Ethos.Integration.Client.Messages.ChangeNotification)
+  name: ProcessChangeNotificationOverrideAsync(ChangeNotification)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ProcessChangeNotificationOverrideAsync_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync(Ellucian.Ethos.Integration.Client.Messages.ChangeNotification)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync(Ellucian.Ethos.Integration.Client.Messages.ChangeNotification)
+  nameWithType: EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync(ChangeNotification)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync*
+  name: ProcessChangeNotificationOverrideAsync
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ProcessChangeNotificationOverrideAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync
+  nameWithType: EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync(IEnumerable{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification})
+  name: ProcessChangeNotificationOverridesAsync(IEnumerable<ChangeNotification>)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ProcessChangeNotificationOverridesAsync_IEnumerable_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification__
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync(IEnumerable{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification})
+  name.vb: ProcessChangeNotificationOverridesAsync(IEnumerable(Of ChangeNotification))
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync(IEnumerable<Ellucian.Ethos.Integration.Client.Messages.ChangeNotification>)
+  fullName.vb: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync(IEnumerable(Of Ellucian.Ethos.Integration.Client.Messages.ChangeNotification))
+  nameWithType: EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync(IEnumerable<ChangeNotification>)
+  nameWithType.vb: EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync(IEnumerable(Of ChangeNotification))
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync*
+  name: ProcessChangeNotificationOverridesAsync
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ProcessChangeNotificationOverridesAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync
+  nameWithType: EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RemoveResourceVersionOverride(System.String)
+  name: RemoveResourceVersionOverride(String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_RemoveResourceVersionOverride_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RemoveResourceVersionOverride(System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RemoveResourceVersionOverride(System.String)
+  nameWithType: EthosChangeNotificationService.RemoveResourceVersionOverride(String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RemoveResourceVersionOverride*
+  name: RemoveResourceVersionOverride
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_RemoveResourceVersionOverride_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RemoveResourceVersionOverride
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RemoveResourceVersionOverride
+  nameWithType: EthosChangeNotificationService.RemoveResourceVersionOverride
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RESOURCE_CONTENT_TYPE
+  name: RESOURCE_CONTENT_TYPE
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_RESOURCE_CONTENT_TYPE
+  commentId: F:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RESOURCE_CONTENT_TYPE
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RESOURCE_CONTENT_TYPE
+  nameWithType: EthosChangeNotificationService.RESOURCE_CONTENT_TYPE
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ResourceVersionOverrideMap
+  name: ResourceVersionOverrideMap
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ResourceVersionOverrideMap
+  commentId: F:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ResourceVersionOverrideMap
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ResourceVersionOverrideMap
+  nameWithType: EthosChangeNotificationService.ResourceVersionOverrideMap
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithConnectionTimeout(System.Int32)
+  name: WithConnectionTimeout(Int32)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithConnectionTimeout_System_Int32_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithConnectionTimeout(System.Int32)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithConnectionTimeout(System.Int32)
+  nameWithType: EthosChangeNotificationService.WithConnectionTimeout(Int32)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithConnectionTimeout*
+  name: WithConnectionTimeout
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithConnectionTimeout_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithConnectionTimeout
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithConnectionTimeout
+  nameWithType: EthosChangeNotificationService.WithConnectionTimeout
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithEthosClientBuilder(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  name: WithEthosClientBuilder(EthosClientBuilder)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithEthosClientBuilder_Ellucian_Ethos_Integration_Client_EthosClientBuilder_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithEthosClientBuilder(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithEthosClientBuilder(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  nameWithType: EthosChangeNotificationService.WithEthosClientBuilder(EthosClientBuilder)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithEthosClientBuilder*
+  name: WithEthosClientBuilder
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithEthosClientBuilder_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithEthosClientBuilder
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithEthosClientBuilder
+  nameWithType: EthosChangeNotificationService.WithEthosClientBuilder
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride(System.String,System.String)
+  name: WithResourceAbbreviatedVersionOverride(String, String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithResourceAbbreviatedVersionOverride_System_String_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride(System.String,System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride(System.String, System.String)
+  nameWithType: EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride(String, String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride*
+  name: WithResourceAbbreviatedVersionOverride
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithResourceAbbreviatedVersionOverride_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride
+  nameWithType: EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceVersionOverride(System.String,System.String)
+  name: WithResourceVersionOverride(String, String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithResourceVersionOverride_System_String_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceVersionOverride(System.String,System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceVersionOverride(System.String, System.String)
+  nameWithType: EthosChangeNotificationService.WithResourceVersionOverride(String, String)
+- uid: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceVersionOverride*
+  name: WithResourceVersionOverride
+  href: api/Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithResourceVersionOverride_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceVersionOverride
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceVersionOverride
+  nameWithType: EthosChangeNotificationService.WithResourceVersionOverride
+- uid: Ellucian.Ethos.Integration.Service.EthosService
+  name: EthosService
+  href: api/Ellucian.Ethos.Integration.Service.EthosService.html
+  commentId: T:Ellucian.Ethos.Integration.Service.EthosService
+  fullName: Ellucian.Ethos.Integration.Service.EthosService
+  nameWithType: EthosService
+- uid: Ellucian.Ethos.Integration.Service.EthosService.#ctor
+  name: EthosService()
+  href: api/Ellucian.Ethos.Integration.Service.EthosService.html#Ellucian_Ethos_Integration_Service_EthosService__ctor
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosService.#ctor
+  fullName: Ellucian.Ethos.Integration.Service.EthosService.EthosService()
+  nameWithType: EthosService.EthosService()
+- uid: Ellucian.Ethos.Integration.Service.EthosService.#ctor(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  name: EthosService(EthosClientBuilder)
+  href: api/Ellucian.Ethos.Integration.Service.EthosService.html#Ellucian_Ethos_Integration_Service_EthosService__ctor_Ellucian_Ethos_Integration_Client_EthosClientBuilder_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosService.#ctor(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  fullName: Ellucian.Ethos.Integration.Service.EthosService.EthosService(Ellucian.Ethos.Integration.Client.EthosClientBuilder)
+  nameWithType: EthosService.EthosService(EthosClientBuilder)
+- uid: Ellucian.Ethos.Integration.Service.EthosService.#ctor(System.String)
+  name: EthosService(String)
+  href: api/Ellucian.Ethos.Integration.Service.EthosService.html#Ellucian_Ethos_Integration_Service_EthosService__ctor_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Service.EthosService.#ctor(System.String)
+  fullName: Ellucian.Ethos.Integration.Service.EthosService.EthosService(System.String)
+  nameWithType: EthosService.EthosService(String)
+- uid: Ellucian.Ethos.Integration.Service.EthosService.#ctor*
+  name: EthosService
+  href: api/Ellucian.Ethos.Integration.Service.EthosService.html#Ellucian_Ethos_Integration_Service_EthosService__ctor_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosService.#ctor
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosService.EthosService
+  nameWithType: EthosService.EthosService
+- uid: Ellucian.Ethos.Integration.Service.EthosService.EthosClientBuilder
+  name: EthosClientBuilder
+  href: api/Ellucian.Ethos.Integration.Service.EthosService.html#Ellucian_Ethos_Integration_Service_EthosService_EthosClientBuilder
+  commentId: P:Ellucian.Ethos.Integration.Service.EthosService.EthosClientBuilder
+  fullName: Ellucian.Ethos.Integration.Service.EthosService.EthosClientBuilder
+  nameWithType: EthosService.EthosClientBuilder
+- uid: Ellucian.Ethos.Integration.Service.EthosService.EthosClientBuilder*
+  name: EthosClientBuilder
+  href: api/Ellucian.Ethos.Integration.Service.EthosService.html#Ellucian_Ethos_Integration_Service_EthosService_EthosClientBuilder_
+  commentId: Overload:Ellucian.Ethos.Integration.Service.EthosService.EthosClientBuilder
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Service.EthosService.EthosClientBuilder
+  nameWithType: EthosService.EthosClientBuilder
 - uid: Ellucian.EthosIntegration.SDK.Client.Config
   name: Ellucian.EthosIntegration.SDK.Client.Config
   href: api/Ellucian.EthosIntegration.SDK.Client.Config.html

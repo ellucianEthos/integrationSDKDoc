@@ -1,0 +1,1014 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EthosChangeNotificationService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EthosChangeNotificationService
+   ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService">
+  
+  
+  <h1 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService" class="text-break">Class EthosChangeNotificationService
+  </h1>
+  <div class="markdown level0 summary"><p>Service class used for retrieving ChangeNotifications. Uses the <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a> and
+<a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a> to do so. If a specific version of a resource is requested for change notifications,
+this service will retrieve the desired version of the resource and return the content of that resource (and version) in the
+corresponding change notification. For example, if persons v12 is requested but the change notification retrieved is for
+persons v8, this service will retrieve persons v12 and replace the content in the persons v8 notification with the content
+of persons v12.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Ellucian.Ethos.Integration.Service.EthosService.html">EthosService</a></div>
+    <div class="level2"><span class="xref">EthosChangeNotificationService</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Ellucian.Ethos.Integration.Service.EthosService.html#Ellucian_Ethos_Integration_Service_EthosService_EthosClientBuilder">EthosService.EthosClientBuilder</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Service.html">Ellucian.Ethos.Integration.Service</a></h6>
+  <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
+  <h5 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EthosChangeNotificationService : EthosService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService__ctor_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService__ctor_Ellucian_Ethos_Integration_Client_EthosClientBuilder_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor(Ellucian.Ethos.Integration.Client.EthosClientBuilder)">EthosChangeNotificationService(EthosClientBuilder)</h4>
+  <div class="markdown level1 summary"><p>Instantiates this service class with <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a>.
+This constructor is only called from the inner Builder class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EthosChangeNotificationService(EthosClientBuilder ethosClientBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a></td>
+        <td><span class="parametername">ethosClientBuilder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService__ctor_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService__ctor_System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.#ctor(System.String)">EthosChangeNotificationService(String)</h4>
+  <div class="markdown level1 summary"><p>Instantiates this service class with an api key.
+This constructor is only called from the inner Builder class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">EthosChangeNotificationService(string apiKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>A <see cref="!:Guid"></see> api key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_EthosMessagesClient" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosMessagesClient">EthosMessagesClient</h4>
+  <div class="markdown level1 summary"><p>The EthosMessagesClient used for retrieving change notification messages from Ethos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EthosMessagesClient EthosMessagesClient</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_EthosProxyClient" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.EthosProxyClient">EthosProxyClient</h4>
+  <div class="markdown level1 summary"><p>The EthosProxyClient used for making Ethos API calls through Ethos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EthosProxyClient EthosProxyClient</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_OPERATION_DELETED" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OPERATION_DELETED">OPERATION_DELETED</h4>
+  <div class="markdown level1 summary"><p><strong>Used internally by the SDK.</strong> Constant value used to determine if a ChangeNotification is for a deleted operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">const string OPERATION_DELETED = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_RESOURCE_CONTENT_TYPE" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RESOURCE_CONTENT_TYPE">RESOURCE_CONTENT_TYPE</h4>
+  <div class="markdown level1 summary"><p><strong>Used internally by the SDK.</strong>
+Default constant value used to replace the contentType in the ChangeNotification if there is no x-content-restricted header when overriding a resource version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">const string RESOURCE_CONTENT_TYPE = null</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ResourceVersionOverrideMap" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ResourceVersionOverrideMap">ResourceVersionOverrideMap</h4>
+  <div class="markdown level1 summary"><p>A map containing the requested resource(s) and version for each resource.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Dictionary&lt;string, string&gt; ResourceVersionOverrideMap</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddResourceAbbreviatedVersionOverride_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddResourceAbbreviatedVersionOverride_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceAbbreviatedVersionOverride(System.String,System.String)">AddResourceAbbreviatedVersionOverride(String, String)</h4>
+  <div class="markdown level1 summary"><p>Same as <a class="xref" href="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddResourceVersionOverride_System_String_System_String_">AddResourceVersionOverride(String, String)</a> except the version can be abbreviated as just the version value, e.g: 16, or 16.0.0.
+Also accepts the version value prefixed with the char 'v', e.g: v16, or v16.0.0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddResourceAbbreviatedVersionOverride(string resourceName, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddResourceVersionOverride_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceVersionOverride*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddResourceVersionOverride_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddResourceVersionOverride(System.String,System.String)">AddResourceVersionOverride(String, String)</h4>
+  <div class="markdown level1 summary"><p>Enables client application code to add resource version overrides after this service has been built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddResourceVersionOverride(string resourceName, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired version of the resource to override change notification of the same resource with, e.g. application/vnd.hedtech.integration.v12.3.0+json</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddToDictionary_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddToDictionary*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_AddToDictionary_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.AddToDictionary(System.String,System.String)">AddToDictionary(String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds resource name and version to a dictionary. If the key (resourceName) already exists with version value, then it replaces same resource with the version provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddToDictionary(string resourceName, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired version of the resource to override change notification of the same resource with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_Build_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.Build*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_Build_Action_Ellucian_Ethos_Integration_Service_EthosChangeNotificationService__System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.Build(Action{Ellucian.Ethos.Integration.Service.EthosChangeNotificationService},System.String)">Build(Action&lt;EthosChangeNotificationService&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Builds an instance of the EthosChangeNotificationService with the given ethosClientBuilder and any resource version overrides.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static EthosChangeNotificationService Build(Action&lt;EthosChangeNotificationService&gt; action, string apiKey)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html">EthosChangeNotificationService</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Actions delegate.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>A <see cref="!:Guid"></see> api key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html">EthosChangeNotificationService</a></td>
+        <td><p>An instance of the EthosChangeNotificationService.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_BuildService_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.BuildService*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_BuildService_Ellucian_Ethos_Integration_Client_EthosClientBuilder_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.BuildService(Ellucian.Ethos.Integration.Client.EthosClientBuilder)">BuildService(EthosClientBuilder)</h4>
+  <div class="markdown level1 summary"><p>Used internally by SDK to build message client, proxy client and configuration client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void BuildService(EthosClientBuilder ethosClientBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a></td>
+        <td><span class="parametername">ethosClientBuilder</span></td>
+        <td><p><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a> builds clients used by <a class="xref" href="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html">EthosChangeNotificationService</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetChangeNotificationsAsync_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetChangeNotificationsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetChangeNotificationsAsync_System_Nullable_System_Int32__" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetChangeNotificationsAsync(System.Nullable{System.Int32})">GetChangeNotificationsAsync(Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieves change notifications using the given limit for message retrieval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;ChangeNotification&gt;&gt; GetChangeNotificationsAsync(int? limit = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">limit</span></td>
+        <td><p>The number of messages to retrieve at once.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>&gt;&gt;</td>
+        <td><p>A list of ChangeNotifications, overriding any notifications with the desired version of the resource if
+notifications in the returned list match those added to this class (by resource name) to be overridden.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetOverriddenResources_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResources*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetOverriddenResources" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResources">GetOverriddenResources()</h4>
+  <div class="markdown level1 summary"><p>Gets a list of resources to be overridden in change notifications.  These are the resources added to the resource version override
+capability of this class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetOverriddenResources()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A list of resource names configured to override change notification content for the specified version.
+Will be an empty list if no overrides have been specified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetOverriddenResourcesVersion_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResourcesVersion*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_GetOverriddenResourcesVersion_System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.GetOverriddenResourcesVersion(System.String)">GetOverriddenResourcesVersion(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the overridden version for the given resource name specified when adding to the resource version override.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetOverriddenResourcesVersion(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource to get the version override for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The version overriding the version of any change notification with the given resource name, or null if the resourceName
+is null or blank, or if there is no version mapping for the given resourceName.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_OverrideChangeNotification_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OverrideChangeNotification*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_OverrideChangeNotification_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification_Ellucian_Ethos_Integration_Client_EthosResponse_System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.OverrideChangeNotification(Ellucian.Ethos.Integration.Client.Messages.ChangeNotification,Ellucian.Ethos.Integration.Client.EthosResponse,System.String)">OverrideChangeNotification(ChangeNotification, EthosResponse, String)</h4>
+  <div class="markdown level1 summary"><p><strong>Used internally by the SDK.</strong></p>
+<p>
+Updates the given changeNotification with the data from the EthosResponse.Specifically, updates the contentType,
+content, and version of the changeNotification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ChangeNotification OverrideChangeNotification(ChangeNotification cn, EthosResponse ethosResponse, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a></td>
+        <td><span class="parametername">cn</span></td>
+        <td><p>The ChangeNotification to update/override.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a></td>
+        <td><span class="parametername">ethosResponse</span></td>
+        <td><p>The EthosResponse containing the data from the proxy call for overriding the changeNotification.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The full version header of the resource overridden.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a></td>
+        <td><p>The updated ChangeNotification.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ProcessChangeNotificationOverrideAsync_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ProcessChangeNotificationOverrideAsync_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverrideAsync(Ellucian.Ethos.Integration.Client.Messages.ChangeNotification)">ProcessChangeNotificationOverrideAsync(ChangeNotification)</h4>
+  <div class="markdown level1 summary"><p>Retrieves change notification using the default limit of 20 messages for message retrieval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ChangeNotification&gt; ProcessChangeNotificationOverrideAsync(ChangeNotification cn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a></td>
+        <td><span class="parametername">cn</span></td>
+        <td><p><a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>&gt;</td>
+        <td><p>A ChangeNotification, overriding any notifications with the desired version of the resource if
+notifications in the returned list match those added to this class (by resource name) to be overridden.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ProcessChangeNotificationOverridesAsync_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_ProcessChangeNotificationOverridesAsync_IEnumerable_Ellucian_Ethos_Integration_Client_Messages_ChangeNotification__" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.ProcessChangeNotificationOverridesAsync(IEnumerable{Ellucian.Ethos.Integration.Client.Messages.ChangeNotification})">ProcessChangeNotificationOverridesAsync(IEnumerable&lt;ChangeNotification&gt;)</h4>
+  <div class="markdown level1 summary"><p>Retrieves change notifications using the default limit of 20 messages for message retrieval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;ChangeNotification&gt;&gt; ProcessChangeNotificationOverridesAsync(IEnumerable&lt;ChangeNotification&gt; changeNotificationList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>&gt;</td>
+        <td><span class="parametername">changeNotificationList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.ChangeNotification.html">ChangeNotification</a>&gt;&gt;</td>
+        <td><p>A list of ChangeNotifications, overriding any notifications with the desired version of the resource if
+notifications in the returned list match those added to this class (by resource name) to be overridden.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_RemoveResourceVersionOverride_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RemoveResourceVersionOverride*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_RemoveResourceVersionOverride_System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.RemoveResourceVersionOverride(System.String)">RemoveResourceVersionOverride(String)</h4>
+  <div class="markdown level1 summary"><p>Enables client application code to remove resource version overrides after this service has been built.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveResourceVersionOverride(string resourceName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithConnectionTimeout_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithConnectionTimeout*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithConnectionTimeout_System_Int32_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithConnectionTimeout(System.Int32)">WithConnectionTimeout(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the connection timeout value for the ethosClientBuilder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosChangeNotificationService WithConnectionTimeout(int connectionTimeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">connectionTimeout</span></td>
+        <td><p>The timeout <strong>in seconds</strong> for a connection to be established, as used by the EthosClientBuilder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html">EthosChangeNotificationService</a></td>
+        <td><p>EthosChangeNotificationService, for fluent API usage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithEthosClientBuilder_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithEthosClientBuilder*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithEthosClientBuilder_Ellucian_Ethos_Integration_Client_EthosClientBuilder_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithEthosClientBuilder(Ellucian.Ethos.Integration.Client.EthosClientBuilder)">WithEthosClientBuilder(EthosClientBuilder)</h4>
+  <div class="markdown level1 summary"><p>Instantiates this EthosChangeNotificationService with the given <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosChangeNotificationService WithEthosClientBuilder(EthosClientBuilder ethosClientBuilder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a></td>
+        <td><span class="parametername">ethosClientBuilder</span></td>
+        <td><p><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosClientBuilder.html">EthosClientBuilder</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html">EthosChangeNotificationService</a></td>
+        <td><p>EthosChangeNotificationService, for fluent API usage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithResourceAbbreviatedVersionOverride_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithResourceAbbreviatedVersionOverride_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceAbbreviatedVersionOverride(System.String,System.String)">WithResourceAbbreviatedVersionOverride(String, String)</h4>
+  <div class="markdown level1 summary"><p>Same as see{@link com.ellucian.ethos.integration.service.EthosChangeNotificationService.
+EthosChangeNotificationService <a class="xref" href="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html#Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithResourceVersionOverride_System_String_System_String_">WithResourceVersionOverride(String, String)</a> except the version can be abbreviated as just the version value, e.g: 16, or 16.0.0. Also accepts the version value
+prefixed with the char 'v', e.g: v16, or v16.0.0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosChangeNotificationService WithResourceAbbreviatedVersionOverride(string resourceName, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired version of the resource to override change notification of the same resource with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html">EthosChangeNotificationService</a></td>
+        <td><p>EthosChangeNotificationService, for fluent API usage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithResourceVersionOverride_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceVersionOverride*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Service_EthosChangeNotificationService_WithResourceVersionOverride_System_String_System_String_" data-uid="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.WithResourceVersionOverride(System.String,System.String)">WithResourceVersionOverride(String, String)</h4>
+  <div class="markdown level1 summary"><p>Adds the resource name and version to the resourceVersionOverrideMap. This enables this service to override
+the content of change notifications that match the resource names and versions listed in this map with the content
+of the given resource for the version specified in the map.For example, if a change notification is for persons, v8
+and persons, v12 is added to the resourceVersionOverrideMap, then for the persons change notifications that are NOT
+v12, this service will retrieve persons v12 (using the GUID from the change notification) and replace the content
+of the persons change notification with the persons v12 content.This overrides the version in the change notification
+with the desired version listed in the resourceVersionOverrideMap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosChangeNotificationService WithResourceVersionOverride(string resourceName, string version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resourceName</span></td>
+        <td><p>The name of the resource.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The desired version of the resource to override change notification of the same resource with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Service.EthosChangeNotificationService.html">EthosChangeNotificationService</a></td>
+        <td><p>EthosChangeNotificationService, for fluent API usage.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

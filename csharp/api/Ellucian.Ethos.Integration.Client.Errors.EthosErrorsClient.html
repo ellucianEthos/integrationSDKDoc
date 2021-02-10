@@ -522,6 +522,33 @@ Handles paging for errors.If the given pageSize is &lt;= 0, the default page siz
   </table>
   
   
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsEthosErrorsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsEthosErrorsAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsEthosErrorsAsync">GetAllErrorsAsEthosErrorsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token, as a list of EthosErrors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosError&gt;&gt; GetAllErrorsAsEthosErrorsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.EthosError.html">EthosError</a>&gt;&gt;</td>
+        <td><p>A list of EthosErrors where each EthosError in the list is for an individual error.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsJArrayAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsJArrayAsync*"></a>
   <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAllErrorsAsJArrayAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAllErrorsAsJArrayAsync">GetAllErrorsAsJArrayAsync()</h4>
   <div class="markdown level1 summary"><p>Get all of the errors for the given tenant per access token, as a list of Jarrays.</p>
@@ -735,6 +762,33 @@ contains up to the number of errors specified as the page size.</p>
         <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;&gt;</td>
         <td><p>A list of EthosResponses where each ethosResponse in the list contains a page of errors and each page
 contains up to the number of errors specified as the page size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsEthosErrorsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsEthosErrorsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetAsEthosErrorsAsync" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetAsEthosErrorsAsync">GetAsEthosErrorsAsync()</h4>
+  <div class="markdown level1 summary"><p>Get an initial list of EthosErrors from the tenant associated with the access token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosError&gt;&gt; GetAsEthosErrorsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.EthosError.html">EthosError</a>&gt;&gt;</td>
+        <td><p>An initial list of EthosErrors.</p>
 </td>
       </tr>
     </tbody>
@@ -998,6 +1052,51 @@ If it is null or empty, then an ArgumentNullException will be thrown.</p>
       <tr>
         <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
         <td><p>An EthosResponse object containing the EthosError in the content body.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsEthosErrorsAsync_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Errors_EthosErrorsClient_GetErrorsFromOffsetAsEthosErrorsAsync_System_Int32_" data-uid="Ellucian.Ethos.Integration.Client.Errors.EthosErrorsClient.GetErrorsFromOffsetAsEthosErrorsAsync(System.Int32)">GetErrorsFromOffsetAsEthosErrorsAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets all of the errors for the given tenant per access token from the given offset, as a list of EthosErrors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IEnumerable&lt;EthosError&gt;&gt; GetErrorsFromOffsetAsEthosErrorsAsync(int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>The 0 based index from which to begin paging for errors.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.Errors.EthosError.html">EthosError</a>&gt;&gt;</td>
+        <td><p>A list of EthosErrors starting from the given offset.</p>
 </td>
       </tr>
     </tbody>

@@ -132,250 +132,6 @@ The parameters are intended to be supplied from the <a class="xref" href="Elluci
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="Ellucian_Ethos_Integration_Client_EthosResponse__ctor_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.#ctor*"></a>
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse__ctor_System_Int32_System_String_Dictionary_System_String_System_String__" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.#ctor(System.Int32,System.String,Dictionary{System.String,System.String})">EthosResponse(Int32, String, Dictionary&lt;String, String&gt;)</h4>
-  <div class="markdown level1 summary"><p>Instantiates an EthosResponse object with the given parameters.
-The parameters are intended to be supplied from the <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.html">EthosResponseBuilder</a> to build this object from an <see cref="!:System.Net.Http.HttpResponseMessage"></see>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EthosResponse(int statusCode, string content, Dictionary&lt;string, string&gt; headersMap)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">statusCode</span></td>
-        <td><p>The Http status code of the response.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">content</span></td>
-        <td><p>The response body content.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
-        <td><span class="parametername">headersMap</span></td>
-        <td><p>A map of headers containing the defined header constants in this class as keys.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_HDR_APPLICATION_CONTEXT" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HDR_APPLICATION_CONTEXT">HDR_APPLICATION_CONTEXT</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HDR_APPLICATION_CONTEXT = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Response header for the application designation in Ethos Integration.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_HDR_CONTENT_TYPE" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HDR_CONTENT_TYPE">HDR_CONTENT_TYPE</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HDR_CONTENT_TYPE = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Response header for the content-type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_HDR_DATE" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HDR_DATE">HDR_DATE</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HDR_DATE = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Response header for the current date of the response.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID">HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_ID = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Response header for the application ID of the application used in Ethos Integration.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME">HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HDR_HEDTECH_ETHOS_INTEGRATION_APPLICATION_NAME = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Response header for the application name of the application used in Ethos Integration.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_HDR_X_MAX_PAGE_SIZE" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_MAX_PAGE_SIZE">HDR_X_MAX_PAGE_SIZE</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HDR_X_MAX_PAGE_SIZE = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Response header for the max page size. Specifies the maximum number of resources returned in a response.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_HDR_X_MEDIA_TYPE" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_MEDIA_TYPE">HDR_X_MEDIA_TYPE</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HDR_X_MEDIA_TYPE = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Response header for the version of the Ethos resource (data-model).</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_HDR_X_TOTAL_COUNT" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HDR_X_TOTAL_COUNT">HDR_X_TOTAL_COUNT</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string HDR_X_TOTAL_COUNT = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>Response header for the total count (total number of rows) for the given resource.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
   
@@ -432,39 +188,13 @@ The parameters are intended to be supplied from the <a class="xref" href="Elluci
   </table>
   
   
-  <a id="Ellucian_Ethos_Integration_Client_EthosResponse_Headers_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.Headers*"></a>
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_Headers" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.Headers">Headers</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, string&gt; Headers { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
-        <td><p>The headers collection.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
   <a id="Ellucian_Ethos_Integration_Client_EthosResponse_HeadersMap_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HeadersMap*"></a>
   <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_HeadersMap" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.HeadersMap">HeadersMap</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HttpResponseHeaders HeadersMap { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public HttpResponseHeaders HeadersMap { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -576,7 +306,7 @@ The parameters are intended to be supplied from the <a class="xref" href="Elluci
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>The value for the <see cref="!:System.Net.Http.Headers.HttpResponseHeaders"></see>.</p>
+        <td><p>The value for the <see cref="!:System.Net.Http.Headers.HttpResponseHeaders"></see> or null.</p>
 </td>
       </tr>
     </tbody>
@@ -585,12 +315,12 @@ The parameters are intended to be supplied from the <a class="xref" href="Elluci
   
   <a id="Ellucian_Ethos_Integration_Client_EthosResponse_GetHeaderMapKeys_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.GetHeaderMapKeys*"></a>
   <h4 id="Ellucian_Ethos_Integration_Client_EthosResponse_GetHeaderMapKeys" data-uid="Ellucian.Ethos.Integration.Client.EthosResponse.GetHeaderMapKeys">GetHeaderMapKeys()</h4>
-  <div class="markdown level1 summary"><p>Gets all the keys used for <see cref="!:System.Net.Http.Headers.HttpRequestHeaders"></see> and <see cref="!:System.Net.Http.Headers.HttpResponseHeaders"></see></p>
+  <div class="markdown level1 summary"><p>Gets the keys in the header map, which can be used to retrieve specific header values from <see cref="!:HttpResponseHeaders"></see>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; GetHeaderMapKeys()</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetHeaderMapKeys()</code></pre>
   </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -602,8 +332,8 @@ The parameters are intended to be supplied from the <a class="xref" href="Elluci
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><p>A list of keys.</p>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>A list of header map keys.</p>
 </td>
       </tr>
     </tbody>

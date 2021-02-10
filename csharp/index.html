@@ -137,11 +137,11 @@ JSON objects.  The <code>JObject</code>, <code>JToken</code> and <code>JArray</c
 manage all the Ethos Data Models and other resource types that could be returned from Ethos Integration without having to create and
 manage C# objects for every possible one.</p>
 <p>Here is an example of getting properties from a list of persons, then printing out the <code>id</code> and <code>fullName</code> attribute.</p>
-<pre><code class="lang-csharp">	JArray persons = await ethosProxyClient.GetAsJArrayAsync(&quot;persons&quot;, string.Empty);
+<pre><code class="lang-csharp">    JArray persons = await proxyClient.GetAsJArrayAsync(&quot;persons&quot;, string.Empty);
     foreach (JToken person in persons)
     {
         string id = person[&quot;id&quot;].Tostring();
-		// a person can have more than one name, but we just want the first one for simplicity.
+        // a person can have more than one name, but we just want the first one for simplicity.
         string fullName = person[&quot;names&quot;][0][&quot;fullName&quot;].Tostring();
         Console.WriteLine($&quot;{fullName} has a person ID of {id}&quot;);
     }
@@ -162,43 +162,43 @@ running these classes, an API key is required as a program argument.</p>
 <h3 id="making-requests-to-the-proxy-api">Making Requests to the Proxy API</h3>
 <p>Get a page of 'courses' resources using a specific version.</p>
 <pre><code class="lang-csharp">EthosProxyClient proxyClient = new EthosClientBuilder(apiKey).BuildEthosProxyClient();
-EthosResponse response = await proxyClient.Get(&quot;courses&quot;, &quot;application/vnd.hedtech.integration.v16.1.0+json&quot;);
+EthosResponse response = await proxyClient.GetAsync(&quot;courses&quot;, &quot;application/vnd.hedtech.integration.v16.1.0+json&quot;);
 </code></pre>
 <p>Get a page of 'persons' resources for a major version.</p>
 <pre><code class="lang-csharp">// get the full version header for v12 of 'persons'
-EthosConfigurationClient configClient = new EthosClientBuilder(apiKey).buildEthosConfigurationClient();
-string version = await configClient.GetVersionHeader​(&quot;persons&quot;, 12);
+EthosConfigurationClient configClient = new EthosClientBuilder(apiKey).BuildEthosConfigurationClient();
+string version = await configClient.GetVersionHeader​Async(&quot;persons&quot;, 12);
 
-EthosResponse response = proxyClient.GetAsync(&quot;persons&quot;, version);
+EthosResponse response = await proxyClient.GetAsync(&quot;persons&quot;, version);
 </code></pre>
 <p>Get a single 'employees' row using an ID.</p>
 <pre><code class="lang-csharp">EthosResponse response = await proxyClient.GetByIdAsync(&quot;employees&quot;, &quot;11111111-1111-1111-1111-111111111111&quot;);
 </code></pre>
 <p>Create a new record with a POST request.</p>
-<pre><code class="lang-csharp">EthosResponse response = await ethosProxyClient.PostAsync(&quot;colors&quot;, &quot;{ \&quot;id\&quot;:\&quot;00000000-0000-0000-0000-000000000000\&quot;, \&quot;name\&quot;: \&quot;green\&quot; }&quot;);
+<pre><code class="lang-csharp">EthosResponse response = await proxyClient.PostAsync(&quot;colors&quot;, &quot;{ \&quot;id\&quot;:\&quot;00000000-0000-0000-0000-000000000000\&quot;, \&quot;name\&quot;: \&quot;green\&quot; }&quot;);
 </code></pre>
 <p>Update a record with a PUT request.</p>
-<pre><code class="lang-csharp">EthosResponse response = await ethosProxyClient.PutAsync(&quot;colors&quot;, &quot;11111111-1111-1111-1111-111111111111&quot;, &quot;{ \&quot;name\&quot;: \&quot;forest green\&quot; }&quot;);
+<pre><code class="lang-csharp">EthosResponse response = await proxyClient.PutAsync(&quot;colors&quot;, &quot;11111111-1111-1111-1111-111111111111&quot;, &quot;{ \&quot;name\&quot;: \&quot;forest green\&quot; }&quot;);
 </code></pre>
 <p>Delete a record with a DELETE request.</p>
-<pre><code class="lang-csharp">await ethosProxyClient.DeleteAsync(&quot;colors&quot;, &quot;11111111-1111-1111-1111-111111111111&quot;);
+<pre><code class="lang-csharp">await proxyClient.DeleteAsync(&quot;colors&quot;, &quot;11111111-1111-1111-1111-111111111111&quot;);
 </code></pre>
 <p>Make requests that use paging.  This will handle sending multiple HTTP requests to get multiple pages of data with a single operation.<br>
 <strong>Use caution when trying to get all pages of a resource in a single request.  Depending on the resource, this could cause a long
 running operation that will cause a timeout, or it could return a huge amount of data that could cause an out of memory error.</strong></p>
 <pre><code class="lang-csharp">// get all the pages of data for the 'buildings' resource using the default page size
-var ethosResponseList = await ethosProxyClient.GetAllPagesAsync( &quot;buildings&quot;);
+var ethosResponseList = await proxyClient.GetAllPagesAsync( &quot;buildings&quot;);
 
 // get the max page size for the 'persons' resource
-int pageSize = ethosProxyClient.GetMaxPageSizeAsync( &quot;persons&quot; );
+int pageSize = proxyClient.GetMaxPageSizeAsync( &quot;persons&quot; );
 
 // get 5 pages of persons data using the default version and maximum allowed page size
 // return the data as a list of JArray objects
-var jsonNodeList = await ethosProxyClient.GetPagesAsJArraysAsync( &quot;persons&quot;, &quot;&quot;, pageSize, 5 );
+var jsonNodeList = await proxyClient.GetPagesAsJArraysAsync( &quot;persons&quot;, &quot;&quot;, pageSize, 5 );
 
 // get 2 pages of courses data starting from an offset of 100, using the default version and page size
 // return the data as a list of Strings
-var stringList = await ethosProxyClient.GetPagesFromOffsetAsStringsAsync( &quot;courses&quot;, &quot;&quot;, 0, 100, 2 );
+var stringList = await proxyClient.GetPagesFromOffsetAsStringsAsync( &quot;courses&quot;, &quot;&quot;, 0, 100, 2 );
 </code></pre>
 <h3 id="consuming-subscriber-messages">Consuming Subscriber Messages</h3>
 <p>Call the consume endpoint to get the default number of new messages from your application's subscriber queue.  The messages are
@@ -219,6 +219,120 @@ the application messages 6-10 again.</p>
 <p>Check to see how many messages are available in your application's subscriber queue.</p>
 <pre><code class="lang-csharp">int numMessages = await messagesClient.GetNumAvailableMessagesAsync();
 </code></pre>
+<h3 id="automated-polling-for-subscriber-messages">Automated Polling for Subscriber Messages</h3>
+<p>Setup automated polling for subscribing to ChangeNotification messages.  The SDK can automatically provide ChangeNotification
+messages to a client application when the client application configures a notification poll service to subscribe to a client implementation
+of the appropriate abstract subscriber.  As an example, the following shows a client application implementation of an abstract
+subscriber, which then receives notifications from the SDK in an automated polling fashion:</p>
+<pre><code class="lang-csharp">    // Client implementation of a change notification subscriber...
+    public class ClientAppChangeNotificationSubscriber: AbstractEthosChangeNotificationSubscriber&lt;ChangeNotification&gt;
+    {
+        /// &lt;summary&gt;
+        /// This is the method where client would implement their own code to process change notification.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;cn&quot;&gt;&lt;/param&gt;
+        public override void OnChangeNotification( ChangeNotification cn )
+        {
+            Console.WriteLine( &quot;In client application change notification received will be processed e.g. save changes in content to database etc.\r\n&quot; );
+            Console.WriteLine( $&quot;Change Notification for: {cn.Resource.Name} with id: {cn.Id} with content type: {cn.ContentType} published on: {cn.Published}.\r\n&quot; );
+
+            /*  
+             *  DO NOT ADD FOLLOWING CODE IN YOUR PRODUCTION IMPLEMENTATION. FOLLOWING THREAD IS BEING SLEPT JUST TO SIMULATE
+             *  THE ACTION(S) SUCH AS DB INTERACTION OR PASSING CHANGE NOTIFICATION TO YOUR OWN SERVICE ETC...
+            */
+
+            TimeSpan ts = new TimeSpan( 0, 0, 0, 5, 0 );
+            Thread.Sleep( ts );
+        }
+
+        /// &lt;summary&gt;
+        /// Here handle any errors that occured.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;e&quot;&gt;&lt;/param&gt;
+		public override void OnChangeNotificationError( Exception e )
+        {
+            base.OnChangeNotificationError( e );
+        }
+    }
+</code></pre>
+<pre><code class="lang-csharp">    // Client implementation of a change notification list subscriber...
+    public class ClientAppChangeNotificationListSubscriber: AbstractEthosChangeNotificationSubscriber&lt;IEnumerable&lt;ChangeNotification&gt;&gt;
+    {
+        /// &lt;summary&gt;
+        /// This is the method where client would implement their own code to process collection of change notifications.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;cn&quot;&gt;&lt;/param&gt;
+        public override void OnChangeNotification( IEnumerable&lt;ChangeNotification&gt; cns )
+        {
+            foreach ( var cn in cns )
+            {
+                Console.WriteLine( &quot;In client application change notification received will be processed e.g. save changes in content to database etc.\r\n&quot; );
+                Console.WriteLine( $&quot;Change Notification for: {cn.Resource.Name} with id: {cn.Id} with content type: {cn.ContentType} published on: {cn.Published}.\r\n&quot; );
+            }
+
+            /*  
+             *  DO NOT ADD FOLLOWING CODE IN YOUR PRODUCTION IMPLEMENTATION. FOLLOWING THREAD IS BEING SLEPT JUST TO SIMULATE
+             *  THE ACTION(S) SUCH AS DB INTERACTION OR PASSING CHANGE NOTIFICATION TO YOUR OWN SERVICE ETC...
+            */
+            TimeSpan ts = new TimeSpan( 0, 0, 0, 5, 0 );
+            Thread.Sleep( ts );
+        }
+
+        /// &lt;summary&gt;
+        /// Here handle any errors that occured.
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;e&quot;&gt;&lt;/param&gt;
+        public override void OnChangeNotificationError( Exception e )
+        {
+            Console.WriteLine( e.Message );
+        }
+    }
+</code></pre>
+<p>Example of using the client application subscriber implementation above, to have it receive notifications.
+This code would reside in a client application that uses the SDK.</p>
+<pre><code class="lang-csharp">        /// &lt;summary&gt;
+        /// Change notification polling example.
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        static async Task SubscribeToChangeNotifications()
+        {
+            EthosClientBuilder ethosClientBuilder = new EthosClientBuilder( SAMPLE_API_KEY )
+                                                    .WithConnectionTimeout( 30 );
+            EthosChangeNotificationService cnService = EthosChangeNotificationService.Build( action =&gt;
+            {
+                action
+                .WithEthosClientBuilder( ethosClientBuilder );
+            }, SAMPLE_API_KEY );
+            int? limit = 2;
+
+            myChangeNotificationSubscriber = new ClientAppChangeNotificationSubscriber();
+            EthosChangeNotificationPollService service = new EthosChangeNotificationPollService( cnService, limit, 5 )
+                .AddSubscriber( myChangeNotificationSubscriber );
+            await service.SubscribeAsync();
+        }
+</code></pre>
+<pre><code class="lang-csharp">        /// &lt;summary&gt;
+        /// Change notification list polling example.
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        static async Task SubscribeToChangeNotificationsList()
+        {
+            EthosClientBuilder ethosClientBuilder = new EthosClientBuilder( SAMPLE_API_KEY )
+                                                    .WithConnectionTimeout( 30 );
+            EthosChangeNotificationService cnService = EthosChangeNotificationService.Build( action =&gt;
+            {
+                action.WithEthosClientBuilder( ethosClientBuilder );
+            }, SAMPLE_API_KEY );
+
+            int? limit = 2;
+
+            ClientAppChangeNotificationListSubscriber subscriber = new ClientAppChangeNotificationListSubscriber();
+            EthosChangeNotificationListPollService service = new EthosChangeNotificationListPollService( cnService, limit, 5 )
+                .AddSubscriber( subscriber ));
+
+            await service.SubscribeAsync();
+        }
+</code></pre>
 <h3 id="getting-configuration-info">Getting Configuration Info</h3>
 <p>Get the configuration information for the application to which the API key belongs.</p>
 <pre><code class="lang-csharp">EthosConfigurationClient configClient = new EthosClientBuilder(apiKey).BuildEthosConfigurationClient();
@@ -235,7 +349,7 @@ endpoint of Ethos Integration, and returns that data in a string or JArray forma
 string availableResources = await configClient.GetAllAvailableResourcesAsync();
 
 // get as JArray
-JArray availableResources = await configClient.GetAllAvailableResourcesJsonAsync();
+JArray availableResources = await configClient.GetAllAvailableResourcesAsJsonAsync();
 </code></pre>
 <p>There is also an option to get the available resources data that only pertains to your application.  If your application has
 credentials configured to call one or more authoritative application API's, then it will have an <code>ownerOverrides</code> array defined in the
@@ -246,24 +360,69 @@ ownerOverrides config.</p>
 string availableResources = await configClient.GetAvailableResourcesForAppAsync();
 
 // get as JArray
-JArray availableResources = await configClient.GetAvailableResourcesForAppJsonAsync();
+JArray availableResources = await configClient.GetAvailableResourcesForAppAsJsonAsync();
 </code></pre>
 <h3 id="managing-ethos-errors">Managing Ethos Errors</h3>
 <p>Create an error in the Ethos Integration errors service.</p>
 <pre><code class="lang-csharp">EthosErrorsClient errorsClient = new EthosClientBuilder(apiKey).BuildEthosErrorsClient();
 // create an EthosError object from a JSON string
-string json = &quot;{ &quot; +
-	&quot;\&quot;severity\&quot;:\&quot;Error\&quot;, &quot; +
-    &quot;\&quot;responseCode\&quot;:400,&quot; +
-    &quot;\&quot;description\&quot;:\&quot;Bad request\&quot;, &quot; +
-    &quot;\&quot;details\&quot;:\&quot;additional error details\&quot; &quot; +
-&quot;}&quot;;
+string json = &quot;{&quot; +
+                    &quot;          \&quot;id\&quot;: \&quot;00000000-0000-0000-0000-000000000000\&quot;,&quot; +
+                    &quot;          \&quot;dateTime\&quot;: \&quot;2020-10-27T03:10:44.827Z\&quot;,&quot; +
+                    &quot;          \&quot;severity\&quot;: \&quot;error\&quot;,&quot; +
+                    &quot;          \&quot;responseCode\&quot;: 500,&quot; +
+                    &quot;          \&quot;description\&quot;: \&quot;Internal Server Error\&quot;,&quot; +
+                    &quot;          \&quot;details\&quot;: \&quot;This is a more info on the info error\&quot;,&quot; +
+                    &quot;          \&quot;applicationId\&quot;: \&quot;00000000-0000-0000-0000-000000000000\&quot;,&quot; +
+                    &quot;          \&quot;applicationName\&quot;: \&quot;Banner\&quot;,&quot; +
+                    &quot;          \&quot;correlationId\&quot;: \&quot;2468UserMade3242134\&quot;,&quot; +
+                    &quot;          \&quot;resource\&quot;: {&quot; +
+                    &quot;            \&quot;id\&quot;: \&quot;00000000-0000-0000-0000-000000000000\&quot;,&quot; +
+                    &quot;            \&quot;name\&quot;: \&quot;persons\&quot;&quot; +
+                    &quot;          },&quot; +
+                    &quot;          \&quot;applicationSubtype\&quot;: \&quot;EMA\&quot;&quot; +
+                    &quot;}&quot;;
 EthosError error = ErrorFactory.CreateErrorFromJson(json);
 // post to errors service
-EthosError response = await errorsClient.PostAsync(error);
+EthosResponse response = await errorsClient.PostAsync(error);
 </code></pre>
 <p>Get a single page of errors for your tenant from the errors service.</p>
 <pre><code class="lang-csharp">EthosResponse errorResponse = await errorsClient.GetAsync();
+</code></pre>
+<h3 id="getting-data-in-a-banner-mep-tenant-environment">Getting Data in a Banner MEP Tenant Environment</h3>
+<p>An overview of Banner MEP and instructions on how to configure an Ethos tenant for Banner MEP is outside of the scope of this documentation.  This will outline how to use API keys
+from the different applications to pull data for the different VPDI codes.</p>
+<p>When an Ethos tenant environment is configured for a Banner MEP institution, it will have multiple Banner applications setup that point to the same
+Banner implementation, but with different URI's to pull data for different VPDI codes.  There will also be separate client or subscribing applications
+setup to make proxy requests and receive change-notifications from the different Banner apps.</p>
+<p>In this code example, let's assume that I am working with a tenant environment that has Banner applications setup for 3 VPDI codes representing 3 different campuses of an institution:</p>
+<ul>
+<li>NORTH</li>
+<li>SOUTH</li>
+<li>MAIN</li>
+</ul>
+<p>Likewise, there will be 3 client applications that are used to get data from the 3 different Banner campuses.</p>
+<pre><code class="lang-csharp">// API keys for my 3 client apps
+string northKey = &quot;4ddb7445-d371-494a-aff4-0a0c55b9aff9&quot;;
+string southKey = &quot;89567e8d-bb76-41a0-af2d-73dc87071081&quot;;
+string mainKey = &quot;56174689-7db3-4785-83d5-3591c29a1a15&quot;;
+
+// get 'students' data through the proxy api for NORTH campus
+EthosProxyClient northProxyClient = new EthosClientBuilder(northKey).BuildEthosProxyClient();
+EthosResponse response = await northProxyClient.GetAsync(&quot;students&quot;);
+
+// get change-notifications from the messages service for SOUTH campus
+EthosMessagesClient southMessagesClient = new EthosClientBuilder(southKey).GetEthosMessagesClient();
+IEnumerable&lt;ChangeNotification&gt; changeNotifications = await southMessagesClient.ConsumeAsync();
+
+// get data through the proxy and get change-notifications for the MAIN campus
+EthosClientBuilder mainClientBuilder = new EthosClientBuilder(mainKey);
+// proxy
+EthosProxyClient mainProxyClient = mainClientBuilder.BuildEthosProxyClient();
+EthosResponse response = await mainProxyClient.GetAsync(&quot;students&quot;);
+// messages
+EthosMessagesClient mainMessagesClient = mainClientBuilder.GetEthosMessagesClient();
+IEnumerable&lt;ChangeNotification&gt; changeNotifications = await mainMessagesClient.ConsumeAsync();
 </code></pre>
 </article>
           </div>

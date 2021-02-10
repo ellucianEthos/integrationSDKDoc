@@ -154,7 +154,7 @@ This class supports building clients specified by the various client types.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IHttpProtocolClientBuilder builder</code></pre>
+    <pre><code class="lang-csharp hljs">protected IHttpProtocolClientBuilder builder</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -281,6 +281,33 @@ This class supports building clients specified by the various client types.</p>
   </table>
   
   
+  <a id="Ellucian_Ethos_Integration_Client_EthosClientBuilder_BuildEthosMessagesClient_" data-uid="Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosMessagesClient*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_EthosClientBuilder_BuildEthosMessagesClient" data-uid="Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosMessagesClient">BuildEthosMessagesClient()</h4>
+  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a> given the AccessToken.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosMessagesClient BuildEthosMessagesClient()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a></td>
+        <td><p>A new <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a> using the given apiKey, or null if the apiKey is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Ellucian_Ethos_Integration_Client_EthosClientBuilder_BuildEthosProxyClient_" data-uid="Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosProxyClient*"></a>
   <h4 id="Ellucian_Ethos_Integration_Client_EthosClientBuilder_BuildEthosProxyClient" data-uid="Ellucian.Ethos.Integration.Client.EthosClientBuilder.BuildEthosProxyClient">BuildEthosProxyClient()</h4>
   <div class="markdown level1 summary"><p>Gets an <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a> that will use the given API key to authenticate.</p>
@@ -302,33 +329,6 @@ This class supports building clients specified by the various client types.</p>
       <tr>
         <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a></td>
         <td><p>A new <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.EthosProxyClient.html">EthosProxyClient</a> using the given apiKey, or null if the apiKey is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Ellucian_Ethos_Integration_Client_EthosClientBuilder_GetEthosMessagesClient_" data-uid="Ellucian.Ethos.Integration.Client.EthosClientBuilder.GetEthosMessagesClient*"></a>
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosClientBuilder_GetEthosMessagesClient" data-uid="Ellucian.Ethos.Integration.Client.EthosClientBuilder.GetEthosMessagesClient">GetEthosMessagesClient()</h4>
-  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a> given the AccessToken.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public EthosMessagesClient GetEthosMessagesClient()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a></td>
-        <td><p>A new <a class="xref" href="Ellucian.Ethos.Integration.Client.Messages.EthosMessagesClient.html">EthosMessagesClient</a> using the given apiKey, or null if the apiKey is null.</p>
 </td>
       </tr>
     </tbody>

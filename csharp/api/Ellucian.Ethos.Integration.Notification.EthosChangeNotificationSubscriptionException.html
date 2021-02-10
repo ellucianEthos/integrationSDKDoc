@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class EthosResponseBuilder
+    <title>Class EthosChangeNotificationSubscriptionException
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class EthosResponseBuilder
+    <meta name="title" content="Class EthosChangeNotificationSubscriptionException
    ">
     <meta name="generator" content="docfx 2.56.5.0">
     
@@ -68,40 +68,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseBuilder">
+            <article class="content wrap" id="_content" data-uid="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException">
   
   
-  <h1 id="Ellucian_Ethos_Integration_Client_EthosResponseBuilder" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseBuilder" class="text-break">Class EthosResponseBuilder
+  <h1 id="Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscriptionException" data-uid="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException" class="text-break">Class EthosChangeNotificationSubscriptionException
   </h1>
-  <div class="markdown level0 summary"><p>Intended to be used to more easily build an EthosResponse object from the given <see cref="!:System.Net.Http.HttpResponseMessage"></see>.</p>
+  <div class="markdown level0 summary"><p>A RuntimeException that can be throws during subscription processing for ChangeNotifications.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">EthosResponseBuilder</span></div>
-      <div class="level2"><a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponseConverter.html">EthosResponseConverter</a></div>
+    <div class="level1"><span class="xref">EthosChangeNotificationSubscriptionException</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Client.html">Ellucian.Ethos.Integration.Client</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Ellucian.Ethos.Integration.Notification.html">Ellucian.Ethos.Integration.Notification</a></h6>
   <h6><strong>Assembly</strong>: Ellucian.EthosIntegration.SDK.dll</h6>
-  <h5 id="Ellucian_Ethos_Integration_Client_EthosResponseBuilder_syntax">Syntax</h5>
+  <h5 id="Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscriptionException_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class EthosResponseBuilder : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class EthosChangeNotificationSubscriptionException : Exception</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Ellucian_Ethos_Integration_Client_EthosResponseBuilder_BuildEthosResponseAsync_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.BuildEthosResponseAsync*"></a>
-  <h4 id="Ellucian_Ethos_Integration_Client_EthosResponseBuilder_BuildEthosResponseAsync_HttpResponseMessage_" data-uid="Ellucian.Ethos.Integration.Client.EthosResponseBuilder.BuildEthosResponseAsync(HttpResponseMessage)">BuildEthosResponseAsync(HttpResponseMessage)</h4>
-  <div class="markdown level1 summary"><p>Builds an <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a> object from the given <see cref="!:System.Net.Http.HttpResponseMessage"></see>.
-The headerList is built taking header values from the given<see cref="!:System.Net.Http.HttpResponseMessage"></see> for the
-headers listed in <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>.Also copies the response body content and Http status code.</p>
+  <a id="Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscriptionException__ctor_" data-uid="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscriptionException__ctor_System_String_" data-uid="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor(System.String)">EthosChangeNotificationSubscriptionException(String)</h4>
+  <div class="markdown level1 summary"><p>Constructs this exception with the given error message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">Task&lt;EthosResponse&gt; BuildEthosResponseAsync(HttpResponseMessage response)</code></pre>
+    <pre><code class="lang-csharp hljs">public EthosChangeNotificationSubscriptionException(string message)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -114,26 +111,44 @@ headers listed in <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosR
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">HttpResponseMessage</span></td>
-        <td><span class="parametername">response</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The error message pertinent to ChangeNotification processing.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscriptionException__ctor_" data-uid="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Notification_EthosChangeNotificationSubscriptionException__ctor_System_String_Exception_" data-uid="Ellucian.Ethos.Integration.Notification.EthosChangeNotificationSubscriptionException.#ctor(System.String,Exception)">EthosChangeNotificationSubscriptionException(String, Exception)</h4>
+  <div class="markdown level1 summary"><p>Constructs this exception with the given error message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EthosChangeNotificationSubscriptionException(string message, Exception e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Task</span>&lt;<a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>&gt;</td>
-        <td><p>An <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>containing the headers values from the given <see cref="!:System.Net.Http.HttpResponseMessage"></see>
-for the headers defined in <a class="xref" href="Ellucian.Ethos.Integration.Client.EthosResponse.html">EthosResponse</a>, the response body content, and the response Http status code,
-or null if the given <see cref="!:System.Net.Http.HttpResponseMessage"></see> is null.</p>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The error message pertinent to ChangeNotification processing.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">e</span></td>
+        <td><p>Base exception.</p>
 </td>
       </tr>
     </tbody>
