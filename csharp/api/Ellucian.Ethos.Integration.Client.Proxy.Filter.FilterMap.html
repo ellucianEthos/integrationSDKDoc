@@ -75,6 +75,31 @@
   </h1>
   <div class="markdown level0 summary"><p>Plain filter map used to support filtering for resource versions 6 and prior.
 Contains a Dictionary of key/value pairs for each key/value in the URL filter.</p>
+<pre><code><strong>
+    Examples:
+
+    //Creates: &quot;persons?firstName=John&amp;lastName=Smith&quot;
+    string resource = &quot;persons&quot;;
+    string version = &quot;application/vnd.hedtech.integration.v6+json&quot;;
+    string filterKey = &quot;firstName&quot;;
+    string filterValue = &quot;John&quot;;
+
+    FilterMap filterMap = new FilterMap()
+    .WithParameterPair( filterKey, filterValue )
+    .WithParameterPair( &quot;lastName&quot;, &quot;Smith&quot; )
+    .Build();
+
+    //Another example
+    //Creates: &quot;persons?firstName=John&quot;
+    string resource = &quot;persons&quot;;
+    string version = &quot;application/vnd.hedtech.integration.v6+json&quot;;
+    string filterMapKey = &quot;firstName&quot;;
+    string filterMapValue = &quot;John&quot;;
+
+    FilterMap filterMap = new FilterMap()
+    .WithParameterPair( filterMapKey, filterMapValue )
+    .Build();
+</strong></code></pre>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">

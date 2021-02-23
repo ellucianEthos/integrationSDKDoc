@@ -2187,19 +2187,19 @@ references:
   commentId: F:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.CRITERIA_FILTER_PREFIX
   fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.CRITERIA_FILTER_PREFIX
   nameWithType: EthosFilterQueryClient.CRITERIA_FILTER_PREFIX
-- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeCriteriaFilterStr(System.String)
-  name: EncodeCriteriaFilterStr(String)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_EncodeCriteriaFilterStr_System_String_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeCriteriaFilterStr(System.String)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeCriteriaFilterStr(System.String)
-  nameWithType: EthosFilterQueryClient.EncodeCriteriaFilterStr(String)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeCriteriaFilterStr*
-  name: EncodeCriteriaFilterStr
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_EncodeCriteriaFilterStr_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeCriteriaFilterStr
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeString(System.String)
+  name: EncodeString(String)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_EncodeString_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeString(System.String)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeString(System.String)
+  nameWithType: EthosFilterQueryClient.EncodeString(String)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeString*
+  name: EncodeString
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_EncodeString_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeString
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeCriteriaFilterStr
-  nameWithType: EthosFilterQueryClient.EncodeCriteriaFilterStr
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.EncodeString
+  nameWithType: EthosFilterQueryClient.EncodeString
 - uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithCriteriaFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.Int32)
   name: GetPagesFromOffsetWithCriteriaFilterAsync(String, CriteriaFilter, Int32)
   href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithCriteriaFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_Int32_
@@ -2250,6 +2250,37 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithFilterMapAsync
   nameWithType: EthosFilterQueryClient.GetPagesFromOffsetWithFilterMapAsync
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32)
+  name: GetPagesFromOffsetWithNamedQueryFilterAsync(String, NamedQueryFilter, Int32)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithNamedQueryFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_System_Int32_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.Int32)
+  nameWithType: EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(String, NamedQueryFilter, Int32)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32,System.Int32)
+  name: GetPagesFromOffsetWithNamedQueryFilterAsync(String, NamedQueryFilter, Int32, Int32)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithNamedQueryFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_System_Int32_System_Int32_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32,System.Int32)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.Int32, System.Int32)
+  nameWithType: EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(String, NamedQueryFilter, Int32, Int32)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32)
+  name: GetPagesFromOffsetWithNamedQueryFilterAsync(String, String, NamedQueryFilter, Int32)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithNamedQueryFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_System_Int32_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String, System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.Int32)
+  nameWithType: EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(String, String, NamedQueryFilter, Int32)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32,System.Int32)
+  name: GetPagesFromOffsetWithNamedQueryFilterAsync(String, String, NamedQueryFilter, Int32, Int32)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithNamedQueryFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_System_Int32_System_Int32_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32,System.Int32)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(System.String, System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.Int32, System.Int32)
+  nameWithType: EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync(String, String, NamedQueryFilter, Int32, Int32)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync*
+  name: GetPagesFromOffsetWithNamedQueryFilterAsync
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesFromOffsetWithNamedQueryFilterAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync
+  nameWithType: EthosFilterQueryClient.GetPagesFromOffsetWithNamedQueryFilterAsync
 - uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithCriteriaFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
   name: GetPagesWithCriteriaFilterAsync(String, CriteriaFilter)
   href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithCriteriaFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_
@@ -2300,12 +2331,49 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithFilterMapAsync
   nameWithType: EthosFilterQueryClient.GetPagesWithFilterMapAsync
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  name: GetPagesWithNamedQueryFilterAsync(String, NamedQueryFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithNamedQueryFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  nameWithType: EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(String, NamedQueryFilter)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32)
+  name: GetPagesWithNamedQueryFilterAsync(String, NamedQueryFilter, Int32)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithNamedQueryFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_System_Int32_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.Int32)
+  nameWithType: EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(String, NamedQueryFilter, Int32)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  name: GetPagesWithNamedQueryFilterAsync(String, String, NamedQueryFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithNamedQueryFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String, System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  nameWithType: EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(String, String, NamedQueryFilter)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32)
+  name: GetPagesWithNamedQueryFilterAsync(String, String, NamedQueryFilter, Int32)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithNamedQueryFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_System_Int32_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.Int32)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(System.String, System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.Int32)
+  nameWithType: EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync(String, String, NamedQueryFilter, Int32)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync*
+  name: GetPagesWithNamedQueryFilterAsync
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetPagesWithNamedQueryFilterAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync
+  nameWithType: EthosFilterQueryClient.GetPagesWithNamedQueryFilterAsync
 - uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
   name: GetTotalCountAsync(String, CriteriaFilter)
   href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_
   commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
   fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
   nameWithType: EthosFilterQueryClient.GetTotalCountAsync(String, CriteriaFilter)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  name: GetTotalCountAsync(String, NamedQueryFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  nameWithType: EthosFilterQueryClient.GetTotalCountAsync(String, NamedQueryFilter)
 - uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
   name: GetTotalCountAsync(String, String, CriteriaFilter)
   href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_
@@ -2318,6 +2386,12 @@ references:
   commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap)
   fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String, System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap)
   nameWithType: EthosFilterQueryClient.GetTotalCountAsync(String, String, FilterMap)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  name: GetTotalCountAsync(String, String, NamedQueryFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync(System.String, System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  nameWithType: EthosFilterQueryClient.GetTotalCountAsync(String, String, NamedQueryFilter)
 - uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetTotalCountAsync*
   name: GetTotalCountAsync
   href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetTotalCountAsync_
@@ -2375,25 +2449,56 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithFilterMapAsync
   nameWithType: EthosFilterQueryClient.GetWithFilterMapAsync
-- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(System.String,System.String,System.String,System.String)
-  name: GetWithSingleCriteriaFilterAsync(String, String, String, String)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSingleCriteriaFilterAsync_System_String_System_String_System_String_System_String_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(System.String,System.String,System.String,System.String)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(System.String, System.String, System.String, System.String)
-  nameWithType: EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(String, String, String, String)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(System.String,System.String,System.String,System.String,System.String)
-  name: GetWithSingleCriteriaFilterAsync(String, String, String, String, String)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSingleCriteriaFilterAsync_System_String_System_String_System_String_System_String_System_String_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(System.String,System.String,System.String,System.String,System.String)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(System.String, System.String, System.String, System.String, System.String)
-  nameWithType: EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync(String, String, String, String, String)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync*
-  name: GetWithSingleCriteriaFilterAsync
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSingleCriteriaFilterAsync_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  name: GetWithNamedQueryFilterAsync(String, NamedQueryFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithNamedQueryFilterAsync_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  nameWithType: EthosFilterQueryClient.GetWithNamedQueryFilterAsync(String, NamedQueryFilter)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String,System.String)
+  name: GetWithNamedQueryFilterAsync(String, String)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithNamedQueryFilterAsync_System_String_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String,System.String)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String, System.String)
+  nameWithType: EthosFilterQueryClient.GetWithNamedQueryFilterAsync(String, String)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  name: GetWithNamedQueryFilterAsync(String, String, NamedQueryFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithNamedQueryFilterAsync_System_String_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String,System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String, System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  nameWithType: EthosFilterQueryClient.GetWithNamedQueryFilterAsync(String, String, NamedQueryFilter)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String,System.String,System.String)
+  name: GetWithNamedQueryFilterAsync(String, String, String)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithNamedQueryFilterAsync_System_String_System_String_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String,System.String,System.String)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync(System.String, System.String, System.String)
+  nameWithType: EthosFilterQueryClient.GetWithNamedQueryFilterAsync(String, String, String)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync*
+  name: GetWithNamedQueryFilterAsync
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithNamedQueryFilterAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync
-  nameWithType: EthosFilterQueryClient.GetWithSingleCriteriaFilterAsync
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithNamedQueryFilterAsync
+  nameWithType: EthosFilterQueryClient.GetWithNamedQueryFilterAsync
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync(System.String,System.String,System.String,System.String)
+  name: GetWithSimpleCriteriaValuesAsync(String, String, String, String)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSimpleCriteriaValuesAsync_System_String_System_String_System_String_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync(System.String,System.String,System.String,System.String)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync(System.String, System.String, System.String, System.String)
+  nameWithType: EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync(String, String, String, String)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync(System.String,System.String,System.String,System.String,System.String)
+  name: GetWithSimpleCriteriaValuesAsync(String, String, String, String, String)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSimpleCriteriaValuesAsync_System_String_System_String_System_String_System_String_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync(System.String,System.String,System.String,System.String,System.String)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync(System.String, System.String, System.String, System.String, System.String)
+  nameWithType: EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync(String, String, String, String, String)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync*
+  name: GetWithSimpleCriteriaValuesAsync
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_GetWithSimpleCriteriaValuesAsync_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync
+  nameWithType: EthosFilterQueryClient.GetWithSimpleCriteriaValuesAsync
 - uid: Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.PrepareForPagingAsync(Ellucian.Ethos.Integration.Client.Proxy.Pager)
   name: PrepareForPagingAsync(Pager)
   href: api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html#Ellucian_Ethos_Integration_Client_Proxy_EthosFilterQueryClient_PrepareForPagingAsync_Ellucian_Ethos_Integration_Client_Proxy_Pager_
@@ -3246,6 +3351,83 @@ references:
   commentId: N:Ellucian.Ethos.Integration.Client.Proxy.Filter
   fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter
   nameWithType: Ellucian.Ethos.Integration.Client.Proxy.Filter
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions
+  name: CriteriaExtensions
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html
+  commentId: T:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions
+  nameWithType: CriteriaExtensions
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,Dictionary{System.String,System.Object})
+  name: WithArray(CriteriaFilter, String, Dictionary<String, Object>)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaExtensions_WithArray_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_String_Dictionary_System_String_System_Object__
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,Dictionary{System.String,System.Object})
+  name.vb: WithArray(CriteriaFilter, String, Dictionary(Of String, Object))
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, Dictionary<System.String, System.Object>)
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, Dictionary(Of System.String, System.Object))
+  nameWithType: CriteriaExtensions.WithArray(CriteriaFilter, String, Dictionary<String, Object>)
+  nameWithType.vb: CriteriaExtensions.WithArray(CriteriaFilter, String, Dictionary(Of String, Object))
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.Object[])
+  name: WithArray(CriteriaFilter, String, Object[])
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaExtensions_WithArray_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_String_System_Object___
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.Object[])
+  name.vb: WithArray(CriteriaFilter, String, Object())
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, System.Object[])
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, System.Object())
+  nameWithType: CriteriaExtensions.WithArray(CriteriaFilter, String, Object[])
+  nameWithType.vb: CriteriaExtensions.WithArray(CriteriaFilter, String, Object())
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.ValueTuple{System.String,System.Object}[])
+  name: WithArray(CriteriaFilter, String, (String key, Object value)[])
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaExtensions_WithArray_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_String_System_ValueTuple_System_String_System_Object____
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.ValueTuple{System.String,System.Object}[])
+  name.vb: WithArray(CriteriaFilter, String, (key As String, value As Object)())
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, System.ValueTuple<System.String, System.Object>[])
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, System.ValueTuple(Of System.String, System.Object)())
+  nameWithType: CriteriaExtensions.WithArray(CriteriaFilter, String, (String key, Object value)[])
+  nameWithType.vb: CriteriaExtensions.WithArray(CriteriaFilter, String, (key As String, value As Object)())
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray*
+  name: WithArray
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaExtensions_WithArray_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithArray
+  nameWithType: CriteriaExtensions.WithArray
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String)
+  name: WithSimpleCriteria(CriteriaFilter, String)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaExtensions_WithSimpleCriteria_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String)
+  nameWithType: CriteriaExtensions.WithSimpleCriteria(CriteriaFilter, String)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.Object)
+  name: WithSimpleCriteria(CriteriaFilter, String, Object)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaExtensions_WithSimpleCriteria_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_String_System_Object_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.Object)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, System.Object)
+  nameWithType: CriteriaExtensions.WithSimpleCriteria(CriteriaFilter, String, Object)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.ValueTuple{System.String,System.Object})
+  name: WithSimpleCriteria(CriteriaFilter, String, (String key, Object value))
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaExtensions_WithSimpleCriteria_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_String_System_ValueTuple_System_String_System_Object__
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.ValueTuple{System.String,System.Object})
+  name.vb: WithSimpleCriteria(CriteriaFilter, String, (key As String, value As Object))
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, System.ValueTuple<System.String, System.Object>)
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, System.ValueTuple(Of System.String, System.Object))
+  nameWithType: CriteriaExtensions.WithSimpleCriteria(CriteriaFilter, String, (String key, Object value))
+  nameWithType.vb: CriteriaExtensions.WithSimpleCriteria(CriteriaFilter, String, (key As String, value As Object))
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.ValueTuple{System.String,System.Object}[])
+  name: WithSimpleCriteria(CriteriaFilter, String, (String key, Object value)[])
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaExtensions_WithSimpleCriteria_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_System_String_System_ValueTuple_System_String_System_Object____
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter,System.String,System.ValueTuple{System.String,System.Object}[])
+  name.vb: WithSimpleCriteria(CriteriaFilter, String, (key As String, value As Object)())
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, System.ValueTuple<System.String, System.Object>[])
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter, System.String, System.ValueTuple(Of System.String, System.Object)())
+  nameWithType: CriteriaExtensions.WithSimpleCriteria(CriteriaFilter, String, (String key, Object value)[])
+  nameWithType.vb: CriteriaExtensions.WithSimpleCriteria(CriteriaFilter, String, (key As String, value As Object)())
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria*
+  name: WithSimpleCriteria
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaExtensions_WithSimpleCriteria_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.WithSimpleCriteria
+  nameWithType: CriteriaExtensions.WithSimpleCriteria
 - uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter
   name: CriteriaFilter
   href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html
@@ -3265,202 +3447,47 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaFilter
   nameWithType: CriteriaFilter.CriteriaFilter
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Build
-  name: Build()
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_Build
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Build
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Build()
-  nameWithType: CriteriaFilter.Build()
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Build*
-  name: Build
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_Build_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Build
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaExpandoObject
+  name: CriteriaExpandoObject
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_CriteriaExpandoObject
+  commentId: P:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaExpandoObject
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaExpandoObject
+  nameWithType: CriteriaFilter.CriteriaExpandoObject
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaExpandoObject*
+  name: CriteriaExpandoObject
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_CriteriaExpandoObject_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaExpandoObject
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Build
-  nameWithType: CriteriaFilter.Build
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.criteriaSet
-  name: criteriaSet
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_criteriaSet
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.criteriaSet
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.criteriaSet
-  nameWithType: CriteriaFilter.criteriaSet
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaSetList
-  name: CriteriaSetList
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_CriteriaSetList
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaSetList
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaSetList
-  nameWithType: CriteriaFilter.CriteriaSetList
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.LBR
-  name: LBR
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_LBR
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.LBR
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.LBR
-  nameWithType: CriteriaFilter.LBR
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.NewCriteriaSet
-  name: NewCriteriaSet()
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_NewCriteriaSet
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.NewCriteriaSet
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.NewCriteriaSet()
-  nameWithType: CriteriaFilter.NewCriteriaSet()
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.NewCriteriaSet(System.String)
-  name: NewCriteriaSet(String)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_NewCriteriaSet_System_String_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.NewCriteriaSet(System.String)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.NewCriteriaSet(System.String)
-  nameWithType: CriteriaFilter.NewCriteriaSet(String)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.NewCriteriaSet*
-  name: NewCriteriaSet
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_NewCriteriaSet_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.NewCriteriaSet
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.CriteriaExpandoObject
+  nameWithType: CriteriaFilter.CriteriaExpandoObject
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.op_Implicit(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)~ExpandoObject
+  name: Implicit(CriteriaFilter to ExpandoObject)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_op_Implicit_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter__ExpandoObject
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.op_Implicit(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)~ExpandoObject
+  name.vb: Widening(CriteriaFilter to ExpandoObject)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Implicit(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter to ExpandoObject)
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Widening(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter to ExpandoObject)
+  nameWithType: CriteriaFilter.Implicit(CriteriaFilter to ExpandoObject)
+  nameWithType.vb: CriteriaFilter.Widening(CriteriaFilter to ExpandoObject)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.op_Implicit(ExpandoObject)~Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter
+  name: Implicit(ExpandoObject to CriteriaFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_op_Implicit_ExpandoObject__Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.op_Implicit(ExpandoObject)~Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter
+  name.vb: Widening(ExpandoObject to CriteriaFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Implicit(ExpandoObject to Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Widening(ExpandoObject to Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
+  nameWithType: CriteriaFilter.Implicit(ExpandoObject to CriteriaFilter)
+  nameWithType.vb: CriteriaFilter.Widening(ExpandoObject to CriteriaFilter)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.op_Implicit*
+  name: Implicit
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_op_Implicit_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.op_Implicit
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.NewCriteriaSet
-  nameWithType: CriteriaFilter.NewCriteriaSet
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.RBR
-  name: RBR
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_RBR
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.RBR
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.RBR
-  nameWithType: CriteriaFilter.RBR
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.ToString
-  name: ToString()
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_ToString
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.ToString
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.ToString()
-  nameWithType: CriteriaFilter.ToString()
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.ToString*
-  name: ToString
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_ToString_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.ToString
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.ToString
-  nameWithType: CriteriaFilter.ToString
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithCriteriaSet(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria)
-  name: WithCriteriaSet(String, SimpleCriteria)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_WithCriteriaSet_System_String_Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithCriteriaSet(System.String,Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithCriteriaSet(System.String, Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria)
-  nameWithType: CriteriaFilter.WithCriteriaSet(String, SimpleCriteria)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithCriteriaSet(System.String,System.String,System.String)
-  name: WithCriteriaSet(String, String, String)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_WithCriteriaSet_System_String_System_String_System_String_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithCriteriaSet(System.String,System.String,System.String)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithCriteriaSet(System.String, System.String, System.String)
-  nameWithType: CriteriaFilter.WithCriteriaSet(String, String, String)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithCriteriaSet*
-  name: WithCriteriaSet
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_WithCriteriaSet_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithCriteriaSet
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithCriteriaSet
-  nameWithType: CriteriaFilter.WithCriteriaSet
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria)
-  name: WithSimpleCriteria(SimpleCriteria)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_WithSimpleCriteria_Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria)
-  nameWithType: CriteriaFilter.WithSimpleCriteria(SimpleCriteria)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithSimpleCriteria(System.String,System.String)
-  name: WithSimpleCriteria(String, String)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_WithSimpleCriteria_System_String_System_String_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithSimpleCriteria(System.String,System.String)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithSimpleCriteria(System.String, System.String)
-  nameWithType: CriteriaFilter.WithSimpleCriteria(String, String)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithSimpleCriteria*
-  name: WithSimpleCriteria
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_WithSimpleCriteria_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithSimpleCriteria
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.WithSimpleCriteria
-  nameWithType: CriteriaFilter.WithSimpleCriteria
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet
-  name: CriteriaSet
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html
-  commentId: T:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet
-  nameWithType: CriteriaSet
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.#ctor
-  name: CriteriaSet()
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet__ctor
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.#ctor
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaSet()
-  nameWithType: CriteriaSet.CriteriaSet()
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.#ctor*
-  name: CriteriaSet
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet__ctor_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.#ctor
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaSet
-  nameWithType: CriteriaSet.CriteriaSet
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.AddSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria)
-  name: AddSimpleCriteria(SimpleCriteria)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_AddSimpleCriteria_Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.AddSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.AddSimpleCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria)
-  nameWithType: CriteriaSet.AddSimpleCriteria(SimpleCriteria)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.AddSimpleCriteria*
-  name: AddSimpleCriteria
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_AddSimpleCriteria_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.AddSimpleCriteria
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.AddSimpleCriteria
-  nameWithType: CriteriaSet.AddSimpleCriteria
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.BSL
-  name: BSL
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_BSL
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.BSL
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.BSL
-  nameWithType: CriteriaSet.BSL
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaList
-  name: CriteriaList
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_CriteriaList
-  commentId: P:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaList
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaList
-  nameWithType: CriteriaSet.CriteriaList
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaList*
-  name: CriteriaList
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_CriteriaList_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaList
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaList
-  nameWithType: CriteriaSet.CriteriaList
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaName
-  name: CriteriaName
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_CriteriaName
-  commentId: P:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaName
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaName
-  nameWithType: CriteriaSet.CriteriaName
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaName*
-  name: CriteriaName
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_CriteriaName_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaName
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.CriteriaName
-  nameWithType: CriteriaSet.CriteriaName
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.LBR
-  name: LBR
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_LBR
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.LBR
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.LBR
-  nameWithType: CriteriaSet.LBR
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.RBR
-  name: RBR
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_RBR
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.RBR
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.RBR
-  nameWithType: CriteriaSet.RBR
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.ToString
-  name: ToString()
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_ToString
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.ToString
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.ToString()
-  nameWithType: CriteriaSet.ToString()
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.ToString*
-  name: ToString
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaSet_ToString_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.ToString
-  isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.ToString
-  nameWithType: CriteriaSet.ToString
+  name.vb: Widening
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Implicit
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.Widening
+  nameWithType: CriteriaFilter.Implicit
+  nameWithType.vb: CriteriaFilter.Widening
 - uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap
   name: FilterMap
   href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.html
@@ -3551,133 +3578,209 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.WithParameterPair
   nameWithType: FilterMap.WithParameterPair
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria
-  name: NamedSimpleCriteria
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.html
-  commentId: T:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria
-  nameWithType: NamedSimpleCriteria
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.#ctor(System.String,System.String,System.String)
-  name: NamedSimpleCriteria(String, String, String)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedSimpleCriteria__ctor_System_String_System_String_System_String_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.#ctor(System.String,System.String,System.String)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.NamedSimpleCriteria(System.String, System.String, System.String)
-  nameWithType: NamedSimpleCriteria.NamedSimpleCriteria(String, String, String)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.#ctor*
-  name: NamedSimpleCriteria
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedSimpleCriteria__ctor_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.#ctor
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility
+  name: FilterUtility
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html
+  commentId: T:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility
+  nameWithType: FilterUtility
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Add(System.String,System.Object)
+  name: Add(String, Object)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_Add_System_String_System_Object_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Add(System.String,System.Object)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Add(System.String, System.Object)
+  nameWithType: FilterUtility.Add(String, Object)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Add*
+  name: Add
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_Add_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Add
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.NamedSimpleCriteria
-  nameWithType: NamedSimpleCriteria.NamedSimpleCriteria
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.Name
-  name: Name
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedSimpleCriteria_Name
-  commentId: P:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.Name
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.Name
-  nameWithType: NamedSimpleCriteria.Name
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.Name*
-  name: Name
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedSimpleCriteria_Name_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.Name
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Add
+  nameWithType: FilterUtility.Add
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Build*
+  name: Build
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_Build_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Build
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.Name
-  nameWithType: NamedSimpleCriteria.Name
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.ToString
-  name: ToString()
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedSimpleCriteria_ToString
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.ToString
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.ToString()
-  nameWithType: NamedSimpleCriteria.ToString()
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.ToString*
-  name: ToString
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedSimpleCriteria_ToString_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.ToString
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Build
+  nameWithType: FilterUtility.Build
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Build``1(``0)
+  name: Build<T>(T)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_Build__1___0_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Build``1(``0)
+  name.vb: Build(Of T)(T)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Build<T>(T)
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Build(Of T)(T)
+  nameWithType: FilterUtility.Build<T>(T)
+  nameWithType.vb: FilterUtility.Build(Of T)(T)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
+  name: BuildCriteria(CriteriaFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_BuildCriteria_Ellucian_Ethos_Integration_Client_Proxy_Filter_CriteriaFilter_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildCriteria(Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter)
+  nameWithType: FilterUtility.BuildCriteria(CriteriaFilter)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildCriteria*
+  name: BuildCriteria
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_BuildCriteria_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildCriteria
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.ToString
-  nameWithType: NamedSimpleCriteria.ToString
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria
-  name: SimpleCriteria
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html
-  commentId: T:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria
-  nameWithType: SimpleCriteria
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.#ctor
-  name: SimpleCriteria()
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria__ctor
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.#ctor
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.SimpleCriteria()
-  nameWithType: SimpleCriteria.SimpleCriteria()
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.#ctor(System.String,System.String)
-  name: SimpleCriteria(String, String)
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria__ctor_System_String_System_String_
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.#ctor(System.String,System.String)
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.SimpleCriteria(System.String, System.String)
-  nameWithType: SimpleCriteria.SimpleCriteria(String, String)
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.#ctor*
-  name: SimpleCriteria
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria__ctor_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.#ctor
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildCriteria
+  nameWithType: FilterUtility.BuildCriteria
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  name: BuildNamedQuery(NamedQueryFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_BuildNamedQuery_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  nameWithType: FilterUtility.BuildNamedQuery(NamedQueryFilter)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildNamedQuery*
+  name: BuildNamedQuery
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_BuildNamedQuery_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildNamedQuery
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.SimpleCriteria
-  nameWithType: SimpleCriteria.SimpleCriteria
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.BSL
-  name: BSL
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_BSL
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.BSL
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.BSL
-  nameWithType: SimpleCriteria.BSL
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Key
-  name: Key
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_Key
-  commentId: P:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Key
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Key
-  nameWithType: SimpleCriteria.Key
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Key*
-  name: Key
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_Key_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Key
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.BuildNamedQuery
+  nameWithType: FilterUtility.BuildNamedQuery
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.IsNull(IDictionary{System.String,System.Object})
+  name: IsNull(IDictionary<String, Object>)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_IsNull_IDictionary_System_String_System_Object__
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.IsNull(IDictionary{System.String,System.Object})
+  name.vb: IsNull(IDictionary(Of String, Object))
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.IsNull(IDictionary<System.String, System.Object>)
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.IsNull(IDictionary(Of System.String, System.Object))
+  nameWithType: FilterUtility.IsNull(IDictionary<String, Object>)
+  nameWithType.vb: FilterUtility.IsNull(IDictionary(Of String, Object))
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.IsNull*
+  name: IsNull
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_IsNull_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.IsNull
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Key
-  nameWithType: SimpleCriteria.Key
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.LBR
-  name: LBR
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_LBR
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.LBR
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.LBR
-  nameWithType: SimpleCriteria.LBR
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.RBR
-  name: RBR
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_RBR
-  commentId: F:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.RBR
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.RBR
-  nameWithType: SimpleCriteria.RBR
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.ToString
-  name: ToString()
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_ToString
-  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.ToString
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.ToString()
-  nameWithType: SimpleCriteria.ToString()
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.ToString*
-  name: ToString
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_ToString_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.ToString
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.IsNull
+  nameWithType: FilterUtility.IsNull
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Validate(ExpandoObject)
+  name: Validate(ExpandoObject)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_Validate_ExpandoObject_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Validate(ExpandoObject)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Validate(ExpandoObject)
+  nameWithType: FilterUtility.Validate(ExpandoObject)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Validate*
+  name: Validate
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_FilterUtility_Validate_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Validate
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.ToString
-  nameWithType: SimpleCriteria.ToString
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Value
-  name: Value
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_Value
-  commentId: P:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Value
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Value
-  nameWithType: SimpleCriteria.Value
-- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Value*
-  name: Value
-  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_SimpleCriteria_Value_
-  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Value
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.Validate
+  nameWithType: FilterUtility.Validate
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions
+  name: NamedQueryExtensions
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.html
+  commentId: T:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions
+  nameWithType: NamedQueryExtensions
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.String,System.Object)
+  name: WithNamedQuery(NamedQueryFilter, String, Object)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryExtensions_WithNamedQuery_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_System_String_System_Object_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.String,System.Object)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.String, System.Object)
+  nameWithType: NamedQueryExtensions.WithNamedQuery(NamedQueryFilter, String, Object)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.String,System.String,System.Object)
+  name: WithNamedQuery(NamedQueryFilter, String, String, Object)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryExtensions_WithNamedQuery_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_System_String_System_String_System_Object_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.String,System.String,System.Object)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.String, System.String, System.Object)
+  nameWithType: NamedQueryExtensions.WithNamedQuery(NamedQueryFilter, String, String, Object)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.ValueTuple{System.String,System.Object}[])
+  name: WithNamedQuery(NamedQueryFilter, (String key, Object value)[])
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryExtensions_WithNamedQuery_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_System_ValueTuple_System_String_System_Object____
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter,System.ValueTuple{System.String,System.Object}[])
+  name.vb: WithNamedQuery(NamedQueryFilter, (key As String, value As Object)())
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.ValueTuple<System.String, System.Object>[])
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter, System.ValueTuple(Of System.String, System.Object)())
+  nameWithType: NamedQueryExtensions.WithNamedQuery(NamedQueryFilter, (String key, Object value)[])
+  nameWithType.vb: NamedQueryExtensions.WithNamedQuery(NamedQueryFilter, (key As String, value As Object)())
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery*
+  name: WithNamedQuery
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryExtensions_WithNamedQuery_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery
   isSpec: "True"
-  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.Value
-  nameWithType: SimpleCriteria.Value
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.WithNamedQuery
+  nameWithType: NamedQueryExtensions.WithNamedQuery
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter
+  name: NamedQueryFilter
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html
+  commentId: T:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter
+  nameWithType: NamedQueryFilter
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.#ctor
+  name: NamedQueryFilter()
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter__ctor
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.#ctor
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryFilter()
+  nameWithType: NamedQueryFilter.NamedQueryFilter()
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.#ctor(System.String)
+  name: NamedQueryFilter(String)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter__ctor_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.#ctor(System.String)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryFilter(System.String)
+  nameWithType: NamedQueryFilter.NamedQueryFilter(String)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.#ctor*
+  name: NamedQueryFilter
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter__ctor_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.#ctor
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryFilter
+  nameWithType: NamedQueryFilter.NamedQueryFilter
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryExpandoObject
+  name: NamedQueryExpandoObject
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_NamedQueryExpandoObject
+  commentId: P:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryExpandoObject
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryExpandoObject
+  nameWithType: NamedQueryFilter.NamedQueryExpandoObject
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryExpandoObject*
+  name: NamedQueryExpandoObject
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_NamedQueryExpandoObject_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryExpandoObject
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryExpandoObject
+  nameWithType: NamedQueryFilter.NamedQueryExpandoObject
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryLabel
+  name: NamedQueryLabel
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_NamedQueryLabel
+  commentId: P:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryLabel
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryLabel
+  nameWithType: NamedQueryFilter.NamedQueryLabel
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryLabel*
+  name: NamedQueryLabel
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_NamedQueryLabel_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryLabel
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.NamedQueryLabel
+  nameWithType: NamedQueryFilter.NamedQueryLabel
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.op_Implicit(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)~ExpandoObject
+  name: Implicit(NamedQueryFilter to ExpandoObject)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_op_Implicit_Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter__ExpandoObject
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.op_Implicit(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)~ExpandoObject
+  name.vb: Widening(NamedQueryFilter to ExpandoObject)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.Implicit(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter to ExpandoObject)
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.Widening(Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter to ExpandoObject)
+  nameWithType: NamedQueryFilter.Implicit(NamedQueryFilter to ExpandoObject)
+  nameWithType.vb: NamedQueryFilter.Widening(NamedQueryFilter to ExpandoObject)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.op_Implicit(ExpandoObject)~Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter
+  name: Implicit(ExpandoObject to NamedQueryFilter)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_op_Implicit_ExpandoObject__Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.op_Implicit(ExpandoObject)~Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter
+  name.vb: Widening(ExpandoObject to NamedQueryFilter)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.Implicit(ExpandoObject to Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.Widening(ExpandoObject to Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter)
+  nameWithType: NamedQueryFilter.Implicit(ExpandoObject to NamedQueryFilter)
+  nameWithType.vb: NamedQueryFilter.Widening(ExpandoObject to NamedQueryFilter)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.op_Implicit*
+  name: Implicit
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html#Ellucian_Ethos_Integration_Client_Proxy_Filter_NamedQueryFilter_op_Implicit_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.Implicit
+  fullName.vb: Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.Widening
+  nameWithType: NamedQueryFilter.Implicit
+  nameWithType.vb: NamedQueryFilter.Widening
 - uid: Ellucian.Ethos.Integration.Client.Proxy.Pager
   name: Pager
   href: api/Ellucian.Ethos.Integration.Client.Proxy.Pager.html
@@ -3830,6 +3933,19 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.Proxy.Pager.HowToPage
   nameWithType: Pager.HowToPage
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Pager.NamedQueryFilter
+  name: NamedQueryFilter
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Pager.html#Ellucian_Ethos_Integration_Client_Proxy_Pager_NamedQueryFilter
+  commentId: P:Ellucian.Ethos.Integration.Client.Proxy.Pager.NamedQueryFilter
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Pager.NamedQueryFilter
+  nameWithType: Pager.NamedQueryFilter
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Pager.NamedQueryFilter*
+  name: NamedQueryFilter
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Pager.html#Ellucian_Ethos_Integration_Client_Proxy_Pager_NamedQueryFilter_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Pager.NamedQueryFilter
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Pager.NamedQueryFilter
+  nameWithType: Pager.NamedQueryFilter
 - uid: Ellucian.Ethos.Integration.Client.Proxy.Pager.NumPages
   name: NumPages
   href: api/Ellucian.Ethos.Integration.Client.Proxy.Pager.html#Ellucian_Ethos_Integration_Client_Proxy_Pager_NumPages
@@ -4002,6 +4118,19 @@ references:
   isSpec: "True"
   fullName: Ellucian.Ethos.Integration.Client.Proxy.Pager.WithFilterMap
   nameWithType: Pager.WithFilterMap
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Pager.WithNamedQuery(System.String)
+  name: WithNamedQuery(String)
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Pager.html#Ellucian_Ethos_Integration_Client_Proxy_Pager_WithNamedQuery_System_String_
+  commentId: M:Ellucian.Ethos.Integration.Client.Proxy.Pager.WithNamedQuery(System.String)
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Pager.WithNamedQuery(System.String)
+  nameWithType: Pager.WithNamedQuery(String)
+- uid: Ellucian.Ethos.Integration.Client.Proxy.Pager.WithNamedQuery*
+  name: WithNamedQuery
+  href: api/Ellucian.Ethos.Integration.Client.Proxy.Pager.html#Ellucian_Ethos_Integration_Client_Proxy_Pager_WithNamedQuery_
+  commentId: Overload:Ellucian.Ethos.Integration.Client.Proxy.Pager.WithNamedQuery
+  isSpec: "True"
+  fullName: Ellucian.Ethos.Integration.Client.Proxy.Pager.WithNamedQuery
+  nameWithType: Pager.WithNamedQuery
 - uid: Ellucian.Ethos.Integration.Client.Proxy.Pager.WithPageSize(System.Int32)
   name: WithPageSize(Int32)
   href: api/Ellucian.Ethos.Integration.Client.Proxy.Pager.html#Ellucian_Ethos_Integration_Client_Proxy_Pager_WithPageSize_System_Int32_

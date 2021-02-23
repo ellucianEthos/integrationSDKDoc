@@ -77,72 +77,87 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></h4>
-      <section><p>This class is used to build CriteriaFilters, for use with Ethos resource using version 8 or later.
-Follows the builder pattern for easy construction of criteria filters.
-Inner class used for Building an instance of a CriteriaFilter, following the builder pattern.
-Use this Builder class to build CriteriaFilters.
-A CriteriaFilter can produce the following constructs, as examples:</p>
-<p>
-Example of a CriteriaFilter with a SimpleCriteria:
-<pre><code>                      CriteriaFilter
-       ______________________/\______________________
-      /                                              \
-     /                          CriteriaSet           \
-    /            ___________________/\_________________\
-   /            /                                      \\
-  /            /                 SimpleCriteria         \\
- /            /      __________________/\________________\\
-/            /      /                                    \\\
-?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;,&quot;lastName&quot;:&quot;Smith&quot;}]}</code></pre></p>
-<p>
-Example of a CriteriaFilter with a NamedSimpleCriteria:
-<pre><code>                                           CriteriaFilter
-           ______________________________________/\__________________________________
-          /                                                                          \
-         /                                           CriteriaSet                      \
-        /           _____________________________________/\____________________________\
-       /           /                                                                   \\
-      /           /                                           NamedSimpleCriteria       \\
-     /           /                         _________________________/\___________________\\
-    /           /                        /                                               \\\
-   /           /                        /Name                  SimpleCriteria             \\\
-  /           /                        / / \       _____________________/\_________________\\\
- /           /                        / /   \    /                                         \\\\
-?criteria={&quot;alternativeCredentials&quot;: [{&quot;type&quot;: {&quot;id&quot;: &quot;11111111-1111-1111-1111-111111111111&quot;}}]} </code></pre></p>
-<p>
-Example of a CriteriaFilter with SimpleCriteria in multiple CriteriaSets:
-<pre><code>                                       CriteriaFilter
-       _______________________________________/\__________________________________
-      /                                                                           \
-     /                        CriteriaSet                             CriteriaSet  \
-    /          ___________________/\____________________           _________/\______\
-   /          /                                         \         /                  \
-  /          /                   SimpleCriteria          \       /     SimpleCriteria\\
- /          /          ________________/\_________________\     /        ______/\_____\\
-/          /          /                                   \\   /       /              \\\
-?criteria={&quot;names&quot;:[{&quot;firstName&quot;:&quot;John&quot;,&quot;lastName&quot;:&quot;Smith&quot;}],&quot;roles&quot;:[{&quot;role&quot;:&quot;student&quot;}]}</code></pre></p>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html">CriteriaExtensions</a></h4>
+      <section><p>This class adds extension methods to <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a> class.</p>
 </section>
-      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html">CriteriaSet</a></h4>
-      <section><p><strong>This class is intended to be used internally by the SDK.</strong></p>
-<p>
-NOTE: This class is not intended to be used directly, but is used by the CriteriaFilter.Builder when constructing a
-CriteriaFilter. CriteriaFilters should be built using the CriteriaFilter.Build method.</p>
-<p>
-A set of criteria containing a list of SimpleCriteria used for building a CriteriaFilter. The criteriaName is associated
-with the list of SimpleCriteria.</p>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html">CriteriaFilter</a></h4>
+      <section><p>This class is used to build criteria for filtering for use with Ethos resource using version 8 or later. This class extends <see cref="!:ExpandoObject"></see> dynamic object and
+add methods to generate criteria used for filtering. There are three overloads of WithArray and four overloads of WithSimpleCriteria methods which help you to construct the criteria
+listed in the example below as well as in the code example above each method.</p>
+<pre><code><strong>
+<strong><h4>The data used in the examples is made up and should be replaced with real data in your environment.</h4></strong>
+    Following are examples of the common patterns you will come across to create filters. Please take a look at the EthosFilterQueryClientExamples.
+
+    Examples:
+    Ex1  ?criteria={ &quot;firstName&quot;:&quot;Angela&quot; }
+    Ex2  ?criteria={ &quot;names&quot;:{ &quot;lastName&quot;:&quot;Smith&quot; } }
+    Ex3  ?criteria={ &quot;paymentTarget&quot;:{ &quot;deduction&quot;:{ &quot;deductionType&quot;:{ &quot;id&quot;:&quot;11111111-1111-1111-1111-111111111112&quot; } } } }
+    Ex4  ?criteria={ &quot;names&quot;:{ &quot;firstName&quot;:&quot;Angela&quot;, &quot;lastName&quot;:&quot;Smith&quot; } }
+    Ex5  ?criteria={ &quot;statuses&quot;:[&quot;active&quot;,&quot;approved&quot;] }
+    Ex6  ?criteria={ &quot;academicLevels&quot;:[{&quot;id&quot;:&quot;11111111-1111-1111-1111-111111111111&quot;},{ &quot;id&quot;:&quot;11111111-1111-1111-1111-111111111112&quot;}]}
+    Ex7  ?criteria={ &quot;authors&quot;:[{&quot;person&quot;:{&quot;id&quot;:&quot;11111111-1111-1111-1111-111111111111&quot;}}]}
+    Ex8  ?criteria={ &quot;names&quot;:{ &quot;personalNames&quot;:[{ &quot;title&quot;:&quot;Mr.&quot;},{ &quot;title&quot;:&quot;Mr&quot;}]}}
+    Ex9  ?criteria={ &quot;credentials&quot;:[{&quot;type&quot;:{&quot;id&quot;:&quot;11111111-1111-1111-1111-111111111111&quot;}},{ &quot;value&quot;:&quot;bannerId&quot;}]}
+    Ex10 ?criteria={ &quot;academicLevels&quot;:[{&quot;id&quot;:&quot;11111111-1111-1111-1111-111111111111&quot;,&quot;firstName&quot;:&quot;John&quot;}]}
+    Ex11 ?criteria={ &quot;solicitors&quot;:[{&quot;solicitor&quot;:{&quot;constituent&quot;:{&quot;person&quot;:{&quot;id&quot;:&quot;11111111-1111-1111-1111-111111111111&quot;}}}}]}
+    Ex12 ?criteria={ &quot;myName&quot;:[{&quot;nestedName&quot;:{&quot;names&quot;:{&quot;firstName&quot;:&quot;John&quot;}}},{ &quot;nestedName&quot;:{ &quot;names&quot;:{ &quot;firstName&quot;:&quot;John&quot;} } }]}
+
+</strong></code></pre> 
 </section>
       <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.html">FilterMap</a></h4>
       <section><p>Plain filter map used to support filtering for resource versions 6 and prior.
 Contains a Dictionary of key/value pairs for each key/value in the URL filter.</p>
+<pre><code><strong>
+    Examples:
+
+    //Creates: &quot;persons?firstName=John&amp;lastName=Smith&quot;
+    string resource = &quot;persons&quot;;
+    string version = &quot;application/vnd.hedtech.integration.v6+json&quot;;
+    string filterKey = &quot;firstName&quot;;
+    string filterValue = &quot;John&quot;;
+
+    FilterMap filterMap = new FilterMap()
+    .WithParameterPair( filterKey, filterValue )
+    .WithParameterPair( &quot;lastName&quot;, &quot;Smith&quot; )
+    .Build();
+
+    //Another example
+    //Creates: &quot;persons?firstName=John&quot;
+    string resource = &quot;persons&quot;;
+    string version = &quot;application/vnd.hedtech.integration.v6+json&quot;;
+    string filterMapKey = &quot;firstName&quot;;
+    string filterMapValue = &quot;John&quot;;
+
+    FilterMap filterMap = new FilterMap()
+    .WithParameterPair( filterMapKey, filterMapValue )
+    .Build();
+</strong></code></pre>
 </section>
-      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.html">NamedSimpleCriteria</a></h4>
-      <section><p>Used to build a SimpleCriteria that is associated with a &quot;name&quot;, or property for the key/value criteria pair.</p>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html">FilterUtility</a></h4>
+      <section><p>This is a utility class used by Criteria and NamedQuery classes.</p>
 </section>
-      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html">SimpleCriteria</a></h4>
-      <section><p>SimpleCriteria class used when building a CriteriaFilter. Should be used when building filter requests for Ethos
-resources using version 8 or later.Contains a simple key and value properties where the key is the JSON label
-and the value is the value to filter by.</p>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.html">NamedQueryExtensions</a></h4>
+      <section><p>This class adds extension methods to <a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html">NamedQueryFilter</a> class.</p>
+</section>
+      <h4><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html">NamedQueryFilter</a></h4>
+      <section><p>This class is used to build named queries for use with Ethos resource using version 8 or later. This class uses <see cref="!:ExpandoObject"></see> dynamic object and add methods to generate named query.
+There are three overloads of WithNamedQuery method. Following are the examples of some of the named queries used in Ethos API's</p>
+<pre><code><strong>
+<strong><h4>The data used in the examples is made up and should be replaced with real data in your environment.</h4></strong>
+Following are just examples of the common patterns you will come across to create named queries.
+
+Resource: sections
+sections?instructor={&quot;instructor&quot;:{&quot;id&quot;:&quot;11111111-1111-1111-1111-111111111111&quot;}}
+sections?keywordSearch={&quot;keywordSearch&quot;:&quot;History&quot;}
+sections?searchable={&quot;searchable&quot;:&quot;hidden&quot;}
+
+Resource: persons
+persons?personFilter= {&quot;personFilter&quot;:{&quot;id&quot;:&quot;11111111-1111-1111-1111-111111111111&quot;}}
+
+Resource: account-funds-available
+account-funds-available?accountSpecification={&quot;accountingString&quot;:&quot;11-01-01-00-11111-11111&quot;,&quot;amount&quot;:&quot;2000&quot;,&quot;balanceOn&quot;:&quot;2018-04-01&quot;,&quot;submittedBy&quot;:&quot;11111111-1111-1111-1111-111111111112&quot;}
+
+</strong></code></pre>
 </section>
 </article>
           </div>

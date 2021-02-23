@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "/var/lib/jenkins/workspace/EthosIntegration/sdk/document-publish-csharp/Ellucian.EthosIntegration.SDK",
+  "source_base_path": "/var/lib/jenkins/workspace/EthosIntegration/sdk/3a.document-publish-csharp/Ellucian.EthosIntegration.SDK",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.EthosFilterQueryClient.html",
-          "hash": "gxkh/VpVMpQVUx0QmtmRlQ=="
+          "hash": "VclB3RQaSSLlMDkqm7JIiQ=="
         }
       },
       "is_incremental": false,
@@ -305,11 +305,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.yml",
+      "source_relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html",
-          "hash": "R73WlD8O8DuYbA6t9urB8A=="
+          "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaExtensions.html",
+          "hash": "bzsqvTSoC8p92NBK0X/9tg=="
         }
       },
       "is_incremental": false,
@@ -317,11 +317,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.yml",
+      "source_relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaSet.html",
-          "hash": "LisSQOntgbXI0dE2iPWk/w=="
+          "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.CriteriaFilter.html",
+          "hash": "3i6djwFSwuTWPHLYGUsKxg=="
         }
       },
       "is_incremental": false,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterMap.html",
-          "hash": "ieX0ORF79MiawtzxwLUung=="
+          "hash": "cceAqwRCCgl8H7ye6Bq+FQ=="
         }
       },
       "is_incremental": false,
@@ -341,11 +341,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.yml",
+      "source_relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedSimpleCriteria.html",
-          "hash": "Y5ayPAZCbsgYKFeVkXKiLA=="
+          "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.FilterUtility.html",
+          "hash": "kX0jE6XJpLdq59vEzEe6Pg=="
         }
       },
       "is_incremental": false,
@@ -353,11 +353,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.yml",
+      "source_relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.SimpleCriteria.html",
-          "hash": "Y5MyNaOGIUb1lrm7DyZKBA=="
+          "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryExtensions.html",
+          "hash": "N3ig6S5EnrHlJ+1Kt80Vlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.NamedQueryFilter.html",
+          "hash": "ZjLzZdnF4gwDhtSZpi7XSg=="
         }
       },
       "is_incremental": false,
@@ -369,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Filter.html",
-          "hash": "IxPzZX1A1XsgoQeBA66Pgg=="
+          "hash": "kA4XjuHhEuDkzNkllz6G6A=="
         }
       },
       "is_incremental": false,
@@ -393,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Ellucian.Ethos.Integration.Client.Proxy.Pager.html",
-          "hash": "4pXLGmXmnLhDrVC4aBzb8Q=="
+          "hash": "0UnHhbDMaFaA5hthTd1wRw=="
         }
       },
       "is_incremental": false,
@@ -693,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Ko7FE4q9xPfz6Gx69XMtYA=="
+          "hash": "kISDPcy03kJ/jQv4F5qq9A=="
         }
       },
       "is_incremental": false,
@@ -705,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "JDnG5ZDXIe9DUWeduHxOYA=="
+          "hash": "tniTF38fuZAi7eWqOaSbyA=="
         }
       },
       "is_incremental": false,
@@ -744,7 +756,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 57,
+          "total_file_count": 58,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

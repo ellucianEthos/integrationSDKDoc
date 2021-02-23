@@ -94,7 +94,7 @@ This class follows the builder pattern and contains an inner static Builder clas
   
   <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_CriteriaFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.CriteriaFilter*"></a>
   <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_CriteriaFilter" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.CriteriaFilter">CriteriaFilter</h4>
-  <div class="markdown level1 summary"><p>The optional request URL criteria filter used when paging.</p>
+  <div class="markdown level1 summary"><p>The optional request URL criteria used when paging.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -190,6 +190,32 @@ This class follows the builder pattern and contains an inner static Builder clas
     <tbody>
       <tr>
         <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.PagingType.html">Pager.PagingType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_NamedQueryFilter_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.NamedQueryFilter*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_NamedQueryFilter" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.NamedQueryFilter">NamedQueryFilter</h4>
+  <div class="markdown level1 summary"><p>The optional request URL named query used when paging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NamedQueryFilter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -814,6 +840,51 @@ All of the attributes in this Builder class correspond to the attributes in the 
       <tr>
         <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
         <td><p>The Builder with the filter map assigned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Ellucian_Ethos_Integration_Client_Proxy_Pager_WithNamedQuery_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.WithNamedQuery*"></a>
+  <h4 id="Ellucian_Ethos_Integration_Client_Proxy_Pager_WithNamedQuery_System_String_" data-uid="Ellucian.Ethos.Integration.Client.Proxy.Pager.WithNamedQuery(System.String)">WithNamedQuery(String)</h4>
+  <div class="markdown level1 summary"><p>Assigns the specified request URL criteria filter and returns this builder for fluent API functionality.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pager WithNamedQuery(string namedQuery)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">namedQuery</span></td>
+        <td><p>The request URL Named Query filter which can also be used when paging.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Ellucian.Ethos.Integration.Client.Proxy.Pager.html">Pager</a></td>
+        <td><p>The Builder with the criteria filter assigned.</p>
 </td>
       </tr>
     </tbody>

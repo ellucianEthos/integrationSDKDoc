@@ -200,6 +200,32 @@ var jsonNodeList = await proxyClient.GetPagesAsJArraysAsync( &quot;persons&quot;
 // return the data as a list of Strings
 var stringList = await proxyClient.GetPagesFromOffsetAsStringsAsync( &quot;courses&quot;, &quot;&quot;, 0, 100, 2 );
 </code></pre>
+<h3 id="making-criteria-filter-requests-to-the-proxy-api">Making Criteria Filter Requests to the Proxy API</h3>
+<p>Requests using criteria filters can be made using the EthosFilterQueryClient. SimpleCriteria can be built using the CriteriaFilter WithSimpleCriteria or WithArray methods. Once built, you call BuildCriteria or BuildNamedQuery method to get a string representation
+of the filter. You can also directly pass CriteriaFilter or NamedQueryFilter to methods in EthosFilterQueryClient.
+This is covered in the documentation and example code. Some knowledge of the desired criteria filter syntax is needed for use with the given Ethos resource.
+The following is a brief example code snippet.</p>
+<pre><code class="lang-csharp">//Creates ?criteria={&quot;names&quot;:{&quot;firstName&quot;:&quot;John&quot;,&quot;lastName&quot;:&quot;Smith&quot;}}
+string resource = &quot;persons&quot;;
+string version = &quot;application/vnd.hedtech.integration.v12.3.0+json&quot;;
+string criteriaFilterStr = new CriteriaFilter().WithArray( &quot;names&quot;, 
+                           new CriteriaFilter().WithSimpleCriteria( &quot;firstName&quot;, &quot;John&quot; )
+                                               .WithSimpleCriteria( &quot;lastName&quot;, &quot;smith&quot; ) ).BuildCriteria();
+Console.WriteLine( criteriaFilterStr );
+EthosFilterQueryClient ethosFilterQueryClient = GetEthosFilterQueryClient();
+try
+{
+    EthosResponse ethosResponse = await ethosFilterQueryClient.GetWithCriteriaFilterAsync( resource, version, criteriaFilterStr );
+    Console.WriteLine( $&quot;REQUESTED URL: { ethosResponse.RequestedUrl }&quot; );
+    Console.WriteLine( $&quot;Number of resources returned: { ethosResponse.ContentAsJson.Count }\r\n&quot; );
+    Console.WriteLine( ethosResponse.ContentAsJson.ToString() );
+}
+catch ( Exception e )
+{
+    Console.WriteLine( e.Message );
+}
+</code></pre>
+<p>Examples of using a named query filter and/or filter map are also available in the example code.</p>
 <h3 id="consuming-subscriber-messages">Consuming Subscriber Messages</h3>
 <p>Call the consume endpoint to get the default number of new messages from your application's subscriber queue.  The messages are
 returned as ChangeNotification objects.</p>
@@ -403,9 +429,9 @@ setup to make proxy requests and receive change-notifications from the different
 </ul>
 <p>Likewise, there will be 3 client applications that are used to get data from the 3 different Banner campuses.</p>
 <pre><code class="lang-csharp">// API keys for my 3 client apps
-string northKey = &quot;4ddb7445-d371-494a-aff4-0a0c55b9aff9&quot;;
-string southKey = &quot;89567e8d-bb76-41a0-af2d-73dc87071081&quot;;
-string mainKey = &quot;56174689-7db3-4785-83d5-3591c29a1a15&quot;;
+string northKey = &quot;11111111-1111-1111-1111-111111111111&quot;;
+string southKey = &quot;11111111-1111-1111-1111-111111111112&quot;;
+string mainKey = &quot;11111111-1111-1111-1111-111111111113&quot;;
 
 // get 'students' data through the proxy api for NORTH campus
 EthosProxyClient northProxyClient = new EthosClientBuilder(northKey).BuildEthosProxyClient();
